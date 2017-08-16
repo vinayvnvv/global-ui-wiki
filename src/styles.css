@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+pre {
+	max-height: 300px;
+	padding: 0px!important;
+	background-color: transparent!important;
+	border: 1px solid #d9d9d9;
+	border-radius: 7px;
+	position: relative;
+	margin: 0em!important;
+}
+pre code {
+	tab-size: 1!important;
+	position: relative;
+}
+
+.html-embed {
+	margin: 11px;
+}
+
+.docs {
+
+}
+.docs .doc-tab {
+
+}
