@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+.none {
+	display: none;
+}
 pre {
 	max-height: 300px;
 	padding: 0px!important;
@@ -15,7 +17,7 @@ pre code {
 }
 
 .html-embed {
-	margin: 11px;
+	margin: 17px 0 17px 0;
 }
 
 .docs {
@@ -23,4 +25,8 @@ pre code {
 }
 .docs .doc-tab {
 
+}
+
+.docs .doc-block {
+	margin: 11px 11px 29px 21px;
 }

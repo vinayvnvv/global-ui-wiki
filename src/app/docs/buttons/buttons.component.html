@@ -11,11 +11,11 @@
 
 
 					<div class="tab style-2 inlined">
-						<div class="item active primary"> 
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
 							<span class="icon"><i class="fa fa-image"></i></span> 
 							<span>Examples</span>
 						</div>
-						<div class="item">
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
 							<span class="icon"><i class="fa fa-music"></i> </span>
 							<span>Usage Syntax</span>
 						</div>
@@ -30,13 +30,22 @@
 		  <!-- main -->
 		  	<div class="row">
 
-				<section>
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn">
 
 					<!-- basic -->
+					<div class="doc-block">
 						<div>
 							<div class="header h3 light">Basic</div>
 							<div class="divider"></div>
 						</div>
+
 						<div class="html-embed">
 								<span class="button">Button</span>
 								<span class="button square">Button</span>
@@ -47,8 +56,53 @@
 						&lt;span class="button square">Button&lt;/span>
 						&lt;span class="button outline">Button&lt;/span>
 						</code></pre>
+					</div>
+
+					<div class="doc-block">
+						<div>
+							<div class="header h3 light">Sizes</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+								<span class="button mini square">Button</span> &nbsp;
+								<span class="button tiny square">Button</span> &nbsp;
+								<span class="button small square">Button</span> &nbsp;
+								<span class="button medium square">Button</span> &nbsp;
+								<span class="button large square">Button</span> &nbsp;
+								<span class="button big square">Button</span> &nbsp;
+								<span class="button huge square">Button</span> &nbsp;
+							</div>
+
+						<pre><code class="language-html">
+							&lt;span class="button mini square">Button&lt;/span> &nbsp;
+							&lt;span class="button tiny square">Button&lt;/span> &nbsp;
+							&lt;span class="button small square">Button&lt;/span> &nbsp;
+							&lt;span class="button medium square">Button&lt;/span> &nbsp;
+							&lt;span class="button large square">Button&lt;/span> &nbsp;
+							&lt;span class="button big square">Button&lt;/span> &nbsp;
+							&lt;span class="button huge square">Button&lt;/span> &nbsp;
+						</code></pre>
+
+					</div>
 						<div style="height: 900px"></div>
 				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		Syntax tab
+			 	</section>
 			</div>
 
 
