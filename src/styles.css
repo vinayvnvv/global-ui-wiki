@@ -10,10 +10,14 @@ pre {
 	border-radius: 7px;
 	position: relative;
 	margin: 0em!important;
+	/*max-width: 500px;*/
 }
 pre code {
 	tab-size: 1!important;
 	position: relative;
+	display: block;
+	overflow-x: auto;
+	white-space: pre-wrap!important;
 }
 
 .html-embed {
@@ -29,4 +33,10 @@ pre code {
 
 .docs .doc-block {
 	margin: 11px 11px 59px 21px;
+	overflow-x: hidden;
+	position: relative;
+}
+.docs .doc-block .d-sub-header {
+	margin: 49px 0px 9px 0px;
+	position: relative;
 }
