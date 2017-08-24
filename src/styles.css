@@ -21,7 +21,7 @@ pre code {
 }
 
 .html-embed {
-	margin: 17px 0 17px 0;
+	margin: 23px 0 23px 0;
 }
 
 .docs {
@@ -32,11 +32,14 @@ pre code {
 }
 
 .docs .doc-block {
-	margin: 11px 11px 59px 21px;
+	margin: 15px 11px 69px 21px;
 	overflow-x: hidden;
 	position: relative;
 }
 .docs .doc-block .d-sub-header {
 	margin: 49px 0px 9px 0px;
 	position: relative;
+}
+.docs .doc-block .doc-block-info {
+	margin: 15px 0;
 }
