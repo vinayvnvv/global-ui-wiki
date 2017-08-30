@@ -117,6 +117,38 @@
 					</div>
 
 
+
+					<!-- Shapes -->
+					<div class="doc-block">
+						<div class="d-header">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">Shape</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+								<span class="button">Basic</span>
+								<span class="button square">Square</span>
+								<span class="button circle">Circle</span>
+						</div>
+						<pre><code class="language-html">
+							&lt;span class="button">Basic&lt;/span>
+							&lt;span class="button square">Square&lt;/span>
+							&lt;span class="button circle">Circle&lt;/span>
+						</code></pre>
+					</div>
+
+
+
+
+
+
 					<!-- States -->
 					<div class="doc-block">
 							<div class="d-header">
@@ -184,6 +216,28 @@
 								&lt;span class="button outline-hovered danger disabled"&gt;Button&lt;/span&gt;
 								&lt;span class="button disabled"&gt;Button&lt;/span&gt;
 						</code></pre>
+
+						<!-- active -->
+						<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">Active</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+									<span class="button active">Button</span>
+									<span class="button primary active">Button</span>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;span class="button active"&gt;Button&lt;/span&gt;
+								&lt;span class="button primary active"&gt;Button&lt;/span&gt;
+						</code></pre>
+
+
 
 					</div>
 
@@ -351,6 +405,193 @@
 						</code></pre>
 					</div>
 
+					<!-- Advanced -->
+					<div class="doc-block">
+							<div class="d-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">Advanced Buttons</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Raised -->
+							<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">Raised Buttons</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<span class="button raised">Button</span> &nbsp;
+								<span class="button white raised square">Button</span> &nbsp;
+								<span class='button white raised circle'><span class="icon"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span></span>&nbsp;
+								<span class="button warning raised circle">Button</span>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;span class="button raised">Button&lt;/span> &nbsp;
+								&lt;span class="button white raised square">Button&lt;/span>
+								&lt;span class='button white raised circle'>
+									&lt;span class="icon">
+										&lt;i class="fa fa-arrow-circle-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/span>&nbsp;
+								&lt;span class="button warning raised circle">Button&lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<span class="label">raised</span> &nbsp; class applies shadow effects around the buttons.
+						</div>
+
+
+						<!-- ripple -->
+							<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">Ripple Ink Effects</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								   <span class="button outline ripple">Button</span>
+								   <span class="button primary ripple">Button</span>
+								   <span class="button outline-hovered ripple">Button</span>
+								   <span class="button teal ripple">Button</span>
+								   <span class='button white raised square ripple'>Button</span>
+								   <span class='button outline border-0 ripple'>Button</span>
+								   <span class="button circle raised ripple"><span class="icon"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span></span>
+								   <span class="button raised ripple">
+								    <span class="icon"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+								    <span>Back</span>
+								  </span>
+							</div>
+							<div class="label pointing point-top modern purple padding-less doc-block-info square">Click on above buttons to see the ripple effects.</div>
+
+						<pre><code class="language-html">
+							   &lt;span class="button outline ripple">Button&lt;/span>
+							   &lt;span class="button primary ripple">Button&lt;/span>
+							   &lt;span class="button outline-hovered ripple">Button&lt;/span>
+							   &lt;span class="button teal ripple">Button&lt;/span>
+							   &lt;span class='button white raised square ripple'>Button&lt;/span>
+							   &lt;span class='button outline border-0 ripple'>Button&lt;/span>
+							   &lt;span class="button circle raised ripple">
+							   		&lt;span class="icon">
+							   			&lt;i class="fa fa-arrow-circle-left" aria-hidden="true">&lt;/i>
+							   		&lt;/span>
+							   	&lt;/span>
+							   &lt;span class="button raised ripple">
+							    	&lt;span class="icon">
+							    		&lt;i class="fa fa-arrow-circle-left" aria-hidden="true">&lt;/i>&lt;/span>
+							    	&lt;span>Back&lt;/span>
+							  &lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<span class="label">ripple</span> &nbsp; class applies ripple effects inside the buttons when you click on the button.<small> &nbsp; ( Similar to Google material ink effect)</small> .
+						</div>
+
+
+					<!-- gradient -->
+							<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">Gradient Buttons</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								   <span class="button gradient">Button</span>
+								   <span class="button teal gradient">Button</span>
+								   <span class="button success gradient">Button</span>
+								   <span class="button pink gradient">Button</span>
+								   <span class="button primary gradient raised square">Button</span>
+							</div>
+
+						<pre><code class="language-html">
+							   &lt;span class="button gradient">Button&lt;/span>
+							   &lt;span class="button teal gradient">Button&lt;/span>
+							   &lt;span class="button success gradient">Button&lt;/span>
+							   &lt;span class="button pink gradient">Button&lt;/span>
+							   &lt;span class="button primary gradient raised square">Button&lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<span class="label">gradient</span> &nbsp; class applies vertical gradient effects inside the buttons.
+						</div>
+
+					<!-- Vip -->
+							<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">VIP Buttons</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							      <span class="button vip">Button</span>
+								  <span class="button square vip">Button</span>
+								  <span class="button outline vip">Button</span>
+								  <span class="button red vip">Button</span>
+								  <span class="button lime vip">Button</span>
+								  <span class="button pink vip ripple">Button</span>
+								  <span class="button green raised vip ripple">Button</span>
+							</div>
+
+						<pre><code class="language-html">
+							  &lt;span class="button vip">Button&lt;/span>
+							  &lt;span class="button square vip">Button&lt;/span>
+							  &lt;span class="button outline vip">Button&lt;/span>
+							  &lt;span class="button red vip">Button&lt;/span>
+							  &lt;span class="button lime vip">Button&lt;/span>
+							  &lt;span class="button pink vip ripple">Button&lt;/span>
+							  &lt;span class="button green raised vip ripple">Button&lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<span class="label">vip</span> &nbsp; class applies special style to buttons with extra letter-spacing.
+						</div>
+
+				<!-- Standard -->
+							<div class="d-sub-header">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">Standard Buttons</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							    <span class="button standard ripple">Button</span>
+								<span class="button square standard ripple">Button</span>
+								<span class="button outline standard">Button</span>
+							</div>
+
+						<pre><code class="language-html">
+							  &lt;span class="button standard ripple">Button&lt;/span>
+							  &lt;span class="button square standard ripple">Button&lt;/span>
+							  &lt;span class="button outline standard">Button&lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<span class="label">vip</span> &nbsp; class applies special style to buttons same as VIP but with less boldness and less letter-spacing.
+						</div>
+
+
+
+
+					</div>
+
+
+
 
 
 
@@ -391,10 +632,12 @@
 						<div class="toc">
 							 <div class="item">Basic</div>
 							 <div class="item">Sizes</div>
+							 <div class="item">Shape</div>
 							 <div class="item active">States
 							 	 <div class="toc">
 										 <div class="item">Loading</div>
 										 <div class="item">Disabled</div>
+										 <div class="item">Active</div>
 										 <!-- <div class="item">Types
 										 	<div class="toc">
 													 <div class="item">Basic</div>
@@ -411,6 +654,16 @@
 									 </div>
 							 </div>
 							 <div class="item">Round Buttons</div>
+							 <div class="item">Block Buttons</div>
+							 <div class="item active">Advanced Styles
+							 			<div class="toc">
+											 <div class="item">Raised Buttons</div>
+											 <div class="item">Ripple Ink Buttons</div>
+											 <div class="item">Gradient Buttons</div>
+											 <div class="item">VIP Buttons</div>
+											 <div class="item">Standard Buttons</div>
+									 	</div>
+							 </div>
 						 </div>
 				</section>
 			</div>
