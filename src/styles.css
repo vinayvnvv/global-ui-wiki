@@ -13,7 +13,7 @@ pre {
 	/*max-width: 500px;*/
 }
 pre code {
-	tab-size: 1!important;
+	tab-size: 2!important;
 	position: relative;
 	display: block;
 	overflow-x: auto;

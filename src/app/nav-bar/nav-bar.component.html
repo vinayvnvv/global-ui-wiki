@@ -7,7 +7,7 @@
 				<span></span>
 				<span></span>
 			</span>
-			<a class="nav-item logo"><i>LOGO</i></a>
+			<a class="nav-item logo"><i>{{app_name}}</i></a>
 			<span class="mobile-toggle-menu" toggle-class-id="menu" toggle-class='{"for":"menu","class":"active"}'>
 				<span></span>
 				<span></span>
@@ -17,7 +17,7 @@
 
 		<div class="nav-left">
 			<a class="nav-item hovered active">Home</a>
-			<a class="nav-item hovered" [routerLink]="['/docs']">Docs</a>
+			<a class="nav-item hovered ripple" [routerLink]="['/docs']">Docs</a>
 			<a class="nav-item hovered nav-dropdown no-hovered-active" toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
 				<span>Products</span><span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				<div class="menu wide-large" toggle-class-id="drop_down_menu_1">

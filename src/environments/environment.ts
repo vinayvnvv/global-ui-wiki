@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  app_name: "Ng2UI"
+  app_name: "GLOBAL-UI",
+  app_short_name: "Global"
 };
