@@ -21,6 +21,9 @@ export class ButtonsComponent implements OnInit, AfterViewInit {
   highlightSyntax() {
   	 if(window["Prism"])
   		Prism.highlightAll();
+
+     var h = window.innerHeight -  document.getElementById("toc-container").offsetTop;
+     document.getElementById("toc-container").style.height = (h-70) + "px";
   }
 
 }

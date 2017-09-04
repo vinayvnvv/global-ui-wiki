@@ -43,3 +43,49 @@ pre code {
 .docs .doc-block .doc-block-info {
 	margin: 15px 0;
 }
+@media screen and (max-width: 767px) {
+.toc-container {
+		height: initial!important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.toc-container {
+		position: fixed;
+	    overflow: auto;
+	    margin-top: -95px;
+	}
+	.toc-container::-webkit-scrollbar {
+	    width: 0px;
+	}
+	.toc-container:hover::-webkit-scrollbar {
+		width: 5px;
+	}
+	 
+	.toc-container::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	}
+	 
+	.toc-container::-webkit-scrollbar-thumb {
+	  background-color: darkgrey;
+	  outline: 1px solid slategrey;
+	}
+}
+
+	.side-nav::-webkit-scrollbar {
+	    width: 0px;
+	    position: absolute;
+	}
+	.side-nav:hover::-webkit-scrollbar {
+		width: 7px;
+	}
+	 
+	.side-nav::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	}
+	 
+	.side-nav::-webkit-scrollbar-thumb {
+	  background-color: #777;
+	  outline: 1px solid slategrey;
+	  border-radius: 11px;
+	}
