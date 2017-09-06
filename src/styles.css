@@ -46,6 +46,7 @@ pre code {
 @media screen and (max-width: 767px) {
 .toc-container {
 		height: initial!important;
+		margin-top: -95px!important;
 	}
 }
 
@@ -58,17 +59,18 @@ pre code {
 	.toc-container::-webkit-scrollbar {
 	    width: 0px;
 	}
-	.toc-container:hover::-webkit-scrollbar {
-		width: 5px;
-	}
+	
 	 
 	.toc-container::-webkit-scrollbar-track {
-	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.08);
 	}
 	 
 	.toc-container::-webkit-scrollbar-thumb {
-	  background-color: darkgrey;
+	  background-color: rgba(0,0,0,0.29);
 	  outline: 1px solid slategrey;
+	}
+	.toc-container:hover::-webkit-scrollbar {
+		width: 5px;
 	}
 }
 
@@ -77,15 +79,15 @@ pre code {
 	    position: absolute;
 	}
 	.side-nav:hover::-webkit-scrollbar {
-		width: 7px;
+		width: 4px;
 	}
 	 
 	.side-nav::-webkit-scrollbar-track {
-	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.08);
 	}
 	 
 	.side-nav::-webkit-scrollbar-thumb {
-	  background-color: #777;
+	  background-color: rgba(0,0,0,0.49);
 	  outline: 1px solid slategrey;
 	  border-radius: 11px;
 	}
