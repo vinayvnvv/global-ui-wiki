@@ -1,0 +1,8 @@
+<div class="toc" >
+	 <a class="item" id="{{list.id}}" *ngFor="let list of list; let i = index" href="/docs/buttons#{{list.id}}" [class.active]="i == 0" [attr.toc-active]="true">{{list.name}}
+	 		<div class="toc" *ngIf="list.child != null">
+	 				<a class="item" id="{{list.id}}" *ngFor="let list of list.child" href="/docs/buttons#{{list.id}}" [attr.toc-sub-active]="true">{{list.name}}</a>
+	 		</div>
+	 </a>
+
+</div>

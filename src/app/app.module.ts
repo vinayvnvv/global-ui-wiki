@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DocsComponent } from './docs/docs.component';
 import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
+import { TocComponent } from './toc/toc.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ButtonsComponent } from './docs/buttons/buttons.component';
     NavBarComponent,
     DocsComponent,
     StartComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    TocComponent
   ],
   imports: [
     BrowserModule,
