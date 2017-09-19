@@ -1,0 +1,446 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Input</div>
+			<div class="sub-header size-3 light">An input is a field used to elicit a response from a user</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- basic -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Simple -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input">
+									<input type="text" placeholder="Search.." />
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+						</code></pre>
+						<!-- Md Style -->
+						<div class="d-sub-header" id="{{toc_list[0].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[1].name}} (material style)</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input md">
+									<input type="text" placeholder="Search.." />
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input md">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Basic Types</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">input</span> class is applies the basic style to inside input element.
+									</div>
+									<div class="margin-5">
+										<span class="label mini white">md</span> class with <b>input</b> makes the input style to material disign.
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+
+					<!-- With Icons -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- icons at left -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+								</div>
+
+							</div>
+
+						<pre><code class="language-html">
+							&lt;div class="input icon-left">
+								&lt;input type="text" placeholder="Search.." />
+								&lt;span class="icon">
+									&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+								&lt;/span>
+							&lt;/div>
+						</code></pre>
+						<!-- Icons at rigt -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-right"> 
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input icon-right"> 
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+						<!-- Icons at both -->
+						<div class="d-sub-header" id="{{toc_list[1].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-left icon-right">
+									<input type="text" placeholder="Search.." />
+									<span class="icon right">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input icon-left icon-right">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon right">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+						<!-- Icons with md style -->
+						<div class="d-sub-header" id="{{toc_list[1].child[3].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[3].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-left md">
+									<input type="text" placeholder="Search.." />
+									<span class="icon right">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="input icon-right md">
+									<input type="text" placeholder="Search.." />
+									<span class="icon right">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="input icon-left icon-right md">
+									<input type="text" placeholder="Search.." />
+									<span class="icon right">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input icon-left md">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon right">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input icon-right md">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon right">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input icon-left icon-right md">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon right">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+						
+
+
+
+					</div>
+
+
+
+
+					
+
+
+
+					<!-- sizes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+								<div class="input mini">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input tiny">
+									<input type="text" placeholder="Search.." />
+								</div>
+							    
+							    <div class="input small icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="input large icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="input huge icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+							&lt;div class="input mini">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input tiny">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+							    
+							    &lt;div class="input small icon-left">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input large icon-left">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input huge icon-left">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/input'"></section>
+			</div>
+
+			</div>
+</div>
+
+

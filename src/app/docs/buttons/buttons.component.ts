@@ -18,7 +18,6 @@ export class ButtonsComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit() {
   	this.highlightSyntax();
-    this.placeTOC();
   }
 
 
@@ -77,21 +76,7 @@ export class ButtonsComponent implements OnInit, AfterViewInit {
     this.toc_list.push(new TOC("Resize", "toc_Resize", toc_sub_list));
   }
 
-       
 
-  placeTOC() {
-     let e = document.getElementById("toc-container");
-     let h = window.innerHeight -  e.offsetTop;
-     e.style.height = (h-70) + "px";
-     let scroller = document.getElementById("nav-content");
-     scroller.addEventListener('scroll', (ev)=> {
-        if(ev.target["id"] != "nav-content") return;
-        let scrolled = ev.target["scrollTop"];
-        if(scrolled < 184 ) {
-          e.style.marginTop = "-" + (scrolled+95) + "px";
-        }
-    }, true);
-    }
      
 
   

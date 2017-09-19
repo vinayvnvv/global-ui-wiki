@@ -11,13 +11,14 @@
 		</div>
 	</div>
 	<div class="nav-list-header">Elements</div>
-	<div class="nav-list-item ripple">
-		<span class="icon"><i class="fa fa-text-height" aria-hidden="true"></i></span>
-		<span class="text">Input</span>
-	</div>
-	<div class="nav-list-item active">
+	
+	<div class="nav-list-item ripple" [routerLink]="['/docs/buttons']" routerLinkActive="active">
 		<span class="icon"><i class="fa fa-backward" aria-hidden="true"></i></span>
-		<span class="text">Button</span>
+		<span class="text" >Button</span>
+	</div>
+	<div class="nav-list-item ripple" [routerLink]="['/docs/input']" routerLinkActive="active">
+		<span class="icon"><i class="fa fa-text-height" aria-hidden="true"></i></span>
+		<span class="text" >Input</span>
 	</div>
 	<div class="nav-list-item">
 		<span class="icon"><i class="fa fa-list" aria-hidden="true"></i></span>

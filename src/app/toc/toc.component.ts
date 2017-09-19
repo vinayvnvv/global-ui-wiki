@@ -22,6 +22,7 @@ export class TOC {
 export class TocComponent implements OnInit, AfterViewInit {
 
   @Input() list: Array<TOC>;
+  @Input() url: String;
 
   constructor() { }
 
@@ -30,9 +31,30 @@ export class TocComponent implements OnInit, AfterViewInit {
 
 
   ngAfterViewInit() {
-  	setTimeout(( () => { this.initScrollsPsy(); }), 1500)
+  	setTimeout(( () => { 
+  		this.initScrollsPsy(); 
+  		this.placeTOC();
+  	}), 1500)
   	
   }
+
+  placeTOC() {
+     let e = document.getElementById("toc-container");
+     let h = window.innerHeight -  e.offsetTop;
+     var e_h = (h-70);
+     e.style.height = e_h + "px";
+     let scroller = document.getElementById("nav-content");
+     scroller.addEventListener('scroll', (ev)=> {
+        if(ev.target["id"] != "nav-content") return;
+        let scrolled = ev.target["scrollTop"];
+        if(scrolled < 184 ) {
+          e.style.marginTop = "-" + (scrolled+95) + "px";
+          e.style.height = e_h + "px";
+        } else {
+          e.style.height = (e_h + 120) + "px"
+        }
+    }, true);
+    }
 
   initScrollsPsy() {
   	let section1 = (document.querySelectorAll(".d-sub-header"));

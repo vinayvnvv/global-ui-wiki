@@ -91,3 +91,41 @@ pre code {
 	  outline: 1px solid slategrey;
 	  border-radius: 11px;
 	}
+
+.toc {
+	font-size: 15px!important;
+	font-weight: 400;
+}
+.toc .item.active>.toc {
+	animation-name: toc_open;
+	animation-duration: .1s;
+}
+
+/*animatiuon*/
+@keyframes pageInUp {
+  from {
+    margin-top: 11px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0px;
+    opacity: 	1;
+  }
+}
+
+@keyframes toc_open {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.pageInUp {
+  animation-name: pageInUp;
+  animation-duration: 0.2s;
+  transition-timing-function: ease-in;
+}

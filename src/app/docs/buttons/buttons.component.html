@@ -1,4 +1,4 @@
-<div class="docs">
+<div class="docs pageInUp">
 		<section class="advertisement padding-more white">
 			<div class="header h2 light">Buttons</div>
 			<div class="sub-header size-3 light">A button indicates a possible user action</div>
@@ -12,15 +12,15 @@
 
 					<div class="tab style-2 inlined">
 						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
-							<span class="icon"><i class="fa fa-image"></i></span> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
 							<span>Examples</span>
 						</div>
 						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
-							<span class="icon"><i class="fa fa-music"></i> </span>
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
 							<span>Usage Syntax</span>
 						</div>
 						<div class="item">
-							<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
 							<span>Supports</span>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 
 
 		  	<!-- example tab -->
-				<section [class.none]="tab != 'example'" class="anim fadeIn">
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
 
 					<!-- basic -->
 					<div class="doc-block">
@@ -1309,7 +1309,41 @@
 
 			 <!-- sytax tab  -->
 			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
-			 		Syntax tab
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
 			 	</section>
 			</div>
 
@@ -1325,7 +1359,7 @@
 
 			<!-- toc -->
 			<div class="row grow-3">
-				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list"></section>
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/buttons'"></section>
 			</div>
 
 			</div>
