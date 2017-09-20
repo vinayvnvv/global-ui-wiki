@@ -5,6 +5,7 @@ import { DocsComponent } from './docs/docs.component';
 import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
 import { InputComponent } from './docs/input/input.component';
+import { TypographyComponent } from './docs/typography/typography.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
   	children: [
       { path: '', redirectTo: 'start', pathMatch: 'full' },
       { path: 'start', component: StartComponent },
+      { path: 'typography', component: TypographyComponent },
       { path: 'buttons', component: ButtonsComponent },
       { path: 'input', component: InputComponent }
     ]
@@ -24,5 +26,6 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routerComponents = [HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent];
+export const routerComponents = [HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, TypographyComponent];
 
+ 

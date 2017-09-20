@@ -41,9 +41,22 @@ public tab:any = "example";
     toc_sub_list.push(new TOC("Icons with Md Style", "toc_icons_with_md", null));
     this.toc_list.push(new TOC("With Icons", "toc_with_icons", toc_sub_list));
 
-
-
     this.toc_list.push(new TOC("Sizes", "toc_sizes", null));
+
+    toc_sub_list = [];
+    toc_sub_list.push(new TOC("Loading", "toc_loading", null));
+    toc_sub_list.push(new TOC("Disabled", "toc_disabled", null));
+    toc_sub_list.push(new TOC("Highleted ", "toc_Highleted", null));
+    this.toc_list.push(new TOC("States", "toc_states", toc_sub_list));
+
+
+    toc_sub_list = [];
+    toc_sub_list.push(new TOC("Square", "toc_square", null));
+    toc_sub_list.push(new TOC("Rounded", "toc_circle", null));
+    this.toc_list.push(new TOC("Shapes", "toc_shapes", toc_sub_list));
+
+
+    this.toc_list.push(new TOC("Colors", "toc_colors", null));
 
   }
 

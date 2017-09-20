@@ -14,6 +14,7 @@ import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
 import { TocComponent } from './toc/toc.component';
 import { InputComponent } from './docs/input/input.component';
+import { TypographyComponent } from './docs/typography/typography.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InputComponent } from './docs/input/input.component';
     routerComponents,
     SideNavComponent,
     NavBarComponent,
-    TocComponent
+    TocComponent,
+    TypographyComponent
   ],
   imports: [
     BrowserModule,

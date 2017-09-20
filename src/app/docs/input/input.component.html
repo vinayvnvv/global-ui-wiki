@@ -361,6 +361,372 @@
 					</div>
 
 
+					<!-- States -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[3].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[3].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Loading -->
+							<div class="d-sub-header" id="{{toc_list[3].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[3].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-left loading">
+									<input type="text" placeholder="Search.." />
+									<span class="icon"></span>
+								</div>
+								<div class="input icon-right loading">
+									<input type="text" placeholder="Search.." />
+									<span class="icon"></span>
+								</div>
+								<div class="input huge icon-right loading">
+									<input type="text" placeholder="Search.." />
+									<span class="icon"></span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+							&lt;div class="input icon-left loading">
+								&lt;input type="text" placeholder="Search.." />
+								&lt;span class="icon">&lt;/span>
+							&lt;/div>
+							&lt;div class="input icon-right loading">
+								&lt;input type="text" placeholder="Search.." />
+								&lt;span class="icon">&lt;/span>
+							&lt;/div>
+							&lt;div class="input huge icon-right loading">
+								&lt;input type="text" placeholder="Search.." />
+								&lt;span class="icon">&lt;/span>
+							&lt;/div>
+						</code></pre>
+						<!-- Disabled -->
+						<div class="d-sub-header" id="{{toc_list[3].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[3].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input">
+									<input type="text" placeholder="Search.." disabled />
+								</div>
+
+							 	<div class="input md">
+									<input type="text" placeholder="Search.." disabled />
+								</div>
+
+							 	<div class="input disabled">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input primary disabled">
+									<input type="text" placeholder="Search.." />
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input">
+									&lt;input type="text" placeholder="Search.." disabled />
+								&lt;/div>
+
+							 	&lt;div class="input md">
+									&lt;input type="text" placeholder="Search.." disabled />
+								&lt;/div>
+
+							 	&lt;div class="input disabled">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input primary disabled">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Usage</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">disabled</span> can be use as class outside the input element or can be used as attribute directly to input element.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Highlet -->
+						<div class="d-sub-header" id="{{toc_list[3].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[3].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input success icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>	
+									</span>
+								</div>
+
+							    <div class="input danger icon-left icon-right">
+									<input type="text" placeholder="Search.." />
+									<span class="icon left">
+										<i class="fa fa-user" aria-hidden="true"></i>	
+									</span>
+									<span class="icon right">
+										<i class="fa fa-warning" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="input info icon-left icon-right">
+									<input type="text" placeholder="Search.." />
+									<span class="icon left">
+										<i class="fa fa-user" aria-hidden="true"></i>	
+									</span>
+									<span class="icon right">
+										<i class="fa fa-check" aria-hidden="true"></i>	
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input success icon-left">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+								&lt;/div>
+
+							    &lt;div class="input danger icon-left icon-right">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon left">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+									&lt;span class="icon right">
+										&lt;i class="fa fa-warning" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input info icon-left icon-right">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon left">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+									&lt;span class="icon right">
+										&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[4].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[4].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="message modern info doc-block-info square">
+								<div class="details">
+									<div class="header">Usage</div>
+									<div class="content">
+										<div class="margin-5">
+											Shapes are working only in normal input classes without md styles.
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Square -->
+							<div class="d-sub-header" id="{{toc_list[4].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[4].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-right square">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+							&lt;div class="input icon-right square">
+								&lt;input type="text" placeholder="Search.." />
+								&lt;span class="icon">
+									&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+								&lt;/span>
+							&lt;/div>
+						</code></pre>
+						<!-- circle -->
+						<div class="d-sub-header" id="{{toc_list[4].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[4].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+								<div class="input icon-right circle">
+									<input type="text" placeholder="Search.." />
+									<span class="icon">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+								&lt;div class="input icon-right circle">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon">
+										&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Usage</div>
+								<div class="content">
+									<div class="margin-5">
+										Supports all the colors mentioned in the Colors Pallete.
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+							<div class="html-embed">
+								<div class="input red">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input teal">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input orange">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input lime">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input blue">
+									<input type="text" placeholder="Search.." />
+								</div>
+
+								<div class="input white">
+									<input type="text" placeholder="Search.." />
+								</div><br/>
+								<div class="input md teal">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input md light-green">
+									<input type="text" placeholder="Search.." />
+								</div>
+								<div class="input md pink icon-left">
+									<input type="text" placeholder="Search.." />
+									<span class="icon left">
+										<i class="fa fa-user" aria-hidden="true"></i>	
+									</span>
+								</div>
+								<div class="input md purple icon-right">
+									<input type="text" placeholder="Search.." />
+									<span class="icon right">
+										<i class="fa fa-user" aria-hidden="true"></i>	
+									</span>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+							&lt;div class="input red">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input teal">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input orange">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input lime">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input blue">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+
+								&lt;div class="input white">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>&lt;br/>
+								&lt;div class="input md teal">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input md light-green">
+									&lt;input type="text" placeholder="Search.." />
+								&lt;/div>
+								&lt;div class="input md pink icon-left">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon left">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="input md purple icon-right">
+									&lt;input type="text" placeholder="Search.." />
+									&lt;span class="icon right">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>	
+									&lt;/span>
+								&lt;/div>
+						</code></pre>
+
+					</div>
+
+
 
 
 

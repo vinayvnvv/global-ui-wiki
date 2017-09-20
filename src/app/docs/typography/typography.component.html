@@ -1,0 +1,421 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Typography</div>
+			<div class="sub-header size-3 light">CSS classes you can use to create visual consistency across your application.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Headers -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Simple -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <h1 class="header">Header 1</h1>
+							   <h2 class="header">Header 2</h2>
+							   <h3 class="header">Header 3</h3>
+							   <h4 class="header">Header 4</h4>
+							   <h5 class="header">Header 5</h5>
+							</div>
+
+						<pre><code class="language-html">
+							   &lt;h1 class="header">Header 1&lt;/h1>
+							   &lt;h2 class="header">Header 2&lt;/h2>
+							   &lt;h3 class="header">Header 3&lt;/h3>
+							   &lt;h4 class="header">Header 4&lt;/h4>
+							   &lt;h5 class="header">Header 5&lt;/h5>
+						</code></pre>
+						<!-- with classes -->
+						<div class="d-sub-header" id="{{toc_list[0].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <span class="header h1">Header 1</span> &nbsp;&nbsp;
+							   <span class="header h2">Header 2</span> &nbsp;&nbsp;
+							   <span class="header h3">Header 3</span> &nbsp;&nbsp;
+							   <span class="header h4">Header 4</span> &nbsp;&nbsp;
+							   <span class="header h5">Header 5</span> &nbsp;&nbsp;
+							</div>
+
+						<pre><code class="language-html">
+							   &lt;span class="header h1">Header 1&lt;/span>
+							   &lt;span class="header h2">Header 2&lt;/span>
+							   &lt;span class="header h3">Header 3&lt;/span>
+							   &lt;span class="header h4">Header 4&lt;/span>
+							   &lt;span class="header h5">Header 5&lt;/span>
+						</code></pre>
+
+						<!-- lightness -->
+						<div class="d-sub-header" id="{{toc_list[0].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <span class="header h1 light">Header 1</span> &nbsp;&nbsp;
+							   <span class="header h2 light">Header 2</span> &nbsp;&nbsp;
+							   <span class="header h3 light">Header 3</span> &nbsp;&nbsp;
+							   <span class="header h4 light">Header 4</span> &nbsp;&nbsp;
+							   <span class="header h5 light">Header 5</span> &nbsp;&nbsp;
+							</div>
+
+						<pre><code class="language-html">
+							   &lt;span class="header h1 light">Header 1&lt;/span>
+							   &lt;span class="header h2 light">Header 2&lt;/span>
+							   &lt;span class="header h3 light">Header 3&lt;/span>
+							   &lt;span class="header h4 light">Header 4&lt;/span>
+							   &lt;span class="header h5 light">Header 5&lt;/span>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Lightness</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">light</span> class makes the text with less strongness.
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+
+					<!-- lightness level -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<span class="header h3 extra-light">Lightness</span> &nbsp;&nbsp;
+							<span class="header h3 light">Lightness</span> &nbsp;&nbsp;
+							<span class="header h3">Lightness</span> &nbsp;&nbsp;
+							</div>
+
+						<pre><code class="language-html">
+							&lt;span class="header h3 extra-light">Lightness&lt;/span>
+							&lt;span class="header h3 light">Lightness&lt;/span>
+							&lt;span class="header h3">Lightness&lt;/span>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Lightness Level</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">light</span> class makes the text less strongness.
+									</div>
+									<div class="margin-5">
+										<span class="label mini white">extra-light</span> class makes the text very-less strongness.
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Sub-Headers -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[2].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+
+							<div class="message modern info doc-block-info square">
+								<div class="details">
+									<div class="content">
+										<div class="margin-5">
+											<b>Sub Header is same as header but with less sizes.</b>class makes the text with less strongness.
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Simple -->
+							<div class="d-sub-header" id="{{toc_list[2].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[2].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <span class="sub-header size-1">Sub Header 1</span> &nbsp;&nbsp;
+							   <span class="sub-header size-2">Sub Header 2</span> &nbsp;&nbsp;
+							   <span class="sub-header size-3">Sub Header 3</span> &nbsp;&nbsp;
+							   <span class="sub-header size-4">Sub Header 4</span> &nbsp;&nbsp;
+							   <span class="sub-header size-5">Sub Header 5</span> &nbsp;&nbsp;
+							</div>
+
+						<pre><code class="language-html">
+							   &lt;span class="sub-header size-1">Sub Header 1&lt;/span>
+							   &lt;span class="sub-header size-2">Sub Header 2&lt;/span>
+							   &lt;span class="sub-header size-3">Sub Header 3&lt;/span>
+							   &lt;span class="sub-header size-4">Sub Header 4&lt;/span>
+							   &lt;span class="sub-header size-5">Sub Header 5&lt;/span>
+						</code></pre>
+						<!-- with classes -->
+						<div class="d-sub-header" id="{{toc_list[2].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[2].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+						       <span class="sub-header size-3 extra-light">Sub Header lightness</span> &nbsp;&nbsp;
+							   <span class="sub-header size-3 light">Sub Header lightness</span> &nbsp;&nbsp;
+							   <span class="sub-header size-3">Sub Header lightness</span> &nbsp;&nbsp;
+							</div>
+
+						<pre><code class="language-html">
+						  &lt;span class="sub-header size-3 extra-light">Sub Header lightness&lt;/span>
+						   &lt;span class="sub-header size-3 light">Sub Header lightness&lt;/span>
+						   &lt;span class="sub-header size-3">Sub Header lightness&lt;/span>
+						</code></pre>
+
+
+
+
+					</div>
+
+					<!-- headers with sub-h -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+							  <div class="margin-y-5">	
+							 	   <div class="header h2">Header</div>
+								   <div class="sub-header size-2">Sub Header</div>
+							  </div><br/>
+							  
+							  <div class="margin-y-5">	
+							 	   <div class="header h2">Header</div>
+   									<div class="sub-header size-2 extra-light">Sub Header</div>
+							  </div> 
+
+							</div>
+
+						<pre><code class="language-html">
+						  &lt;div class="margin-y-5">	
+						 	   &lt;div class="header h2">Header&lt;/div>
+							   &lt;div class="sub-header size-2">Sub Header&lt;/div>
+						  &lt;/div>
+						  
+						  &lt;div class="margin-y-5">	
+						 	   &lt;div class="header h2">Header&lt;/div>
+   							   &lt;div class="sub-header size-2 extra-light">Sub Header&lt;/div>
+						  &lt;/div> 
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="content">
+									<div class="margin-5">
+										Use appropriate <b>sub-header</b> with <b>header</b> to make title-subtitle combinations.
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- lightness level -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 		<span class="caption">Caption</span>&nbsp;&nbsp;
+							   	<span class="caption light">Caption light</span>&nbsp;&nbsp;
+							  	<span class="caption strong">Caption Strong</span>
+							</div>
+
+						<pre><code class="language-html">
+							&lt;span class="caption">Caption&lt;/span>
+						   	&lt;span class="caption light">Caption light&lt;/span>
+						  	&lt;span class="caption strong">Caption Strong&lt;/span>
+						</code></pre>
+
+					</div>
+
+
+
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/typography'"></section>
+			</div>
+
+			</div>
+</div>
+
+
