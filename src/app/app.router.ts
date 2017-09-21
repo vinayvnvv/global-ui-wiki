@@ -6,6 +6,8 @@ import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
 import { InputComponent } from './docs/input/input.component';
 import { TypographyComponent } from './docs/typography/typography.component';
+import { ListComponent } from './docs/list/list.component';
+import { LabelComponent } from './docs/label/label.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +17,9 @@ const appRoutes: Routes = [
       { path: 'start', component: StartComponent },
       { path: 'typography', component: TypographyComponent },
       { path: 'buttons', component: ButtonsComponent },
-      { path: 'input', component: InputComponent }
+      { path: 'input', component: InputComponent },
+      { path: 'list', component: ListComponent },
+      { path: 'label', component: LabelComponent }
     ]
   }
 ];
@@ -26,6 +30,6 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routerComponents = [HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, TypographyComponent];
+export const routerComponents = [HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, TypographyComponent, ListComponent, LabelComponent];
 
  

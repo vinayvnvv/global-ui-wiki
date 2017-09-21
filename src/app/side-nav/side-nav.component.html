@@ -24,9 +24,13 @@
 		<span class="icon"><i class="fa fa-text-height" aria-hidden="true"></i></span>
 		<span class="text" >Input</span>
 	</div>
-	<div class="nav-list-item">
+	<div class="nav-list-item" [routerLink]="['/docs/list']" routerLinkActive="active">
 		<span class="icon"><i class="fa fa-list" aria-hidden="true"></i></span>
 		<span class="text">List</span>
+	</div>
+	<div class="nav-list-item" [routerLink]="['/docs/label']" routerLinkActive="active">
+		<span class="icon"><i class="fa fa-tag" aria-hidden="true"></i></span>
+		<span class="text">Label</span>
 	</div>
 	<div class="nav-list-item">
 		<span class="icon"><i class="fa fa-table" aria-hidden="true"></i></span>

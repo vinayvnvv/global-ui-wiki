@@ -1,0 +1,1348 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">List</div>
+			<div class="sub-header size-3 light">A list is used to group related content.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Simple -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							  <ul class="list">
+								<li>List 1</li>
+								<li>List 2</li>
+								<li>List 3</li>
+							  </ul>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;ul class="list">
+								&lt;li>List 1&lt;/li>
+								&lt;li>List 2&lt;/li>
+								&lt;li>List 3&lt;/li>
+						&lt;/ul>
+						</code></pre>
+						<!-- with classes -->
+						<div class="d-sub-header" id="{{toc_list[0].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <div class="list">
+									<div class="item">List 1</div>
+									<div class="item">List 2</div>
+									<div class="item">List 3</div>
+								</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+									&lt;div class="item">List 1&lt;/div>
+									&lt;div class="item">List 2&lt;/div>
+									&lt;div class="item">List 3&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Without li&ui</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">item</span> class you have to add to the elements to make it as a item in the list if You are using list without <b>ul</b> & <b>li</b> tags
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>	
+
+					<!-- Types -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Simple -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							 <ol class="list ordered">
+								<li>List 1</li>
+								<li>List 2</li>
+								<li>List 3</li>
+							 </ol>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;ol class="list ordered">
+								&lt;li>List 1&lt;/li>
+								&lt;li>List 2&lt;/li>
+								&lt;li>List 3&lt;/li>
+						&lt;/ol>
+						</code></pre>
+						<!-- with classes -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							   <ul class="list unordered">
+									<li>List 1</li>
+									<li>List 2</li>
+									<li>List 3</li>
+							  </ul>	
+							</div>
+
+						<pre><code class="language-html">
+						&lt;ul class="list unordered">
+									&lt;li>List 1&lt;/li>
+									&lt;li>List 2&lt;/li>
+									&lt;li>List 3&lt;/li>
+						&lt;/ul>	
+						</code></pre>
+
+					
+
+
+					</div>
+
+					<!-- with icons -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list">
+								<div class="item">
+									<span class="icon blue-grey">
+											<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+							&lt;div class="item">
+								&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+								&lt;/span>
+								&lt;div class="content">List item&lt;/div>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon blue-grey">
+									&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+								&lt;/span>
+								&lt;div class="content">List item&lt;/div>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon blue-grey">
+									&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+								&lt;/span>
+								&lt;div class="content">List item&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+					<!-- with iconsand desc-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list">
+								<div class="item">
+									<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+								&lt;div class="item">
+									&lt;span class="icon">&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+
+					<!-- Actions-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list">
+								<div class="item">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+									<div class="actions">
+											<span class="button circle tiny green ripple space-x-3 raised margin-x-2">
+												<span class="icon">
+													<i class="fa fa-check" aria-hidden="true"></i>
+												</span>
+											</span>
+											<span class="button circle tiny red ripple space-x-3 raised margin-x-2">
+												<span class="icon">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</span>
+											</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+
+								<div class="item nowrap">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+									<div class="actions">
+											<span class="button mini primary ripple vip margin-x-2">
+												<span class="icon">
+													<i class="fa fa-check" aria-hidden="true"></i>
+												</span>
+												<span>Save</span>
+											</span>
+											<span class="button mini danger ripple vip margin-x-2">
+												<span class="icon">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</span>
+												<span>Delete</span>
+											</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+
+
+								<div class="item">
+									<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<div class="content">
+										<div class="title">List Title</div>
+										<div class="desc">Desc of a list</div>
+									</div>
+									<div class="actions">
+											<span class="button tiny green border-0 outline-hovered ripple circle">
+												<span class="icon">
+													<i class="fa fa-check" aria-hidden="true"></i>
+												</span>
+											</span>
+											<span class="button tiny red border-0 outline-hovered ripple circle">
+												<span class="icon">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</span>
+											</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+								&lt;div class="item">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+									&lt;div class="actions">
+											&lt;span class="button circle tiny green ripple space-x-3 raised margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+											&lt;span class="button circle tiny red ripple space-x-3 raised margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-trash" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+
+								&lt;div class="item nowrap">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+									&lt;div class="actions">
+											&lt;span class="button mini primary ripple vip margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>
+												&lt;/span>
+												&lt;span>Save&lt;/span>
+											&lt;/span>
+											&lt;span class="button mini danger ripple vip margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-trash" aria-hidden="true">&lt;/i>
+												&lt;/span>
+												&lt;span>Delete&lt;/span>
+											&lt;/span>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+
+
+								&lt;div class="item">
+									&lt;span class="icon">&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title&lt;/div>
+										&lt;div class="desc">Desc of a list&lt;/div>
+									&lt;/div>
+									&lt;div class="actions">
+											&lt;span class="button tiny green border-0 outline-hovered ripple circle">
+												&lt;span class="icon">
+													&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+											&lt;span class="button tiny red border-0 outline-hovered ripple circle">
+												&lt;span class="icon">
+													&lt;i class="fa fa-trash" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+
+					<!-- Wrapped-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list">
+						 		<div class="item nowrap">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										<div class="title">List Title </div>
+										<div class="desc">Desc of a List with long content which wraps the content by no-overflowing</div>
+									</div>
+									<div class="actions">
+											<span class="button mini primary ripple vip margin-x-2">
+												<span class="icon">
+													<i class="fa fa-check" aria-hidden="true"></i>
+												</span>
+												<span>Save</span>
+											</span>
+											<span class="button mini danger ripple vip margin-x-2">
+												<span class="icon">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</span>
+												<span>Delete</span>
+											</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+
+
+								<div class="item nowrap">
+									<span class="icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">
+										List with long content which wraps the content by no-overflowing
+									</div>
+									<div class="actions">
+											<span class="button tiny green border-0 outline-hovered ripple circle">
+												<span class="icon">
+													<i class="fa fa-check" aria-hidden="true"></i>
+												</span>
+											</span>
+											<span class="button tiny red border-0 outline-hovered ripple circle">
+												<span class="icon">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</span>
+											</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+						 		&lt;div class="item nowrap">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">List Title &lt;/div>
+										&lt;div class="desc">Desc of a List with long content which wraps the content by no-overflowing&lt;/div>
+									&lt;/div>
+									&lt;div class="actions">
+											&lt;span class="button mini primary ripple vip margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>
+												&lt;/span>
+												&lt;span>Save&lt;/span>
+											&lt;/span>
+											&lt;span class="button mini danger ripple vip margin-x-2">
+												&lt;span class="icon">
+													&lt;i class="fa fa-trash" aria-hidden="true">&lt;/i>
+												&lt;/span>
+												&lt;span>Delete&lt;/span>
+											&lt;/span>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+
+
+								&lt;div class="item nowrap">
+									&lt;span class="icon">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">
+										List with long content which wraps the content by no-overflowing
+									&lt;/div>
+									&lt;div class="actions">
+											&lt;span class="button tiny green border-0 outline-hovered ripple circle">
+												&lt;span class="icon">
+													&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+											&lt;span class="button tiny red border-0 outline-hovered ripple circle">
+												&lt;span class="icon">
+													&lt;i class="fa fa-trash" aria-hidden="true">&lt;/i>
+												&lt;/span>
+											&lt;/span>
+									&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">wrap</span> class to the list avoid the over-flow items to next line by keeping in the same line through <b>ellipsis</b> style.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="message modern orange doc-block-info square">
+							<div class="details">
+								<div class="content">
+									<div class="margin-5">
+										Reduce the horizantal screen size to see the <b>wrapping</b> effect.
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+					<!-- Nested-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[6].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[6].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list">
+								<div class="item">
+									<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+									<div class="content">
+										<div class="title">Folder</div>
+										<div class="desc">Desc of Folder</div>
+										<div class="list">
+											<div class="item">
+												<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+												<div class="content">
+													<div class="title">Folder</div>
+													<div class="desc">Desc of Folder</div>
+												</div>
+											</div>
+											<div class="item">
+												<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+												<div class="content">
+													<div class="title">Folder</div>
+													<div class="desc">Desc of Folder</div>
+													<div class="list">
+														<div class="item">
+															<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+															<div class="content">
+																<div class="title">Folder</div>
+																<div class="desc">Desc of Folder</div>
+															</div>
+														</div>
+														<div class="item">
+															<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+															<div class="content">
+																<div class="title">Folder</div>
+																<div class="desc">Desc of Folder</div>
+																<div class="list">
+																	<div class="item">
+																		<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+																		<div class="content">
+																			<div class="title">Folder</div>
+																			<div class="desc">Desc of Folder</div>
+																		</div>
+																	</div>
+																	<div class="item">
+																		<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+																		<div class="content">
+																			<div class="title">Folder</div>
+																			<div class="desc">Desc of Folder</div>
+																			<div class="list">
+																				<div class="item">
+																					<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+																					<div class="content">
+																						<div class="title">Folder</div>
+																						<div class="desc">Desc of Folder</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="item">
+																		<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+																		<div class="content">
+																			<div class="title">Folder</div>
+																			<div class="desc">Desc of Folder</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+												<div class="content">
+													<div class="title">Folder</div>
+													<div class="desc">Desc of Folder</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+
+								</div>
+								<div class="item">
+												<span class="icon valign-top"><i class="fa fa-folder" aria-hidden="true"></i></span>
+												<div class="content">
+													<div class="title">Folder</div>
+													<div class="desc">Desc of Folder</div>
+												</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list">
+								&lt;div class="item">
+									&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">
+										&lt;div class="title">Folder&lt;/div>
+										&lt;div class="desc">Desc of Folder&lt;/div>
+										&lt;div class="list">
+											&lt;div class="item">
+												&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+												&lt;div class="content">
+													&lt;div class="title">Folder&lt;/div>
+													&lt;div class="desc">Desc of Folder&lt;/div>
+												&lt;/div>
+											&lt;/div>
+											&lt;div class="item">
+												&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+												&lt;div class="content">
+													&lt;div class="title">Folder&lt;/div>
+													&lt;div class="desc">Desc of Folder&lt;/div>
+													&lt;div class="list">
+														&lt;div class="item">
+															&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+															&lt;div class="content">
+																&lt;div class="title">Folder&lt;/div>
+																&lt;div class="desc">Desc of Folder&lt;/div>
+															&lt;/div>
+														&lt;/div>
+														&lt;div class="item">
+															&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+															&lt;div class="content">
+																&lt;div class="title">Folder&lt;/div>
+																&lt;div class="desc">Desc of Folder&lt;/div>
+																&lt;div class="list">
+																	&lt;div class="item">
+																		&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+																		&lt;div class="content">
+																			&lt;div class="title">Folder&lt;/div>
+																			&lt;div class="desc">Desc of Folder&lt;/div>
+																		&lt;/div>
+																	&lt;/div>
+																	&lt;div class="item">
+																		&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+																		&lt;div class="content">
+																			&lt;div class="title">Folder&lt;/div>
+																			&lt;div class="desc">Desc of Folder&lt;/div>
+																			&lt;div class="list">
+																				&lt;div class="item">
+																					&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+																					&lt;div class="content">
+																						&lt;div class="title">Folder&lt;/div>
+																						&lt;div class="desc">Desc of Folder&lt;/div>
+																					&lt;/div>
+																				&lt;/div>
+																			&lt;/div>
+																		&lt;/div>
+																	&lt;/div>
+																	&lt;div class="item">
+																		&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+																		&lt;div class="content">
+																			&lt;div class="title">Folder&lt;/div>
+																			&lt;div class="desc">Desc of Folder&lt;/div>
+																		&lt;/div>
+																	&lt;/div>
+																&lt;/div>
+															&lt;/div>
+														&lt;/div>
+													&lt;/div>
+												&lt;/div>
+											&lt;/div>
+											&lt;div class="item">
+												&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+												&lt;div class="content">
+													&lt;div class="title">Folder&lt;/div>
+													&lt;div class="desc">Desc of Folder&lt;/div>
+												&lt;/div>
+											&lt;/div>
+										&lt;/div>
+									&lt;/div>
+									
+
+								&lt;/div>
+								&lt;div class="item">
+												&lt;span class="icon valign-top">&lt;i class="fa fa-folder" aria-hidden="true">&lt;/i>&lt;/span>
+												&lt;div class="content">
+													&lt;div class="title">Folder&lt;/div>
+													&lt;div class="desc">Desc of Folder&lt;/div>
+												&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+
+					<!-- State -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[7].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[7].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- hovered -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="list hovered">
+								<div class="item">
+									<span class="icon blue-grey">
+											<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered">
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+											&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- with classes -->
+						<div class="d-sub-header" id="{{toc_list[7].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="list hovered">
+								<div class="item">
+									<span class="icon blue-grey">
+											<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item active">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered">
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+											&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item active">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+							&lt;/div>
+						</code></pre>
+
+						</div>	
+
+
+						<!-- Dimensions -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[8].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[8].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- more -->
+							<div class="d-sub-header" id="{{toc_list[8].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[8].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="list hovered padding-more">
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered padding-more">
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- less -->
+						<div class="d-sub-header" id="{{toc_list[8].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[8].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="list hovered padding-less">
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered padding-less">
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">
+										&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>	
+
+					<!-- with avtart -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[9].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[9].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list hovered padding-more">
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered padding-more">
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+
+					<!-- horizantal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[10].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[10].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list hovered padding-more horizontal">
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+								<div class="divider"></div>
+								<div class="item">
+									<img class="avtar image circle" src="assets/image.png"/>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list hovered padding-more horizontal">
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="divider">&lt;/div>
+								&lt;div class="item">
+									&lt;img class="avtar image circle" src="assets/image.png"/>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+
+
+					<!-- horizantal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[11].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[11].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<div class="list outline whiteframe-7 padding-more">
+								<div class="item">
+									<span class="icon blue-grey"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<div class="content">List item</div>
+								</div>
+								<div class="item">
+									<span class="icon blue-grey"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<div class="content">List item</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="list outline whiteframe-7 padding-more">
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+								&lt;div class="item">
+									&lt;span class="icon blue-grey">&lt;i class="fa fa-user" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;div class="content">List item&lt;/div>
+								&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/list'"></section>
+			</div>
+
+			</div>
+</div>
+
+

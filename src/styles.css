@@ -40,6 +40,11 @@ pre code {
 	margin: 49px 0px 9px 0px;
 	position: relative;
 }
+.docs .doc-block .d-sub-header>div {
+	display: inline-block;
+	padding-left: 7px;
+	border-left: 4px solid #d9d9d9;
+}
 .docs .doc-block .doc-block-info {
 	margin: 15px 0;
 }
