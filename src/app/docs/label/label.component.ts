@@ -37,23 +37,20 @@ export class LabelComponent implements OnInit {
 
     this.toc_list.push(new TOC("Icons", "toc_icons", null));
 
-    toc_sub_list = [];
-    toc_sub_list.push(new TOC("Square", "toc_square", null));
-    toc_sub_list.push(new TOC("Rounded", "toc_rounded", null));
-    this.toc_list.push(new TOC("Shapes", "toc_shapes", toc_sub_list));
+    this.toc_list.push(new TOC("Shapes", "toc_shapes", null));
+
+    this.toc_list.push(new TOC("Pointed", "toc_pointed", null));
 
     toc_sub_list = [];
     toc_sub_list.push(new TOC("Basic", "toc_d_basic", null));
-    toc_sub_list.push(new TOC("Filled", "toc_d_fillled", null));
+    toc_sub_list.push(new TOC("Filled (Badge)", "toc_d_badge", null));
     this.toc_list.push(new TOC("Detailed", "toc_detailed", toc_sub_list));
 
     this.toc_list.push(new TOC("Taged Label", "toc_tag", null));
 
     this.toc_list.push(new TOC("Raised", "toc_raised", null));
 
-    toc_sub_list.push(new TOC("More Padded", "toc_sub_more_padded", null));
-    toc_sub_list.push(new TOC("Less Padded", "toc_sub_less_padded", null));
-    this.toc_list.push(new TOC("Dimensions", "toc_sub_dimentions", toc_sub_list));
+    this.toc_list.push(new TOC("Dimensions", "toc_sub_dimentions", null));
 
   }
 }

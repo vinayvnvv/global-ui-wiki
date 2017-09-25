@@ -39,7 +39,386 @@
 		  	<!-- example tab -->
 				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
 
+					<!-- basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label">label</span>
+						<span class="label outline">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label">label&lt;/span>
+						&lt;span class="label outline">label&lt;/span>
+						</code></pre>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Basic Types</div>
+								<div class="content">
+									<div class="margin-5">
+										<span class="label mini white">label</span> class is basic usage.
+									</div>
+									<div class="margin-5">
+										<span class="label mini white">outline</span> class removes the background color and gives the border color.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- sizes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label mini">label</span>
+						<span class="label tiny">label</span>
+						<span class="label small">label</span>
+						<span class="label large">label</span>
+						<span class="label big">label</span>
+						<span class="label huge">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label mini">label&lt;/span>
+						&lt;span class="label tiny">label&lt;/span>
+						&lt;span class="label small">label&lt;/span>
+						&lt;span class="label large">label&lt;/span>
+						&lt;span class="label big">label&lt;/span>
+						&lt;span class="label huge">label&lt;/span>
+						</code></pre>
+					</div>
+
+					<!-- colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label primary">label</span>
+						<span class="label success">label</span>
+						<span class="label pink">label</span>
+						<span class="label orange">label</span>
+						<span class="label lime">label</span>
+						<span class="label teal">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label primary">label&lt;/span>
+						&lt;span class="label success">label&lt;/span>
+						&lt;span class="label pink">label&lt;/span>
+						&lt;span class="label orange">label&lt;/span>
+						&lt;span class="label lime">label&lt;/span>
+						&lt;span class="label teal">label&lt;/span>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="content">
+									<div class="margin-5">
+										Supports all the colors mentioned in the Colors Pallete.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- icons -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label success">
+							<span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+							<span>5000 ratings</span>
+						</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label success">
+							&lt;span class="icon">&lt;i class="fa fa-star" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;span>5000 ratings&lt;/span>
+						&lt;/span>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label">label</span>
+						<span class="label square">label</span>
+						<span class="label round">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label">label&lt;/span>
+						&lt;span class="label square">label&lt;/span>
+						&lt;span class="label round">label&lt;/span>
+						</code></pre>
+						
+					</div>
+
+
+					<!-- Pointed -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label pointing point-top">label</span> &nbsp;
+						<span class="label outline pointing point-left">label</span> &nbsp;
+						<span class="label pink pointing point-right">label</span> &nbsp;
+						<span class="label orange pointing point-bottom">label</span> &nbsp;
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label pointing point-top">label&lt;/span>
+						&lt;span class="label outline pointing point-left">label&lt;/span>
+						&lt;span class="label pink pointing point-right">label&lt;/span>
+						&lt;span class="label orange pointing point-bottom">label&lt;/span>
+						</code></pre>
+						
+					</div>
+
+
+					<!-- Detailed -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[6].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[6].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Basic -->
+							<div class="d-sub-header" id="{{toc_list[6].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="label info">Members
+								<span class="detail">1000</span>
+							</span>
+							<span class="label">
+								Members	
+								<span class="detail">1000</span>
+							</span>
+							<span class="label outline orange">
+								Members	
+								<span class="detail">1000</span>
+							</span>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;span class="label info">Members
+							&lt;span class="detail">1000&lt;/span>
+						&lt;/span>
+						&lt;span class="label">
+							Members	
+							&lt;span class="detail">1000&lt;/span>
+						&lt;/span>
+						&lt;span class="label outline orange">
+							Members	
+							&lt;span class="detail">1000&lt;/span>
+						&lt;/span>
+						</code></pre>
+						<!-- badge -->
+						<div class="d-sub-header" id="{{toc_list[6].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="label">
+								label
+								<span class="detail fill">1000</span>
+							</span>
+							<span class="label red">
+								label
+								<span class="detail fill">1000</span>
+							</span>
+							<span class="label blue">
+								label
+								<span class="detail fill">10</span>
+							</span>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;span class="label">
+							label
+							&lt;span class="detail fill">1000&lt;/span>
+						&lt;/span>
+						&lt;span class="label red">
+							label
+							&lt;span class="detail fill">1000&lt;/span>
+						&lt;/span>
+						&lt;span class="label blue">
+							label
+							&lt;span class="detail fill">10&lt;/span>
+						&lt;/span>
+						</code></pre>
+					</div>
+
+					<!-- Tagged -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[7].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[7].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label tag-left">label</span>
+						<span class="label tag-right">label</span>
+						<span class="label info tag-left">label</span>
+						<span class="label red tag-right">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label tag-left">label&lt;/span>
+						&lt;span class="label tag-right">label&lt;/span>
+						&lt;span class="label info tag-left">label&lt;/span>
+						&lt;span class="label red tag-right">label&lt;/span>
+						</code></pre>
+						
+					</div>
+
+
+					<!-- Raised -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[8].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[8].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label raised">label</span>
+						<span class="label round raised">label</span>
+						<span class="label square raised">label</span>
+						<span class="label outline raised">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label raised">label&lt;/span>
+						&lt;span class="label round raised">label&lt;/span>
+						&lt;span class="label square raised">label&lt;/span>
+						&lt;span class="label outline raised">label&lt;/span>
+						</code></pre>
+						
+					</div>
+
+
+
+					<!-- Dimesions -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[9].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[9].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<span class="label padding-less black">label</span>
+						<span class="label black">label</span>
+						<span class="label padding-more black">label</span>
+						</div>
+						<pre><code class="language-html">
+						&lt;span class="label padding-less black">label&lt;/span>
+						&lt;span class="label black">label&lt;/span>
+						&lt;span class="label padding-more black">label&lt;/span>
+						</code></pre>
+						
+					</div>
 					
+
 
 
 
@@ -112,7 +491,7 @@
 
 			<!-- toc -->
 			<div class="row grow-3">
-				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/typography'"></section>
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/label'"></section>
 			</div>
 
 			</div>

@@ -17,6 +17,8 @@ import { InputComponent } from './docs/input/input.component';
 import { TypographyComponent } from './docs/typography/typography.component';
 import { ListComponent } from './docs/list/list.component';
 import { LabelComponent } from './docs/label/label.component';
+import { TableComponent } from './docs/table/table.component';
+import { ImageComponent } from './docs/image/image.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LabelComponent } from './docs/label/label.component';
     TocComponent,
     TypographyComponent,
     ListComponent,
-    LabelComponent
+    LabelComponent,
+    TableComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

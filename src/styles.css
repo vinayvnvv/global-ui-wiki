@@ -22,6 +22,10 @@ pre code {
 
 .html-embed {
 	margin: 23px 0 23px 0;
+	line-height: 50px;
+}
+.html-embed.no-line-height {
+	line-height: initial;
 }
 
 .docs {

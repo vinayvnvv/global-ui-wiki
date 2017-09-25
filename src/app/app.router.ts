@@ -8,9 +8,10 @@ import { InputComponent } from './docs/input/input.component';
 import { TypographyComponent } from './docs/typography/typography.component';
 import { ListComponent } from './docs/list/list.component';
 import { LabelComponent } from './docs/label/label.component';
+import { TableComponent } from './docs/table/table.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'docs', component: DocsComponent,
   	children: [
       { path: '', redirectTo: 'start', pathMatch: 'full' },
@@ -19,9 +20,12 @@ const appRoutes: Routes = [
       { path: 'buttons', component: ButtonsComponent },
       { path: 'input', component: InputComponent },
       { path: 'list', component: ListComponent },
-      { path: 'label', component: LabelComponent }
+      { path: 'label', component: LabelComponent },
+      { path: 'table', component: TableComponent}
     ]
-  }
+  },
+  { path: '*', redirectTo: "/home" },
+  { path: '**', redirectTo: "/home" },
 ];
 
 @NgModule({
@@ -30,6 +34,8 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routerComponents = [HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, TypographyComponent, ListComponent, LabelComponent];
+export const routerComponents = [ HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, 
+                                  TypographyComponent, ListComponent, LabelComponent, TableComponent
+                                ];
 
  
