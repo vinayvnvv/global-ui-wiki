@@ -12,34 +12,11 @@
 	</div>
 	<div class="nav-list-header">Elements</div>
 	
-	<div class="nav-list-item ripple" [routerLink]="['/docs/typography']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-header" aria-hidden="true"></i>	</span>
-		<span class="text" >Typography</span>
+	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of navElementsList">
+		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
+		<span class="text" >{{item.name}}</span>
 	</div>
-	<div class="nav-list-item ripple" [routerLink]="['/docs/buttons']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-backward" aria-hidden="true"></i></span>
-		<span class="text" >Button</span>
-	</div>
-	<div class="nav-list-item ripple" [routerLink]="['/docs/input']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-text-height" aria-hidden="true"></i></span>
-		<span class="text" >Input</span>
-	</div>
-	<div class="nav-list-item ripple" [routerLink]="['/docs/list']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-list" aria-hidden="true"></i></span>
-		<span class="text">List</span>
-	</div>
-	<div class="nav-list-item ripple" [routerLink]="['/docs/label']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-tag" aria-hidden="true"></i></span>
-		<span class="text">Label</span>
-	</div>
-	<div class="nav-list-item ripple" [routerLink]="['/docs/table']" routerLinkActive="active">
-		<span class="icon"><i class="fa fa-table" aria-hidden="true"></i></span>
-		<span class="text">Table</span>
-	</div>
-	<div class="nav-list-item">
-		<span class="icon"><i class="fa fa-header" aria-hidden="true"></i>	</span>
-		<span class="text">Headers</span>
-	</div>
+
 	<div class="divider"></div>
 	<div class="nav-list-header">Components</div>
 	<div class="nav-list-item">Modal</div>

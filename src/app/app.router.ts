@@ -9,6 +9,9 @@ import { TypographyComponent } from './docs/typography/typography.component';
 import { ListComponent } from './docs/list/list.component';
 import { LabelComponent } from './docs/label/label.component';
 import { TableComponent } from './docs/table/table.component';
+import { ImageComponent } from './docs/image/image.component';
+import { DividerComponent } from './docs/divider/divider.component';
+import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,7 +24,10 @@ const appRoutes: Routes = [
       { path: 'input', component: InputComponent },
       { path: 'list', component: ListComponent },
       { path: 'label', component: LabelComponent },
-      { path: 'table', component: TableComponent}
+      { path: 'table', component: TableComponent},
+      { path: 'image', component: ImageComponent },
+      { path: 'divider', component: DividerComponent },
+      { path: 'whiteframe', component: WhiteframeComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },
@@ -35,7 +41,8 @@ const appRoutes: Routes = [
 export class AppRoutingModule { }
 
 export const routerComponents = [ HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, 
-                                  TypographyComponent, ListComponent, LabelComponent, TableComponent
+                                  TypographyComponent, ListComponent, LabelComponent, TableComponent, ImageComponent,
+                                  DividerComponent, WhiteframeComponent
                                 ];
 
  

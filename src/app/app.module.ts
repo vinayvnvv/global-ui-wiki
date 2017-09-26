@@ -19,6 +19,8 @@ import { ListComponent } from './docs/list/list.component';
 import { LabelComponent } from './docs/label/label.component';
 import { TableComponent } from './docs/table/table.component';
 import { ImageComponent } from './docs/image/image.component';
+import { DividerComponent } from './docs/divider/divider.component';
+import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ImageComponent } from './docs/image/image.component';
     ListComponent,
     LabelComponent,
     TableComponent,
-    ImageComponent
+    ImageComponent,
+    DividerComponent,
+    WhiteframeComponent
   ],
   imports: [
     BrowserModule,

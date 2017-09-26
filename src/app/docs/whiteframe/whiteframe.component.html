@@ -1,0 +1,188 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Whiteframe</div>
+			<div class="sub-header size-3 light">A shaded effect for boxing.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					
+					
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+							<div class="html-embed">
+						 	<span class="box_ whiteframe-1">whiteframe-1</span>
+							<span class="box_ whiteframe-2">whiteframe-2</span>
+							<span class="box_ whiteframe-3">whiteframe-3</span>
+							<span class="box_ whiteframe-4">whiteframe-4</span>
+							<span class="box_ whiteframe-5">whiteframe-5</span>
+							<span class="box_ whiteframe-6">whiteframe-6</span>
+							<span class="box_ whiteframe-7">whiteframe-7</span>
+							<span class="box_ whiteframe-8">whiteframe-8</span>
+							<span class="box_ whiteframe-9">whiteframe-9</span>
+							<span class="box_ whiteframe-10">whiteframe-10</span>
+
+							<style>
+								.box_ {
+									min-width: 150px;
+									min-height: 100px;
+									border: 1px solid #d9d9d9;
+									margin: 21px;
+									display: inline-flex;
+									align-content: center;
+									justify-content: center;
+								}
+
+							</style>
+
+							</div>
+
+						<pre><code class="language-html">
+						&lt;span class="box_ whiteframe-1">whiteframe-1&lt;/span>
+						&lt;span class="box_ whiteframe-2">whiteframe-2&lt;/span>
+						&lt;span class="box_ whiteframe-3">whiteframe-3&lt;/span>
+						&lt;span class="box_ whiteframe-4">whiteframe-4&lt;/span>
+						&lt;span class="box_ whiteframe-5">whiteframe-5&lt;/span>
+						&lt;span class="box_ whiteframe-6">whiteframe-6&lt;/span>
+						&lt;span class="box_ whiteframe-7">whiteframe-7&lt;/span>
+						&lt;span class="box_ whiteframe-8">whiteframe-8&lt;/span>
+						&lt;span class="box_ whiteframe-9">whiteframe-9&lt;/span>
+						&lt;span class="box_ whiteframe-10">whiteframe-10&lt;/span>
+
+						&lt;style>
+								.box_ &#123;
+									min-width: 150px;
+									min-height: 100px;
+									border: 1px solid #d9d9d9;
+									margin: 21px;
+									display: inline-flex;
+									align-content: center;
+									justify-content: center;
+								&#125;
+
+						&lt;/style>
+						</code></pre>
+
+
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/whiteframe'"></section>
+			</div>
+
+			</div>
+</div>
+
+
