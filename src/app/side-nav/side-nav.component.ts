@@ -22,6 +22,7 @@ export class SideNavComponent implements OnInit {
 
   public app_name: any = environment.app_name;
   public navElementsList: Array<NavList> = [];
+  public navComponetsList: Array<NavList> = [];
 
   constructor(
   	) { 
@@ -30,6 +31,7 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit() {
   	this.initElementList();
+    this.initComponentsList();
   }
 
   initElementList() {
@@ -42,6 +44,11 @@ export class SideNavComponent implements OnInit {
   	this.navElementsList.push(new NavList("Image", ['/docs/image'], "fa fa-picture-o"));
   	this.navElementsList.push(new NavList("Divider", ['/docs/divider'], "fa fa-minus"));
   	this.navElementsList.push(new NavList("WhiteFrame", ['/docs/whiteframe'], "fa fa-square"));
+  }
+
+  initComponentsList() {
+    this.navComponetsList.push(new NavList("Breadcrumb", ['/docs/breadcrumb'], "fa fa-angle-right"));
+    this.navComponetsList.push(new NavList("Message", ['/docs/message'], "fa fa-envelope"));
   }
 
 }

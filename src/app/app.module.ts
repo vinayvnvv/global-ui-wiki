@@ -21,6 +21,8 @@ import { TableComponent } from './docs/table/table.component';
 import { ImageComponent } from './docs/image/image.component';
 import { DividerComponent } from './docs/divider/divider.component';
 import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
+import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
+import { MessageComponent } from './docs/components/message/message.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
     TableComponent,
     ImageComponent,
     DividerComponent,
-    WhiteframeComponent
+    WhiteframeComponent,
+    BreadcrumbComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

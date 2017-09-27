@@ -1,0 +1,588 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Breadcrumb</div>
+			<div class="sub-header size-3 light">A breadcrumb is used to show hierarchy between content.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Normal -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="breadcrumb">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- outlined -->
+						<div class="d-sub-header" id="{{toc_list[0].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="breadcrumb outline">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb outline">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Normal -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="breadcrumb outline square">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb outline square">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- outlined -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="breadcrumb outline circle">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb outline circle">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<div class="message modern orange doc-block-info square">Shapes are working only with outlined breadcrumb.</div>
+
+					</div>
+
+
+					<!-- Icons -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+							<div class="html-embed">
+						 	<div class="breadcrumb">
+								<a class="item">Home</a>
+								<div class="seperator">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								</div>
+								<div class="item active">Mobiles</div>
+							</div>
+
+							<br/><br/>
+							<div class="breadcrumb">
+								<a class="item">Home</a>
+								<div class="seperator">
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</div>
+								<div class="item active">Mobiles</div>
+							</div>
+
+							<br/><br/>
+							<div class="breadcrumb">
+								<a class="item">
+									<span class="icon">
+										<i class="fa fa-home" aria-hidden="true"></i>
+									</span>Home
+								</a>
+								<div class="seperator">/</div>
+								<a class="item">
+									<span class="icon">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									</span>Shopping
+								</a>
+								<div class="seperator">/</div>
+								<a class="item">
+									<span class="icon">
+										<i class="fa fa-google-wallet" aria-hidden="true"></i>
+									</span>Electronics
+								</a>
+								<div class="seperator">/</div>
+								<div class="item active">
+									<span class="icon">
+										<i class="fa fa-mobile" aria-hidden="true"></i>
+									</span>Mobiles
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">
+								&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>
+							&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb">
+							&lt;a class="item">
+								&lt;span class="icon">
+									&lt;i class="fa fa-home" aria-hidden="true">&lt;/i>
+								&lt;/span>Home
+							&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">
+								&lt;span class="icon">
+									&lt;i class="fa fa-shopping-cart" aria-hidden="true">&lt;/i>
+								&lt;/span>Shopping
+							&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">
+								&lt;span class="icon">
+									&lt;i class="fa fa-google-wallet" aria-hidden="true">&lt;/i>
+								&lt;/span>Electronics
+							&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">
+								&lt;span class="icon">
+									&lt;i class="fa fa-mobile" aria-hidden="true">&lt;/i>
+								&lt;/span>Mobiles
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Sizes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="breadcrumb mini">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb tiny">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb small">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb medium">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb large">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb big">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							<br/><br/>
+							<div class="breadcrumb huge">
+								<a class="item">Home</a>
+								<div class="seperator">/</div>
+								<a class="item">Shopping</a>
+								<div class="seperator">/</div>
+								<a class="item">Electronics</a>
+								<div class="seperator">/</div>
+								<div class="item active">Mobiles</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="breadcrumb mini">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb tiny">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb small">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb medium">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb large">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb big">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="breadcrumb huge">
+							&lt;a class="item">Home&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Shopping&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;a class="item">Electronics&lt;/a>
+							&lt;div class="seperator">/&lt;/div>
+							&lt;div class="item active">Mobiles&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/breadcrumb'"></section>
+			</div>
+
+			</div>
+</div>
+
+

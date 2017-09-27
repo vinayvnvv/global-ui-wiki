@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DocsComponent } from './docs/docs.component';
+
+//elements docs
 import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
 import { InputComponent } from './docs/input/input.component';
@@ -12,6 +14,17 @@ import { TableComponent } from './docs/table/table.component';
 import { ImageComponent } from './docs/image/image.component';
 import { DividerComponent } from './docs/divider/divider.component';
 import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
+
+let elements = [ StartComponent, ButtonsComponent, InputComponent, 
+                TypographyComponent, ListComponent, LabelComponent, TableComponent, ImageComponent,
+                DividerComponent, WhiteframeComponent
+                ];
+
+//components docs
+import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
+import { MessageComponent } from './docs/components/message/message.component';
+
+let components = [ BreadcrumbComponent, MessageComponent ];
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -27,7 +40,9 @@ const appRoutes: Routes = [
       { path: 'table', component: TableComponent},
       { path: 'image', component: ImageComponent },
       { path: 'divider', component: DividerComponent },
-      { path: 'whiteframe', component: WhiteframeComponent }
+      { path: 'whiteframe', component: WhiteframeComponent },
+      { path: 'breadcrumb' , component: BreadcrumbComponent },
+      { path: 'message' , component: MessageComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },
@@ -40,9 +55,9 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routerComponents = [ HomeComponent, DocsComponent, StartComponent, ButtonsComponent, InputComponent, 
-                                  TypographyComponent, ListComponent, LabelComponent, TableComponent, ImageComponent,
-                                  DividerComponent, WhiteframeComponent
+export const routerComponents = [ HomeComponent, DocsComponent,
+                                  elements,
+                                  components
                                 ];
 
  

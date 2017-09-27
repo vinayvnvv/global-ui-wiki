@@ -19,6 +19,10 @@
 
 	<div class="divider"></div>
 	<div class="nav-list-header">Components</div>
+	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of navComponetsList">
+		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
+		<span class="text" >{{item.name}}</span>
+	</div>
 	<div class="nav-list-item">Modal</div>
 	<div class="nav-list-item disabled">Progress</div>
 	<div class="nav-list-item">Label</div>
