@@ -1,3 +1,764 @@
-<p>
-  message works!
-</p>
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Message</div>
+			<div class="sub-header size-3 light">A message displays information that explains nearby content.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message">This is sample text message.</div><br/>
+						 	<div class="message outline">This is sample text message.</div><br/>
+							<div class="message outline transparent">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message">This is sample text message.&lt;/div>&lt;br/>
+					 	&lt;div class="message outline">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message outline transparent">This is sample text message.&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Square -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message square">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message square">This is sample text message.&lt;/div>
+						</code></pre>
+						<!-- Round -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message circle">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message circle">This is sample text message.&lt;/div>
+						</code></pre>
+
+					</div>
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message primary">This is sample text message.</div><br/>
+							<div class="message red">This is sample text message.</div><br/>
+							<div class="message lime">This is sample text message.</div><br/>
+							<div class="message green outline">This is sample text message.</div><br/>
+							<div class="message orange outline transparent">This is sample text message.</div><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message primary">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message red">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message lime">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message green outline">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message orange outline transparent">This is sample text message.&lt;/div>&lt;br/>
+						</code></pre>
+
+						
+
+					</div>
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Square -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message square">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message square">This is sample text message.&lt;/div>
+						</code></pre>
+						<!-- Round -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message circle">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message circle">This is sample text message.&lt;/div>
+						</code></pre>
+
+					</div>
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message primary">This is sample text message.</div><br/>
+							<div class="message red">This is sample text message.</div><br/>
+							<div class="message lime">This is sample text message.</div><br/>
+							<div class="message green outline">This is sample text message.</div><br/>
+							<div class="message orange outline transparent">This is sample text message.</div><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message primary">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message red">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message lime">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message green outline">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message orange outline transparent">This is sample text message.&lt;/div>&lt;br/>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Square -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message square">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message square">This is sample text message.&lt;/div>
+						</code></pre>
+						<!-- Round -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="message circle">This is sample text message.</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message circle">This is sample text message.&lt;/div>
+						</code></pre>
+
+					</div>
+
+					<!-- Dimensjojms -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message padding-less">This is sample text message.</div><br/>
+							<div class="message padding-more">This is sample text message.</div><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message padding-less">This is sample text message.&lt;/div>&lt;br/>
+						&lt;div class="message padding-more">This is sample text message.&lt;/div>&lt;br/>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Titled -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message">
+								<div class="header">Header</div>
+								<div class="content">This is Message Content</div>
+							</div><br/>
+							<div class="message teal">
+								<div class="header">Header</div>
+								<div class="content">This is Message Content</div>
+							</div><br/>
+							<div class="message purple outline">
+								<div class="header">Header</div>
+								<div class="content">This is Message Content</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message">
+							&lt;div class="header">Header&lt;/div>
+							&lt;div class="content">This is Message Content&lt;/div>
+						&lt;/div>&lt;br/>
+						&lt;div class="message teal">
+							&lt;div class="header">Header&lt;/div>
+							&lt;div class="content">This is Message Content&lt;/div>
+						&lt;/div>&lt;br/>
+						&lt;div class="message purple outline">
+							&lt;div class="header">Header&lt;/div>
+							&lt;div class="content">This is Message Content&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Icons with -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message icon danger">
+								<span class="icon">
+									<i class="fa fa-warning" aria-hidden="true"></i>
+								</span>
+								<div class="details">Error in server , 404</div>
+							</div>
+
+							<br/>
+							<div class="message icon danger">
+								<span class="icon">
+									<i class="fa fa-warning" aria-hidden="true"></i>
+								</span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+							</div><br/>
+
+							<div class="message">
+							  <span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							  This is message
+							</div>
+							<br/>
+							<div class="message">
+							  <span class="close">
+								  <button class="button extra-mini circle ripple black">
+								  	<span class="icon">
+								  		<i class="fa fa-close" aria-hidden="true"></i>
+								  	</span>
+								  </button>
+							  </span>
+							  This is message
+							</div>
+							<br/>
+							<div class="message icon success outline ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message icon danger">
+							&lt;span class="icon">
+								&lt;i class="fa fa-warning" aria-hidden="true">&lt;/i>
+							&lt;/span>
+							&lt;div class="details">Error in server , 404&lt;/div>
+						&lt;/div>
+
+						&lt;br/>
+						&lt;div class="message icon danger">
+							&lt;span class="icon">
+								&lt;i class="fa fa-warning" aria-hidden="true">&lt;/i>
+							&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+						&lt;/div>&lt;br/>
+
+						&lt;div class="message">
+						  &lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						  This is message
+						&lt;/div>
+						&lt;br/>
+						&lt;div class="message">
+						  &lt;span class="close">
+							  &lt;button class="button extra-mini circle ripple black">
+							  	&lt;span class="icon">
+							  		&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>
+							  	&lt;span>
+							  &lt;/button>
+						  &lt;/span>
+						  This is message
+						&lt;/div>
+						&lt;br/>
+						&lt;div class="message icon success outline ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+					<!-- Actions -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[6].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[6].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message icon danger">
+								<span class="icon"><i class="fa fa-warning" aria-hidden="true"></i></span>
+								<div class="details">Error in server , 404</div>
+								<div class='actions'>
+									<button class="button tiny button-space outline danger">Restart</button>
+									<button class="button tiny button-space outline danger">Close</button>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message icon danger">
+							&lt;span class="icon">&lt;i class="fa fa-warning" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">Error in server , 404&lt;/div>
+							&lt;div class='actions'>
+								&lt;button class="button tiny button-space outline danger">Restart&lt;/button>
+								&lt;button class="button tiny button-space outline danger">Close&lt;/button>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Dark -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[7].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[7].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message icon success outline pink dark-colored ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div><br/>
+							<div class="message icon outline lime dark-colored ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div><br/>
+							<div class="message icon outline blue dark-colored ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div><br/>
+
+							<div class="message icon outline blue-grey dark-colored ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<div class='actions'>
+									<button class="button tiny button-space white ripple">Restart</button>
+									<button class="button tiny button-space white ripple">Close</button>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message icon success outline pink dark-colored ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>&lt;br/>
+						&lt;div class="message icon outline lime dark-colored ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>&lt;br/>
+						&lt;div class="message icon outline blue dark-colored ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>&lt;br/>
+
+						&lt;div class="message icon outline blue-grey dark-colored ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;div class='actions'>
+								&lt;button class="button tiny button-space white ripple">Restart&lt;/button>
+								&lt;button class="button tiny button-space white ripple">Close&lt;/button>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Modern -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[8].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[8].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="message modern">This is modern message</div><br/>
+							<div class="message modern primary">This is modern message</div><br/>
+							<div class="message icon modern deep-orange ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div><br/>
+							<div class="message icon modern purple square ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div><br/>
+
+							<div class="message icon modern green circle ">
+								<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								<div class="details">
+									<div class="header">Header</div>
+									<div class="content">This is Message Content</div>
+								</div>
+								<span class="close"><i class="fa fa-close" aria-hidden="true"></i></span>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="message modern">This is modern message&lt;/div>&lt;br/>
+						&lt;div class="message modern primary">This is modern message&lt;/div>&lt;br/>
+						&lt;div class="message icon modern deep-orange ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>&lt;br/>
+						&lt;div class="message icon modern purple square ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>&lt;br/>
+
+						&lt;div class="message icon modern green circle ">
+							&lt;span class="icon">&lt;i class="fa fa-check" aria-hidden="true">&lt;/i>&lt;/span>
+							&lt;div class="details">
+								&lt;div class="header">Header&lt;/div>
+								&lt;div class="content">This is Message Content&lt;/div>
+							&lt;/div>
+							&lt;span class="close">&lt;i class="fa fa-close" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/message'"></section>
+			</div>
+
+			</div>
+</div>
+
+

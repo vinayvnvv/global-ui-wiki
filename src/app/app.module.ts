@@ -23,6 +23,7 @@ import { DividerComponent } from './docs/divider/divider.component';
 import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
 import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
 import { MessageComponent } from './docs/components/message/message.component';
+import { PanelComponent } from './docs/components/panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MessageComponent } from './docs/components/message/message.component';
     DividerComponent,
     WhiteframeComponent,
     BreadcrumbComponent,
-    MessageComponent
+    MessageComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

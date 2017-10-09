@@ -23,8 +23,9 @@ let elements = [ StartComponent, ButtonsComponent, InputComponent,
 //components docs
 import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
 import { MessageComponent } from './docs/components/message/message.component';
+import { PanelComponent } from './docs/components/panel/panel.component';
 
-let components = [ BreadcrumbComponent, MessageComponent ];
+let components = [ BreadcrumbComponent, MessageComponent, PanelComponent ];
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
       { path: 'divider', component: DividerComponent },
       { path: 'whiteframe', component: WhiteframeComponent },
       { path: 'breadcrumb' , component: BreadcrumbComponent },
-      { path: 'message' , component: MessageComponent }
+      { path: 'message' , component: MessageComponent },
+      { path: 'panel', component: PanelComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },

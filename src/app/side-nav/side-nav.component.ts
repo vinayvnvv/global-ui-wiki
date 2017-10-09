@@ -49,6 +49,7 @@ export class SideNavComponent implements OnInit {
   initComponentsList() {
     this.navComponetsList.push(new NavList("Breadcrumb", ['/docs/breadcrumb'], "fa fa-angle-right"));
     this.navComponetsList.push(new NavList("Message", ['/docs/message'], "fa fa-envelope"));
+    this.navComponetsList.push(new NavList("Panel", ['/docs/panel'], "fa fa-window-maximize"));
   }
 
 }
