@@ -24,8 +24,9 @@ let elements = [ StartComponent, ButtonsComponent, InputComponent,
 import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
 import { MessageComponent } from './docs/components/message/message.component';
 import { PanelComponent } from './docs/components/panel/panel.component';
+import { PaginationComponent } from './docs/components/pagination/pagination.component';
 
-let components = [ BreadcrumbComponent, MessageComponent, PanelComponent ];
+let components = [ BreadcrumbComponent, MessageComponent, PanelComponent, PaginationComponent ];
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
       { path: 'whiteframe', component: WhiteframeComponent },
       { path: 'breadcrumb' , component: BreadcrumbComponent },
       { path: 'message' , component: MessageComponent },
-      { path: 'panel', component: PanelComponent }
+      { path: 'panel', component: PanelComponent },
+      { path: 'pagination', component: PaginationComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },

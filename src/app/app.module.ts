@@ -24,6 +24,7 @@ import { WhiteframeComponent } from './docs/whiteframe/whiteframe.component';
 import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.component';
 import { MessageComponent } from './docs/components/message/message.component';
 import { PanelComponent } from './docs/components/panel/panel.component';
+import { PaginationComponent } from './docs/components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PanelComponent } from './docs/components/panel/panel.component';
     WhiteframeComponent,
     BreadcrumbComponent,
     MessageComponent,
-    PanelComponent
+    PanelComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
