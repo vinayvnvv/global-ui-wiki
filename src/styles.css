@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+.layout-container {
+	/*transform: scale(0.8, 1)*/
+}
 .none {
 	display: none;
 }

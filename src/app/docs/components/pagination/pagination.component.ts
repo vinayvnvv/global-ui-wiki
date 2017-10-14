@@ -30,22 +30,29 @@ export class PaginationComponent implements OnInit {
   addListToToc() {
     console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
-    this.toc_list.push(new TOC("Basic", "toc_basic", null));
+    toc_sub_list.push(new TOC("Default", "toc_default", null));
+    toc_sub_list.push(new TOC("Closed Items", "toc_closed", null));
+    this.toc_list.push(new TOC("Basic", "toc_basic", toc_sub_list));
 
-    this.toc_list.push(new TOC("Alignment", "toc_alignment", null)); 
+    toc_sub_list = [];
+    toc_sub_list.push(new TOC("Left Link items", "toc_l_aligned", null));
+    toc_sub_list.push(new TOC("Right Link items", "toc_r_aligned", null));
+    this.toc_list.push(new TOC("Alignment", "toc_alignment", toc_sub_list)); 
 
     this.toc_list.push(new TOC("Outlined", "toc_outline", null));
 
-    // toc_sub_list = [];
-    // toc_sub_list.push(new TOC("Square", "toc_square", null));
-    // toc_sub_list.push(new TOC("Round", "toc_round", null));
-    // this.toc_list.push(new TOC("Shapes", "toc_shapes", toc_sub_list));
+    
 
     this.toc_list.push(new TOC("Colors", "toc_colors", null));
     
     this.toc_list.push(new TOC("Dimensions", "toc_dimension", null));
 
     this.toc_list.push(new TOC("Sizes", "toc_sizes", null));
+
+    toc_sub_list = [];
+    toc_sub_list.push(new TOC("Square", "toc_square", null));
+    toc_sub_list.push(new TOC("Round", "toc_round", null));
+    this.toc_list.push(new TOC("Shapes", "toc_shapes", toc_sub_list));
 
     this.toc_list.push(new TOC("Ripple Example", "toc_ripple", null));
 

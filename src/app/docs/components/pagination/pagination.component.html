@@ -39,6 +39,1304 @@
 		  	<!-- example tab -->
 				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
 
+					<!-- Basic -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- deafault -->
+							<div class="d-sub-header" id="{{toc_list[0].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- Closed -->
+						<div class="d-sub-header" id="{{toc_list[0].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[0].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination close-by">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by">
+								&lt;div class="pagination-prev">
+									&lt;a class="link">
+										&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+										&lt;span>Prev&lt;/span>
+									&lt;/a>
+								&lt;/div>
+								&lt;div class="pagination-list">
+									&lt;a class="link">1&lt;/a>
+									&lt;a class="link ellipsis">&hellip;&lt;/a>
+									&lt;a class="link">32&lt;/a>
+									&lt;a class="link disabled">33&lt;/a>
+									&lt;a class="link">34&lt;/a>
+									&lt;a class="link ellipsis">&hellip;&lt;/a>
+									&lt;a class="link">5&lt;/a>
+								&lt;/div>
+								&lt;div class="pagination-next">
+									&lt;a class="link">
+										&lt;span>Next&lt;/span>
+										&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;/a>
+								&lt;/div>
+							&lt;/div>
+						</code></pre>
+
+						<div  class="message modern info doc-block-info square">
+							<div  class="details">
+								<div  class="header">Basic Types</div>
+								<div  class="content">
+									<div class="margin-5">
+										By Default <b>prev</b> and <b>next</b> links are extended are stretched. 
+									</div>
+									<div  class="margin-5">
+										<span  class="label mini white">close-by</span> class puts the <b>prev</b> and <b>next</b> links closed to the center links.
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<!-- Alignment -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- left -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination pagination-left">
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination pagination-left close-by">
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination pagination-left">
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="pagination pagination-left close-by">
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- right -->
+							<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination pagination-right">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+
+							</div>
+							<br/><br/>
+							<div class="pagination pagination-right close-by">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination pagination-right">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="pagination pagination-right close-by">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Outlined -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="pagination close-by outline">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by outline">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="pagination close-by primary">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by lime">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by outline pink">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by primary">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="pagination close-by lime">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="pagination close-by outline pink">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+					<!-- Outlined -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="pagination close-by outline">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by outline">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Dimensions -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="pagination close-by padding-less">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by padding-more">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by padding-less">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+
+
+						&lt;div class="pagination close-by padding-more">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+					<!-- sizes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="pagination close-by mini">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by tiny">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by small">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="pagination close-by big">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by mini">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+
+
+						&lt;div class="pagination close-by tiny">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+
+
+						&lt;div class="pagination close-by small">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+
+
+						&lt;div class="pagination close-by big">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[6].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[6].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- deafault -->
+							<div class="d-sub-header" id="{{toc_list[6].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination close-by square">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link active">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by square">
+							&lt;div class="pagination-prev">
+								&lt;a class="link">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link active">32&lt;/a>
+								&lt;a class="link disabled">33&lt;/a>
+								&lt;a class="link">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- Closed -->
+						<div class="d-sub-header" id="{{toc_list[6].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="pagination close-by circle">
+								<div class="pagination-prev">
+									<a class="link">
+										<span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">32</a>
+									<a class="link disabled">33</a>
+									<a class="link">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link">
+										<span>Next</span>
+										<span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by circle">
+								&lt;div class="pagination-prev">
+									&lt;a class="link">
+										&lt;span class="icon">&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>&lt;/span>
+										&lt;span>Prev&lt;/span>
+									&lt;/a>
+								&lt;/div>
+								&lt;div class="pagination-list">
+									&lt;a class="link">1&lt;/a>
+									&lt;a class="link ellipsis">&hellip;&lt;/a>
+									&lt;a class="link">32&lt;/a>
+									&lt;a class="link disabled">33&lt;/a>
+									&lt;a class="link">34&lt;/a>
+									&lt;a class="link ellipsis">&hellip;&lt;/a>
+									&lt;a class="link">5&lt;/a>
+								&lt;/div>
+								&lt;div class="pagination-next">
+									&lt;a class="link">
+										&lt;span>Next&lt;/span>
+										&lt;span class="icon">&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>&lt;/span>
+									&lt;/a>
+								&lt;/div>
+							&lt;/div>
+						</code></pre>
+
+					</div>
+
+					<!-- Ripple -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[7].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[7].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="message modern orange doc-block-info square">
+								Click on the pagination links to see ripple efffects.
+							</div>
+
+
+							<div class="html-embed">
+						 	<div class="pagination close-by">
+								<div class="pagination-prev">
+									<a class="link ripple">
+										<span class="icon">
+											<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+										</span>
+										<span>Prev</span>
+									</a>
+								</div>
+								<div class="pagination-list">
+									<a class="link ripple">1</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link ripple">32</a>
+									<a class="link disabled ripple">33</a>
+									<a class="link ripple">34</a>
+									<a class="link ellipsis">&hellip;</a>
+									<a class="link ripple">5</a>
+								</div>
+								<div class="pagination-next">
+									<a class="link ripple">
+										<span>Next</span>
+										<span class="icon">
+											<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+										</span>
+									</a>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="pagination close-by">
+							&lt;div class="pagination-prev">
+								&lt;a class="link ripple">
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-left" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;span>Prev&lt;/span>
+								&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-list">
+								&lt;a class="link ripple">1&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link ripple">32&lt;/a>
+								&lt;a class="link disabled ripple">33&lt;/a>
+								&lt;a class="link ripple">34&lt;/a>
+								&lt;a class="link ellipsis">&hellip;&lt;/a>
+								&lt;a class="link ripple">5&lt;/a>
+							&lt;/div>
+							&lt;div class="pagination-next">
+								&lt;a class="link ripple">
+									&lt;span>Next&lt;/span>
+									&lt;span class="icon">
+										&lt;i class="fa fa-long-arrow-right" aria-hidden="true">&lt;/i>
+									&lt;/span>
+								&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
 					
 					
 

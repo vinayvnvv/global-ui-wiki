@@ -51,6 +51,7 @@ export class TocComponent implements OnInit, AfterViewInit {
           e.style.marginTop = "-" + (scrolled+95) + "px";
           e.style.height = e_h + "px";
         } else {
+          e.style.marginTop = "-" + (184+95) + "px";
           e.style.height = (e_h + 120) + "px"
         }
     }, true);
@@ -64,42 +65,42 @@ export class TocComponent implements OnInit, AfterViewInit {
   	var i = 0;
   	Array.prototype.forEach.call(section1, function(e) {
 	    sections1[e.id] = (e.offsetParent.offsetTop + e.offsetTop);
-	});
-	Array.prototype.forEach.call(section2, function(e) {
-	    sections2[e.id] = e.offsetParent.offsetTop;
-	});
+  	});
+  	Array.prototype.forEach.call(section2, function(e) {
+  	    sections2[e.id] = e.offsetParent.offsetTop;
+  	});
 
-	document.getElementById("nav-content").onscroll = function() {
-    var scrollPosition = document.getElementById("nav-content").scrollTop;
-    
-    for (let i in sections2) {
-      if (sections2[i] <= scrollPosition) {
-        //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
-        var last_active = document.querySelector('[toc-active="true"]');
-        last_active.setAttribute('class', 'item');
-        last_active.setAttribute('toc-active', 'false');
+  	document.getElementById("nav-content").onscroll = function() {
+      var scrollPosition = document.getElementById("nav-content").scrollTop;
+      
+      for (let i in sections2) {
+        if (sections2[i] <= scrollPosition) {
+          //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
+          var last_active = document.querySelector('[toc-active="true"]');
+          last_active.setAttribute('class', 'item');
+          last_active.setAttribute('toc-active', 'false');
 
-        //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
-        var current_active = document.querySelector('a[href*=' + i + ']');
-        current_active.setAttribute('class', 'item active');
-        current_active.setAttribute('toc-active', 'true');
+          //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
+          var current_active = document.querySelector('a[href*=' + i + ']');
+          current_active.setAttribute('class', 'item active');
+          current_active.setAttribute('toc-active', 'true');
+        }
       }
-    }
 
-    for (let i in sections1) {
-      if (sections1[i] <= scrollPosition) {
-        //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
-        var last_active = document.querySelector('[toc-sub-active="true"]');
-        last_active.setAttribute('class', 'item');
-        last_active.setAttribute('toc-sub-active', 'false');
+      for (let i in sections1) {
+        if (sections1[i] <= scrollPosition) {
+          //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
+          var last_active = document.querySelector('[toc-sub-active="true"]');
+          last_active.setAttribute('class', 'item');
+          last_active.setAttribute('toc-sub-active', 'false');
 
-        //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
-        var current_active = document.querySelector('a[href*=' + i + ']');
-        current_active.setAttribute('class', 'item active');
-        current_active.setAttribute('toc-sub-active', 'true');
+          //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
+          var current_active = document.querySelector('a[href*=' + i + ']');
+          current_active.setAttribute('class', 'item active');
+          current_active.setAttribute('toc-sub-active', 'true');
+        }
       }
-    }
-  };
+    };
 
   }
 

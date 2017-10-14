@@ -1,0 +1,649 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Indicators</div>
+			<div class="sub-header size-3 light">A indicators shows the progression of a task.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="loader"></div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader">&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Sizes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="loader mini"></div><br/><br/>
+							<div class="loader tiny"></div><br/><br/>
+							<div class="loader small"></div><br/><br/>
+							<div class="loader medium"></div><br/><br/>
+							<div class="loader large"></div><br/><br/>
+							<div class="loader big"></div><br/><br/>
+							<div class="loader huge"></div><br/><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader mini">&lt;/div>
+						&lt;div class="loader tiny">&lt;/div>
+						&lt;div class="loader small">&lt;/div>
+						&lt;div class="loader medium">&lt;/div>
+						&lt;div class="loader large">&lt;/div>
+						&lt;div class="loader big">&lt;/div>
+						&lt;div class="loader huge">&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Usage -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<span class="button">
+						 		<span class="loader"></span>&nbsp;
+						 		Hello
+						 	</span>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;span class="button">
+					 		&lt;span class="loader">&lt;/span>
+					 		Hello
+					 	&lt;/span>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loader primary medium"></div><br/><br/>
+							<div class="loader red medium"></div><br/><br/>
+							<div class="loader lime medium"></div><br/><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader primary medium">&lt;/div>
+						&lt;div class="loader red medium">&lt;/div>
+						&lt;div class="loader lime medium">&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+					<!-- Loader-container -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:300px;">
+								<span class="loader center huge"></span>
+								This is the content.
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:300px;">
+							&lt;span class="loader center huge">&lt;/span>
+							This is the content.
+						&lt;/div>
+						</code></pre>
+
+						<div class="message modern info doc-block-info square">
+							<span class="label mini white">loader-container</span> class finds the <span class="label mini white">loader</span>  &nbsp;inside it and makes the loader as&nbsp; <b>absolute</b>&nbsp; element and aligns center in both horizontal and vertical directions.
+						</div>
+
+						
+
+					</div>
+
+					<!-- speed -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loader medium speed-1"></div><br/><br/>
+							<div class="loader medium speed-2"></div><br/><br/>
+							<div class="loader medium speed-3"></div><br/><br/>
+							<div class="loader medium speed-4"></div><br/><br/>
+							<div class="loader medium speed-5"></div><br/><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader medium speed-1">&lt;/div>
+						&lt;div class="loader medium speed-2">&lt;/div>
+						&lt;div class="loader medium speed-3">&lt;/div>
+						&lt;div class="loader medium speed-4">&lt;/div>
+						&lt;div class="loader medium speed-5">&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+					<!-- styles -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[6].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[6].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loader medium style-1"></div><br/><br/>
+							<div class="loader medium style-1 green"></div><br/><br/>
+							<div class="loader medium style-2"></div><br/><br/>
+							<div class="loader medium style-2 deep-orange"></div><br/><br/>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader medium style-1">&lt;/div>
+						&lt;div class="loader medium style-1 green">&lt;/div>
+						&lt;div class="loader medium style-2">&lt;/div>
+						&lt;div class="loader medium style-2 deep-orange">&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- bars -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[7].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[7].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loading-bar">
+								<div class="line"></div>
+								<div class="break dot-1"></div>
+								<div class="break dot-2"></div>
+								<div class="break dot-3"></div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loading-bar">
+							&lt;div class="line">&lt;/div>
+							&lt;div class="break dot-1">&lt;/div>
+							&lt;div class="break dot-2">&lt;/div>
+							&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+					<!-- bars colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[8].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[8].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="loading-bar primary">
+								<div class="line"></div>
+								<div class="break dot-1"></div>
+								<div class="break dot-2"></div>
+								<div class="break dot-3"></div>
+							</div><br/><br/>
+							<div class="loading-bar red">
+								<div class="line"></div>
+								<div class="break dot-1"></div>
+								<div class="break dot-2"></div>
+								<div class="break dot-3"></div>
+							</div><br/><br/>
+							<div class="loading-bar green">
+								<div class="line"></div>
+								<div class="break dot-1"></div>
+								<div class="break dot-2"></div>
+								<div class="break dot-3"></div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loading-bar primary">
+							&lt;div class="line">&lt;/div>
+							&lt;div class="break dot-1">&lt;/div>
+							&lt;div class="break dot-2">&lt;/div>
+							&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+
+						&lt;div class="loading-bar red">
+							&lt;div class="line">&lt;/div>
+							&lt;div class="break dot-1">&lt;/div>
+							&lt;div class="break dot-2">&lt;/div>
+							&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+
+						&lt;div class="loading-bar green">
+							&lt;div class="line">&lt;/div>
+							&lt;div class="break dot-1">&lt;/div>
+							&lt;div class="break dot-2">&lt;/div>
+							&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+					<!-- Bars position -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[9].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[9].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Top -->
+							<div class="d-sub-header" id="{{toc_list[9].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[9].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+								<div class="loading-bar blue top">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+							&lt;div class="loading-bar blue top">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- Midddle -->
+						<div class="d-sub-header" id="{{toc_list[9].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[9].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+								<div class="loading-bar blue center">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+							&lt;div class="loading-bar blue center">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- Bottom -->
+						<div class="d-sub-header" id="{{toc_list[9].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[9].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+								<div class="loading-bar blue bottom">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loader-container" style="border:1px solid #d9d9d9; width: 400px; height:200px; background-color: #e9e9e9">
+							&lt;div class="loading-bar blue bottom">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+					</div>
+
+					<!-- Boldness -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[10].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[10].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="loading-bar bold-1">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+							</div>
+							<br/><br/>
+							<div class="loading-bar bold-2">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+							</div>
+							<br/><br/>
+							<div class="loading-bar bold-3">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+							</div>
+							<br/><br/>
+							<div class="loading-bar bold-4">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+							</div>
+							<br/><br/>
+							<div class="loading-bar bold-5">
+									<div class="line"></div>
+									<div class="break dot-1"></div>
+									<div class="break dot-2"></div>
+									<div class="break dot-3"></div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="loading-bar bold-1">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="loading-bar bold-2">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="loading-bar bold-3">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="loading-bar bold-4">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						&lt;br/>&lt;br/>
+						&lt;div class="loading-bar bold-5">
+								&lt;div class="line">&lt;/div>
+								&lt;div class="break dot-1">&lt;/div>
+								&lt;div class="break dot-2">&lt;/div>
+								&lt;div class="break dot-3">&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/indicators'"></section>
+			</div>
+
+			</div>
+</div>
+
+

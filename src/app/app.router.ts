@@ -25,6 +25,9 @@ import { BreadcrumbComponent } from './docs/components/breadcrumb/breadcrumb.com
 import { MessageComponent } from './docs/components/message/message.component';
 import { PanelComponent } from './docs/components/panel/panel.component';
 import { PaginationComponent } from './docs/components/pagination/pagination.component';
+import { ProgressBarComponent } from './docs/components/progress-bar/progress-bar.component';
+import { IndicatorsComponent } from './docs/components/indicators/indicators.component';
+import { TabsComponent } from './docs/components/tabs/tabs.component';
 
 let components = [ BreadcrumbComponent, MessageComponent, PanelComponent, PaginationComponent ];
 
@@ -46,7 +49,10 @@ const appRoutes: Routes = [
       { path: 'breadcrumb' , component: BreadcrumbComponent },
       { path: 'message' , component: MessageComponent },
       { path: 'panel', component: PanelComponent },
-      { path: 'pagination', component: PaginationComponent }
+      { path: 'pagination', component: PaginationComponent },
+      { path: 'progress-bar', component: ProgressBarComponent },
+      { path: 'indicators', component: IndicatorsComponent },
+      { path: 'tabs', component: TabsComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },
