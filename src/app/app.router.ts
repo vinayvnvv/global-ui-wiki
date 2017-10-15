@@ -28,6 +28,8 @@ import { PaginationComponent } from './docs/components/pagination/pagination.com
 import { ProgressBarComponent } from './docs/components/progress-bar/progress-bar.component';
 import { IndicatorsComponent } from './docs/components/indicators/indicators.component';
 import { TabsComponent } from './docs/components/tabs/tabs.component';
+import { TocDocComponent } from './docs/components/toc/toc.component';
+import { ModalComponent } from './docs/components/modal/modal.component';
 
 let components = [ BreadcrumbComponent, MessageComponent, PanelComponent, PaginationComponent ];
 
@@ -52,7 +54,9 @@ const appRoutes: Routes = [
       { path: 'pagination', component: PaginationComponent },
       { path: 'progress-bar', component: ProgressBarComponent },
       { path: 'indicators', component: IndicatorsComponent },
-      { path: 'tabs', component: TabsComponent }
+      { path: 'tabs', component: TabsComponent },
+      { path: 'toc', component: TocDocComponent },
+      { path: 'modal', component: ModalComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },

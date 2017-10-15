@@ -28,6 +28,9 @@ import { PaginationComponent } from './docs/components/pagination/pagination.com
 import { ProgressBarComponent } from './docs/components/progress-bar/progress-bar.component';
 import { IndicatorsComponent } from './docs/components/indicators/indicators.component';
 import { TabsComponent } from './docs/components/tabs/tabs.component';
+import { TocDocComponent } from './docs/components/toc/toc.component';
+import { JsToggleInfoComponent } from './common/js-toggle-info/js-toggle-info.component';
+import { ModalComponent } from './docs/components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { TabsComponent } from './docs/components/tabs/tabs.component';
     PaginationComponent,
     ProgressBarComponent,
     IndicatorsComponent,
-    TabsComponent
+    TabsComponent,
+    TocDocComponent,
+    JsToggleInfoComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

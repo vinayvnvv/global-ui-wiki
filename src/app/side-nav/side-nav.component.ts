@@ -54,6 +54,8 @@ export class SideNavComponent implements OnInit {
     this.navComponetsList.push(new NavList("Progress Bar", ['/docs/progress-bar'], "fa fa-tasks"));
     this.navComponetsList.push(new NavList("Indicators", ['/docs/indicators'], "fa fa-spinner"));
     this.navComponetsList.push(new NavList("Tabs", ['/docs/tabs'], "fa fa-credit-card-alt"));
+    this.navComponetsList.push(new NavList("Toc", ['/docs/toc'], "fa fa-th-list"));
+    this.navComponetsList.push(new NavList("Modal", ['/docs/modal'], "fa fa-window-restore"));
   }
 
 }

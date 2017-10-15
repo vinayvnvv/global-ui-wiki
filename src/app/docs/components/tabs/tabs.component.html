@@ -1,3 +1,1070 @@
-<p>
-  tabs works!
-</p>
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Tabs</div>
+			<div class="sub-header size-3 light">A tab is a hidden section of content activated by a menu.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab">
+								<div class="item" (click)="tab_active=1" [class.active]="!tab_active || tab_active == 1">Tab1</div>
+								<div class="item" (click)="tab_active=2" [class.active]="tab_active == 2">Tab2</div>
+								<div class="item" (click)="tab_active=3" [class.active]="tab_active == 3">Tab3</div>
+								<div class="item" (click)="tab_active=4" [class.active]="tab_active == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+						<div class="message icon modern info doc-block-info square">
+								To activate the tab switches, just add the <span class="label black mini margin-x-4">active</span> modifier on the tab items.
+						</div>
+
+						<app-js-toggle-info></app-js-toggle-info>
+
+						
+
+					</div>
+
+
+
+					<!-- Alignment -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- left -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab">
+								<div class="item active">Tab1</div>
+								<div class="item" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- shaded -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab items-center">
+								<div class="item active">Tab1</div>
+								<div class="item">Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab items-center">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item">Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- right -->
+						<div class="d-sub-header" id="{{toc_list[1].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[1].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab items-right">
+								<div class="item active">Tab1</div>
+								<div class="item">Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab items-right">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item">Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Stretched -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab stretch-items">
+								<div class="item" (click)="tab_active=1" [class.active]="!tab_active || tab_active == 1">Tab1</div>
+								<div class="item" (click)="tab_active=2" [class.active]="tab_active == 2">Tab2</div>
+								<div class="item" (click)="tab_active=3" [class.active]="tab_active == 3">Tab3</div>
+								<div class="item" (click)="tab_active=4" [class.active]="tab_active == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab stretch-items">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label grey mini margin-x-4">stretch-items</span> modifier divides the tab items and occupies entire width of its parent.
+						</div>
+						
+
+					</div>
+
+
+
+					<!-- Inlined -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab inlined">
+								<div class="item" (click)="tab_active=1" [class.active]="!tab_active || tab_active == 1">Tab1</div>
+								<div class="item" (click)="tab_active=2" [class.active]="tab_active == 2">Tab2</div>
+								<div class="item" (click)="tab_active=3" [class.active]="tab_active == 3">Tab3</div>
+								<div class="item" (click)="tab_active=4" [class.active]="tab_active == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab inlined">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label grey mini margin-x-4">stretch-items</span> modifier set the width of the tab container to auto instead of block.
+						</div>
+						
+
+					</div>
+
+
+					<!-- With Icons -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab">
+								<div class="item active"> 
+									<span class="icon">
+										<i class="fa fa-image"></i>
+									</span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item">
+									<span class="icon">
+										<i class="fa fa-music"></i> 
+									</span>
+									<span>Music</span>
+								</div>
+								<div class="item">
+									<span class="icon">
+										<i class="fa fa-file-text-o"></i>
+									</span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab">
+							&lt;div class="item active"> 
+								&lt;span class="icon">
+									&lt;i class="fa fa-image">&lt;/i>
+								&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">
+									&lt;i class="fa fa-music">&lt;/i> 
+								&lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">
+									&lt;i class="fa fa-file-text-o">&lt;/i>
+								&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Colored Active -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab stretch-items">
+								<div class="item"> 
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item active blue">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab stretch-items">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active blue">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern orange doc-block-info square">
+								You can also add whatever color you want to the active tab by adding it to color class.
+						</div>
+
+					</div>
+
+
+					<!-- Styles -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[6].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[6].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- style-1 -->
+							<div class="d-sub-header" id="{{toc_list[6].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab style-1">
+								<div class="item active" (click)="tab_active_s=1" [class.active]="!tab_active_s || tab_active_s == 1">Tab1</div>
+								<div class="item" (click)="tab_active_s=2" [class.active]="tab_active_s == 2">Tab2</div>
+								<div class="item" (click)="tab_active_s=3" [class.active]="tab_active_s == 3">Tab3</div>
+								<div class="item" (click)="tab_active_s=4" [class.active]="tab_active_s == 4">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab style-1 stretch-items">
+								<div class="item active" (click)="tab_active_sa=1" [class.active]="!tab_active_sa || tab_active_sa == 1">Tab1</div>
+								<div class="item" (click)="tab_active_sa=2" [class.active]="tab_active_sa == 2">Tab2</div>
+								<div class="item" (click)="tab_active_sa=3" [class.active]="tab_active_sa == 3">Tab3</div>
+								<div class="item" (click)="tab_active_sa=4" [class.active]="tab_active_sa == 4">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab style-1 stretch-items">
+								<div class="item active" (click)="tab_active_sb=1" [class.active]="!tab_active_sb || tab_active_sb == 1">
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item" (click)="tab_active_sb=2" [class.active]="tab_active_sb == 2">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item" (click)="tab_active_sb=3" [class.active]="tab_active_sb == 3">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab style-1">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab style-1 stretch-items">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab style-1 stretch-items">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active blue">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- shaded -->
+						<div class="d-sub-header" id="{{toc_list[6].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab style-2 inlined">
+								<div class="item active" (click)="tab_active_ss=1" [class.active]="!tab_active_ss || tab_active_ss == 1">Tab1</div>
+								<div class="item" (click)="tab_active_ss=2" [class.active]="tab_active_ss == 2">Tab2</div>
+								<div class="item" (click)="tab_active_ss=3" [class.active]="tab_active_ss == 3">Tab3</div>
+								<div class="item" (click)="tab_active_ss=4" [class.active]="tab_active_ss == 4">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab style-2 stretch-items">
+								<div class="item active" (click)="tab_active_ssa=1" [class.active]="!tab_active_ssa || tab_active_ssa == 1">Tab1</div>
+								<div class="item" (click)="tab_active_ssa=2" [class.active]="tab_active_ssa == 2">Tab2</div>
+								<div class="item" (click)="tab_active_ssa=3" [class.active]="tab_active_ssa == 3">Tab3</div>
+								<div class="item" (click)="tab_active_ssa=4" [class.active]="tab_active_ssa == 4">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab style-2 stretch-items">
+								<div class="item active" (click)="tab_active_ssb=1" [class.active]="!tab_active_ssb || tab_active_ssb == 1">
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item" (click)="tab_active_ssb=2" [class.active]="tab_active_ssb == 2">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item" (click)="tab_active_ssb=3" [class.active]="tab_active_ssb == 3">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab style-2 inlined">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item">Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+						&lt;div class="tab style-2 stretch-items">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab style-2 stretch-items">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active blue">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Vertical -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[7].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[7].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- basic -->
+							<div class="d-sub-header" id="{{toc_list[7].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab vertical">
+								<div class="item active" (click)="tab_active_v=1" [class.active]="!tab_active_v || tab_active_v == 1">Tab1</div>
+								<div class="item" (click)="tab_active_v=2" [class.active]="tab_active_v == 2">Tab2</div>
+								<div class="item" (click)="tab_active_v=3" [class.active]="tab_active_v == 3">Tab3</div>
+								<div class="item" (click)="tab_active_v=4" [class.active]="tab_active_v == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab vertical">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+						<!-- Style-1 -->
+						<div class="d-sub-header" id="{{toc_list[7].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab style-1 vertical">
+								<div class="item active" (click)="tab_active_vv=1" [class.active]="!tab_active_vv || tab_active_vv == 1">Tab1</div>
+								<div class="item" (click)="tab_active_vv=2" [class.active]="tab_active_vv == 2">Tab2</div>
+								<div class="item" (click)="tab_active_vv=3" [class.active]="tab_active_vv == 3">Tab3</div>
+								<div class="item" (click)="tab_active_vv=4" [class.active]="tab_active_vv == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab style-1 vertical">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item">Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<!-- Style-2 -->
+						<div class="d-sub-header" id="{{toc_list[7].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab style-2 vertical">
+								<div class="item active" (click)="tab_active_vvv=1" [class.active]="!tab_active_vvv || tab_active_vvv == 1">Tab1</div>
+								<div class="item" (click)="tab_active_vvv=2" [class.active]="tab_active_vvv == 2">Tab2</div>
+								<div class="item" (click)="tab_active_vvv=3" [class.active]="tab_active_vvv == 3">Tab3</div>
+								<div class="item" (click)="tab_active_vvv=4" [class.active]="tab_active_vvv == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab style-2 vertical">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item">Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<!-- Iconinc -->
+						<div class="d-sub-header" id="{{toc_list[7].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="tab vertical">
+								<div class="item active" (click)="tab_active_vb=1" [class.active]="!tab_active_vb || tab_active_vb == 1">
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item" (click)="tab_active_vb=2" [class.active]="tab_active_vb == 2">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item" (click)="tab_active_vb=3" [class.active]="tab_active_vb == 3">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab vertical">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active blue">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+					<!-- Colored  -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[8].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[8].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<div class="tab pink stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab green style-1 stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab brown style-2 stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab deep-orange">
+								<div class="item"> 
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item active">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							<br/><br/>
+							<div class="tab vertical pink stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab vertical green style-1 stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab vertical brown style-2 stretch-items">
+								<div class="item">Tab1</div>
+								<div class="item active" >Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab vertical style-2 deep-orange	">
+								<div class="item"> 
+									<span class="icon"><i class="fa fa-image"></i></span> 
+									<span>Pictures</span>
+								</div>
+								<div class="item active">
+									<span class="icon"><i class="fa fa-music"></i> </span>
+									<span>Music</span>
+								</div>
+								<div class="item">
+									<span class="icon"><i class="fa fa-file-text-o"></i></span> 
+									<span>Documents</span>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab pink stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab green style-1 stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						
+
+						&lt;div class="tab brown style-2 stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab deep-orange">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab vertical pink stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab vertical green style-1 stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab vertical brown style-2 stretch-items">
+							&lt;div class="item">Tab1&lt;/div>
+							&lt;div class="item active" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab vertical style-2 deep-orange	">
+							&lt;div class="item"> 
+								&lt;span class="icon">&lt;i class="fa fa-image">&lt;/i>&lt;/span> 
+								&lt;span>Pictures&lt;/span>
+							&lt;/div>
+							&lt;div class="item active">
+								&lt;span class="icon">&lt;i class="fa fa-music">&lt;/i> &lt;/span>
+								&lt;span>Music&lt;/span>
+							&lt;/div>
+							&lt;div class="item">
+								&lt;span class="icon">&lt;i class="fa fa-file-text-o">&lt;/i>&lt;/span> 
+								&lt;span>Documents&lt;/span>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Disabled state -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[9].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[9].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab">
+								<div class="item" (click)="tab_activeaa=1" [class.active]="!tab_activeaa || tab_activeaa == 1">Tab1</div>
+								<div class="item disabled" (click)="tab_activeaa=2" [class.active]="tab_activeaa == 2">Tab2</div>
+								<div class="item" (click)="tab_activeaa=3" [class.active]="tab_activeaa == 3">Tab3</div>
+								<div class="item" (click)="tab_activeaa=4" [class.active]="tab_activeaa == 4">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item disabled" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[10].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[10].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab style-1 square">
+								<div class="item active">Tab1</div>
+								<div class="item">Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							<br/><br/>
+							<div class="tab style-2 square inlined">
+								<div class="item active">Tab1</div>
+								<div class="item">Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab style-1 square">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+
+
+						&lt;div class="tab style-2 square inlined">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message modern orange square doc-block-info">
+							Shapes are visible only on  <span class='label mini grey margin-x-5'>style-1</span> and <span class='label mini grey margin-x-5'>style-2</span> class.
+						</div>
+
+					</div>
+
+
+					<!-- Scrollable -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[11].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[11].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="tab scrollable" style="width: 400px">
+								<div class="item active">Tab1</div>
+								<div class="item">Tab2</div>
+								<div class="item">Tab3</div>
+								<div class="item">Tab4</div>
+								<div class="item">Tab5</div>
+								<div class="item">Tab6</div>
+								<div class="item">Tab7</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="tab scrollable" style="width: 400px">
+							&lt;div class="item active">Tab1&lt;/div>
+							&lt;div class="item" >Tab2&lt;/div>
+							&lt;div class="item">Tab3&lt;/div>
+							&lt;div class="item">Tab4&lt;/div>
+							&lt;div class="item">Tab5&lt;/div>
+							&lt;div class="item">Tab6&lt;/div>
+							&lt;div class="item">Tab7&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/tabs'"></section>
+			</div>
+
+			</div>
+</div>
+
+

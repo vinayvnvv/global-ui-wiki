@@ -1,0 +1,337 @@
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Table of Contents (Toc)</div>
+			<div class="sub-header size-3 light">A toc displays the table of contents.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="toc margin-x-5	">
+								 <div class="item">Basic</div>
+								 <div class="item">Types</div>
+								 <div class="item active">States
+								 	 <div class="toc">
+											 <div class="item">Basic</div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+											 <div class="item active">Types
+											 	<div class="toc">
+														 <div class="item">Basic</div>
+														 <div class="item active">Types</div>
+														 <div class="item">Colored</div>
+												 </div>
+											 </div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+									 		 <div class="item">States</div>
+									 </div>
+								 </div>
+								 <div class="item">Colored</div>
+							 </div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="toc">
+							 &lt;div class="item">Basic&lt;/div>
+							 &lt;div class="item">Types&lt;/div>
+							 &lt;div class="item active">States
+							 	 &lt;div class="toc">
+										 &lt;div class="item">Basic&lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+										 &lt;div class="item active">Types
+										 	&lt;div class="toc">
+													 &lt;div class="item">Basic&lt;/div>
+													 &lt;div class="item active">Types&lt;/div>
+													 &lt;div class="item">Colored&lt;/div>
+											 &lt;/div>
+										 &lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+								 		 &lt;div class="item">States&lt;/div>
+								 &lt;/div>
+							 &lt;/div>
+							 &lt;div class="item">Colored&lt;/div>
+						 &lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								To collpase the list, just add the <span class="label black mini margin-x-4">active</span> modifier on the list item.
+						</div>
+
+						<app-js-toggle-info></app-js-toggle-info>
+
+						
+
+					</div>
+
+
+					<!-- Right bordered -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="toc margin-x-5	right-bordered">
+								 <div class="item">Basic</div>
+								 <div class="item">Types</div>
+								 <div class="item active">States
+								 	 <div class="toc">
+											 <div class="item">Basic</div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+											 <div class="item active">Types
+											 	<div class="toc">
+														 <div class="item">Basic</div>
+														 <div class="item active">Types</div>
+														 <div class="item">Colored</div>
+												 </div>
+											 </div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+									 		 <div class="item">States</div>
+									 </div>
+								 </div>
+								 <div class="item">Colored</div>
+							 </div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="toc right-bordered">
+							 &lt;div class="item">Basic&lt;/div>
+							 &lt;div class="item">Types&lt;/div>
+							 &lt;div class="item active">States
+							 	 &lt;div class="toc">
+										 &lt;div class="item">Basic&lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+										 &lt;div class="item active">Types
+										 	&lt;div class="toc">
+													 &lt;div class="item">Basic&lt;/div>
+													 &lt;div class="item active">Types&lt;/div>
+													 &lt;div class="item">Colored&lt;/div>
+											 &lt;/div>
+										 &lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+								 		 &lt;div class="item">States&lt;/div>
+								 &lt;/div>
+							 &lt;/div>
+							 &lt;div class="item">Colored&lt;/div>
+						 &lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+							This will be usefull when you use TOC at left side of the content of page.
+						</div>
+
+						
+
+					</div>
+
+
+
+					<!-- Right bordered inlined -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<div class="toc margin-x-5	right-bordered inlined">
+								 <div class="item">Basic</div>
+								 <div class="item">Types</div>
+								 <div class="item active">States
+								 	 <div class="toc">
+											 <div class="item">Basic</div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+											 <div class="item active">Types
+											 	<div class="toc">
+														 <div class="item">Basic</div>
+														 <div class="item active">Types</div>
+														 <div class="item">Colored</div>
+												 </div>
+											 </div>
+											 <div class="item">Types</div>
+											 <div class="item">Colored</div>
+									 		 <div class="item">States</div>
+									 </div>
+								 </div>
+								 <div class="item">Colored</div>
+							 </div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="toc right-bordered inlined">
+							 &lt;div class="item">Basic&lt;/div>
+							 &lt;div class="item">Types&lt;/div>
+							 &lt;div class="item active">States
+							 	 &lt;div class="toc">
+										 &lt;div class="item">Basic&lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+										 &lt;div class="item active">Types
+										 	&lt;div class="toc">
+													 &lt;div class="item">Basic&lt;/div>
+													 &lt;div class="item active">Types&lt;/div>
+													 &lt;div class="item">Colored&lt;/div>
+											 &lt;/div>
+										 &lt;/div>
+										 &lt;div class="item">Types&lt;/div>
+										 &lt;div class="item">Colored&lt;/div>
+								 		 &lt;div class="item">States&lt;/div>
+								 &lt;/div>
+							 &lt;/div>
+							 &lt;div class="item">Colored&lt;/div>
+						 &lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+							Inlined class set tje TOC width as auto instead of block.
+						</div>
+
+						
+
+					</div>	
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/toc'"></section>
+			</div>
+
+			</div>
+</div>
+
+
