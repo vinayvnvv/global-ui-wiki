@@ -1,3 +1,395 @@
-<p>
-  modal works!
-</p>
+<div class="docs pageInUp">
+		<section class="advertisement padding-more">
+			<div class="header h2 light">Modal</div>
+			<div class="sub-header size-3 light">A modal displays content that temporarily blocks interactions with the main view of a site.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal1 = true" >Open Sample Modal</span>
+						 	<div class="modal" [class.active]="modal1">
+								<div class="modal-bg" (click)="modal1 = false"></div>
+								<div class="modal-content">
+									
+										This is sample modal<br/>
+										<span class="button mini" (click)="modal1 = false">Close</span>
+									
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal" >
+							&lt;div class="modal-bg">&lt;/div>	
+							&lt;div class="modal-content">
+								
+									This is sample modal&lt;br/>
+									&lt;span class="button mini">Close&lt;/span>
+								
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+
+						<div class="message icon modern info doc-block-info square">
+								To activate the modal, just add the <span class="label black mini margin-x-4">active</span> modifier on the modal.
+						</div>
+
+						<app-js-toggle-info></app-js-toggle-info>
+
+						
+
+					</div>
+
+
+
+					<!-- Structured -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal2 = true" >Open Structured Modal</span>
+						 	<div class="modal structured" [class.active]="modal2">
+								<div class="modal-bg" (click)="modal2 = false"></div>
+								<div class="modal-content">
+									<div class="modal-header">
+										This is Header
+										<span class="modal-close" >
+											<span class="button circle ripple" (click)="modal2 = false"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+										</span>
+									</div>
+									<div class="modal-body">
+										This is modal content and scrollable on height exceeds.
+										<div style="height: 999px"></div>
+									</div>
+									<div class="modal-footer">
+										<span class="button small primary">Save</span>
+										<span class="button small" (click)="modal2 = false">Close</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal structured">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-header">
+									This is Header
+									&lt;span class="modal-close">
+										&lt;span class="button circle ripple">
+										&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="modal-body">
+									This is modal content and scrollable on height exceeds.
+									&lt;div style="height: 999px">&lt;/div>
+								&lt;/div>
+								&lt;div class="modal-footer">
+									&lt;span class="button small primary">Save&lt;/span>
+									&lt;span class="button small">Close&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						
+
+					</div>
+
+
+
+					<!-- Structured with coloor-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal2 = true" >Open Structured Colored Modal</span>
+						 	<div class="modal structured primary" [class.active]="modal2">
+								<div class="modal-bg" (click)="modal2 = false"></div>
+								<div class="modal-content">
+									<div class="modal-header">
+										This is Header
+										<span class="modal-close" >
+											<span class="button circle ripple" (click)="modal2 = false"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+										</span>
+									</div>
+									<div class="modal-body">
+										This is modal content and scrollable on height exceeds.
+										<div style="height: 999px"></div>
+									</div>
+									<div class="modal-footer">
+										<span class="button small primary">Save</span>
+										<span class="button small" (click)="modal2 = false">Close</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal structured primary">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-header">
+									This is Header
+									&lt;span class="modal-close">
+										&lt;span class="button circle ripple">
+										&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+									&lt;/span>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="modal-body">
+									This is modal content and scrollable on height exceeds.
+									&lt;div style="height: 999px">&lt;/div>
+								&lt;/div>
+								&lt;div class="modal-footer">
+									&lt;span class="button small primary">Save&lt;/span>
+									&lt;span class="button small">Close&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								You can apply all the colors in your theme.
+						</div>
+
+						
+
+					</div>
+
+
+					<!-- aletr-->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal3 = true">Open Alert Modal</span>
+						 	<div class="modal alert" [class.active]="modal3">
+								<div class="modal-bg" (click)="modal3 = false"></div>
+								<div class="modal-content">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">Alert Text</div>
+									<div class="modal-alert-action">
+										<span class="button small border-0 ripple outline standard">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">Alert Text&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- alert with multi-action modal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal3 = true">Open Alert Modal</span>
+						 	<div class="modal alert" [class.active]="modal3">
+								<div class="modal-bg" (click)="modal3 = false"></div>
+								<div class="modal-content">
+									<div class="modal-alert-title">Confirm Delete?</div>
+									<div class="modal-alert-desc">Items will no longer available after delete!</div>
+									<div class="modal-alert-action">
+										<span class="button primary small border-0 outline standard ripple">Okay</span>
+										<span class="button danger small border-0 outline standard ripple">Cancel</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-alert-title">Confirm Delete?&lt;/div>
+								&lt;div class="modal-alert-desc">Items will no longer available after delete!&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button primary small border-0 outline standard ripple">Okay&lt;/span>
+									&lt;span class="button danger small border-0 outline standard ripple">Cancel&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/modal'"></section>
+			</div>
+
+			</div>
+</div>
+
+
