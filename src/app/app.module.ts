@@ -31,6 +31,7 @@ import { TabsComponent } from './docs/components/tabs/tabs.component';
 import { TocDocComponent } from './docs/components/toc/toc.component';
 import { JsToggleInfoComponent } from './common/js-toggle-info/js-toggle-info.component';
 import { ModalComponent } from './docs/components/modal/modal.component';
+import { ToastComponent } from './docs/components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ModalComponent } from './docs/components/modal/modal.component';
     TabsComponent,
     TocDocComponent,
     JsToggleInfoComponent,
-    ModalComponent
+    ModalComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,

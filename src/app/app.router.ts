@@ -30,6 +30,7 @@ import { IndicatorsComponent } from './docs/components/indicators/indicators.com
 import { TabsComponent } from './docs/components/tabs/tabs.component';
 import { TocDocComponent } from './docs/components/toc/toc.component';
 import { ModalComponent } from './docs/components/modal/modal.component';
+import { ToastComponent } from './docs/components/toast/toast.component';
 
 let components = [ BreadcrumbComponent, MessageComponent, PanelComponent, PaginationComponent ];
 
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
       { path: 'indicators', component: IndicatorsComponent },
       { path: 'tabs', component: TabsComponent },
       { path: 'toc', component: TocDocComponent },
-      { path: 'modal', component: ModalComponent }
+      { path: 'modal', component: ModalComponent },
+      { path: 'toast', component: ToastComponent }
     ]
   },
   { path: '*', redirectTo: "/home" },

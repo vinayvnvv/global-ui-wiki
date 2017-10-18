@@ -247,12 +247,12 @@
 						 	<div class="modal alert" [class.active]="modal3">
 								<div class="modal-bg" (click)="modal3 = false"></div>
 								<div class="modal-content">
-									<div class="modal-alert-title">Alert Title</div>
-									<div class="modal-alert-desc">Alert Text</div>
-									<div class="modal-alert-action">
-										<span class="button small border-0 ripple outline standard">Got It!</span>
-									</div>
+								<div class="modal-alert-title">Alert Title</div>
+								<div class="modal-alert-desc">Alert Text</div>
+								<div class="modal-alert-action">
+									<span class="button small border-0 ripple outline standard">Got It!</span>
 								</div>
+							</div>
 							</div>
 							</div>
 
@@ -287,15 +287,15 @@
 						</div>
 						
 							<div class="html-embed">
-							<span class="button" (click)="modal3 = true">Open Alert Modal</span>
-						 	<div class="modal alert" [class.active]="modal3">
-								<div class="modal-bg" (click)="modal3 = false"></div>
+							<span class="button" (click)="modal4 = true">Open Alert Modal with Action</span>
+						 	<div class="modal alert" [class.active]="modal4">
+								<div class="modal-bg" (click)="modal4 = false"></div>
 								<div class="modal-content">
 									<div class="modal-alert-title">Confirm Delete?</div>
 									<div class="modal-alert-desc">Items will no longer available after delete!</div>
 									<div class="modal-alert-action">
 										<span class="button primary small border-0 outline standard ripple">Okay</span>
-										<span class="button danger small border-0 outline standard ripple">Cancel</span>
+										<span class="button danger small border-0 outline standard ripple" (click)="modal4 = false">Cancel</span>
 									</div>
 								</div>
 							</div>
@@ -316,6 +316,427 @@
 						</code></pre>
 
 					</div>
+
+
+					<!-- with whiteframe -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal6 = true">Open Shaded Modal</span>
+						 	<div class="modal alert" [class.active]="modal6">
+								<div class="modal-bg" (click)="modal6 = false"></div>
+								<div class="modal-content whiteframe-10">
+								<div class="modal-alert-title">Alert Title</div>
+								<div class="modal-alert-desc">This Modal content has shaded effect.</div>
+								<div class="modal-alert-action">
+									<span class="button small border-0 ripple outline standard">Got It!</span>
+								</div>
+							</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content whiteframe-10">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">This Modal content has shaded effect.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								To make shade effect around the modal, just add <span class="label black mini margin-x-4">whiteframe-*</span> modifier on the modal-content.
+						</div>
+
+					</div>
+
+
+					<!-- full screenn mobile -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[6].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[6].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal7 = true">Test Modal</span>
+						 	<div class="modal structured fullscreen-mobile" [class.active]='modal7'>
+								<div class="modal-bg" (click)="modal7 = false"></div>
+								<div class="modal-content">
+									<div class="modal-header">
+										This is Header
+										<span class="modal-close">
+											<span class="button circle ripple" (click)="modal7 = false">
+												<i class="fa fa-times-circle" aria-hidden="true"></i>
+											</span>
+										</span>
+									</div>
+									<div class="modal-body">
+										This is modal become full-screen on mobile screen width. Reduce the screen size to see the effect.
+										<div style="height: 999px"></div>
+									</div>
+									<div class="modal-footer">
+										<span class="button small primary">Save</span>
+										<span class="button small" (click)="modal7 = false">Close</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal structured fullscreen-mobile">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-header">
+									This is Header
+									&lt;span class="modal-close">
+										&lt;span class="button circle ripple">
+											&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+										&lt;/span>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="modal-body">
+									This is modal become full-screen on mobile screen width. Reduce the screen size to see the effect.
+									&lt;div style="height: 999px">&lt;/div>
+								&lt;/div>
+								&lt;div class="modal-footer">
+									&lt;span class="button small primary">Save&lt;/span>
+									&lt;span class="button small">Close&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label black mini margin-x-4">fullscreen-mobile</span> Modifier makes the modal as always full-screen in mobile screens.
+						</div>
+
+					</div>
+
+
+					<!-- full screenn desktop -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[7].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[7].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal8 = true">Test Modal</span>
+						 	<div class="modal structured fullscreen-desktop" [class.active]='modal8'>
+								<div class="modal-bg" (click)="modal8 = false"></div>
+								<div class="modal-content">
+									<div class="modal-header">
+										This is Header
+										<span class="modal-close">
+											<span class="button circle ripple" (click)="modal8 = false">
+												<i class="fa fa-times-circle" aria-hidden="true"></i>
+											</span>
+										</span>
+									</div>
+									<div class="modal-body">
+										This is modal become full-screen on desktop screen width and become auto width on mobile screen. Reduce the screen size to see the effect.
+										<div style="height: 999px"></div>
+									</div>
+									<div class="modal-footer">
+										<span class="button small primary">Save</span>
+										<span class="button small" (click)="modal8 = false">Close</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal structured fullscreen-desktop">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-header">
+									This is Header
+									&lt;span class="modal-close">
+										&lt;span class="button circle ripple">
+											&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+										&lt;/span>
+									&lt;/span>
+								&lt;/div>
+								&lt;div class="modal-body">
+									This is modal become full-screen on desktop screen width and become auto width on mobile screen. Reduce the screen size to see the effect.
+									&lt;div style="height: 999px">&lt;/div>
+								&lt;/div>
+								&lt;div class="modal-footer">
+									&lt;span class="button small primary">Save&lt;/span>
+									&lt;span class="button small">Close&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label black mini margin-x-4">fullscreen-desktop</span> Modifier makes the modal as always full-screen in desktop screens.
+						</div>
+
+					</div>
+
+
+					<!-- light bg -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[8].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[8].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal9 = true">Test Modal</span>
+						 	<div class="modal alert light-bg" [class.active]="modal9">
+								<div class="modal-bg" (click)="modal9 = false"></div>
+								<div class="modal-content">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">Modal is with light dimness in the Bg.</div>
+									<div class="modal-alert-action">
+										<span class="button small border-0 ripple outline standard">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert light-bg">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">Modal is with light dimness in the Bg.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label black mini margin-x-4">light-bg</span> Modifier gives light white background to the modal.
+						</div>
+
+					</div>
+
+
+					<!-- animated modal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[9].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[9].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal11 = true">Test Animated Modal</span>
+						 	<div class="modal alert animated" [class.active]="modal11">
+								<div class="modal-bg" (click)="modal11 = false"></div>
+								<div class="modal-content whiteframe-10">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">This modal content is opened with zoom-in animation.</div>
+									<div class="modal-alert-action">
+										<span class="button small border-0 ripple outline standard">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert animated">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content whiteframe-10">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">This modal content is opened with zoom-in animation.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+						<div class="message icon modern info doc-block-info square">
+								<span class="label black mini margin-x-4">animated</span> Modifier opens the modal with ZOOM-IN animation.
+						</div>
+
+					</div>
+
+
+
+					<!-- Square modal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[10].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[10].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal12 = true">Test Square shaped Modal</span>
+						 	<div class="modal alert animated square" [class.active]="modal12">
+								<div class="modal-bg" (click)="modal12 = false"></div>
+								<div class="modal-content whiteframe-10">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">This modal content is opened with zoom-in animation.</div>
+									<div class="modal-alert-action">
+										<span class="button small border-0 ripple outline standard">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert animated square">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content whiteframe-10">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">This modal content is opened with zoom-in animation.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+					<!-- Flash modal -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[11].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[11].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal13 = true">Test Flash Modal</span>
+						 	<div class="modal alert flash" [class.active]="modal13">
+								<div class="modal-bg" (click)="modal13 = false"></div>
+								<div class="modal-content">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">This is Flash Modal.</div>
+									<div class="modal-alert-action">
+										<span class="button small ripple outline standard green">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert flash">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content whiteframe-10">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">This is Flash modal.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard green">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
+					<!-- Flash modal light BG -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[12].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[12].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="modal14 = true">Test Flash Modal with Light Bg</span>
+						 	<div class="modal alert flash light-bg" [class.active]="modal14">
+								<div class="modal-bg" (click)="modal14 = false"></div>
+								<div class="modal-content">
+									<div class="modal-alert-title">Alert Title</div>
+									<div class="modal-alert-desc">This is Flash Modal.</div>
+									<div class="modal-alert-action">
+										<span class="button small border-0 ripple outline standard white">Got It!</span>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						<pre><code class="language-html">
+						&lt;div class="modal alert flash light-bg">
+							&lt;div class="modal-bg">&lt;/div>
+							&lt;div class="modal-content whiteframe-10">
+								&lt;div class="modal-alert-title">Alert Title&lt;/div>
+								&lt;div class="modal-alert-desc">This is Flash modal.&lt;/div>
+								&lt;div class="modal-alert-action">
+									&lt;span class="button small border-0 ripple outline standard white">Got It!&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+						</code></pre>
+
+					</div>
+
+
+
 
 
 
