@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../toc/toc.component';
-
-declare const Prism: any;
-
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
@@ -15,15 +12,6 @@ public tab:any = "example";
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

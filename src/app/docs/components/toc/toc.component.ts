@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
 import { environment }  from './../../../../environments/environment';
-
-declare const Prism: any;
 @Component({
   selector: 'app-toc',
   templateUrl: './toc.component.html',
@@ -17,16 +15,6 @@ export class TocDocComponent implements OnInit {
   ngOnInit() {
     this.addListToToc();
   }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
-  }
-
 
   addListToToc() {
     //console.log(this.toc_list)

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../toc/toc.component';
-
-declare const Prism: any;
 @Component({
   selector: 'app-whiteframe',
   templateUrl: './whiteframe.component.html',
@@ -15,15 +13,6 @@ export class WhiteframeComponent implements OnInit {
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

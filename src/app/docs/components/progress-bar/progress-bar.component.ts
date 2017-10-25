@@ -16,15 +16,6 @@ export class ProgressBarComponent implements OnInit {
   ngOnInit() {
     this.addListToToc();
   }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
-  }
 
 
   addListToToc() {

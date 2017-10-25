@@ -3,3 +3,39 @@ $primary: #0483a9
 .nav-avtar-grd
 	background-color: $primary
 	background: linear-gradient(-90deg, darken($primary, 20%), transparentize($primary, 0.2));
+
+.banner
+	display: flex
+	width: 100%
+	height: 100%
+	align-items: center
+	justify-content: center
+	background-color: $primary
+	flex-direction: column
+	background: linear-gradient(5deg, darken($primary, 27%) 20%, darken($primary, 31%) 31%, $primary 75%)
+	padding: 0!important
+	& .title
+		font-size: 55px
+		letter-spacing: -4px
+		color: #fff
+		font-weight: bold
+		margin-bottom: 9px
+		opacity: 0.9
+	& .sub-title
+		font-size: 31px
+		color: #fff
+		margin-bottom: 43px
+		opacity: 0.8
+		animation-name: sub_title_banner
+		animation-duration: 0.6s
+		text-align: center
+	& .actions
+		color: #fff
+
+// animation
+
+@keyframes sub_title_banner
+	from
+		transform: scaleX(0)
+  to
+  	transform: scaleX(1)

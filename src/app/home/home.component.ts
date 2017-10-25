@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	document.getElementById("side-nav").classList.remove("active");
   }
 
 }

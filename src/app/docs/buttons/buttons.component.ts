@@ -1,29 +1,17 @@
 import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { TOC } from './../../toc/toc.component';
-
-declare const Prism: any;
-
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.css']
 })
-export class ButtonsComponent implements OnInit, AfterViewInit {
+export class ButtonsComponent implements OnInit {
   public tab:any = "example";
   public toc_list: Array<TOC> = [];
   constructor() { }
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

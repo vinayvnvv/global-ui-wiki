@@ -11,19 +11,11 @@ export class ModalComponent implements OnInit {
 
   public tab:any = "example";
   public toc_list: Array<TOC> = [];
+  public modal1; modal2; modal3; modal4; modal5; modal6; modal7; modal8; modal9; modal10; modal11; modal12; modal13; modal14;
   constructor() { }
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

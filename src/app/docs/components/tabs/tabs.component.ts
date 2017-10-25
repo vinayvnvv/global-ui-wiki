@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
 import { environment }  from './../../../../environments/environment';
-
-declare const Prism: any;
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.component.html',
@@ -12,19 +10,11 @@ export class TabsComponent implements OnInit {
 
   public tab:any = "example";
   public toc_list: Array<TOC> = [];
+  public tab_active; tab_active_s; tab_active_sa; tab_active_sb; tab_active_ss; tab_active_ssa; tab_active_ssb; tab_active_v; tab_active_vv; tab_active_vvv; tab_active_vb; tab_activeaa;
   constructor() { }
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

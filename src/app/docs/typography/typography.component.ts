@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../toc/toc.component';
-
-declare const Prism: any;
-
 @Component({
   selector: 'app-typography',
   templateUrl: './typography.component.html',
@@ -15,15 +12,6 @@ export class TypographyComponent implements OnInit {
 
   ngOnInit() {
     this.addListToToc();
-  }
-  ngAfterViewInit() {
-  	this.highlightSyntax();
-  }
-
-
-  highlightSyntax() {
-  	 if(window["Prism"])
-  		Prism.highlightAll();
   }
 
 

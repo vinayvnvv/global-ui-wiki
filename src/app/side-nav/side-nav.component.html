@@ -1,5 +1,5 @@
-<div class="close">
-				<i class="fa fa-times-circle" aria-hidden="true" remove-class='{"for":"nav_1","class":"active"}'></i>
+<div class="close" (click)="navBar.close()">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
 </div>
 <div class="nav-list">
 	<div class="nav-avtar">
@@ -10,6 +10,14 @@
 			<div class="avtar-details">Customized UI Components</div>
 		</div>
 	</div>
+	<div class="nav-list-header">Layout</div>
+	
+	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of layoutList">
+		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
+		<span class="text" >{{item.name}}</span>
+	</div>
+
+	<div class="divider"></div>
 	<div class="nav-list-header">Elements</div>
 	
 	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of navElementsList">
@@ -23,9 +31,4 @@
 		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
 		<span class="text" >{{item.name}}</span>
 	</div>
-	<div class="nav-list-item">Modal</div>
-	<div class="nav-list-item disabled">Progress</div>
-	<div class="nav-list-item">Label</div>
-	<div class="nav-list-item">Message</div>
-	<div class="nav-list-item">Nav</div>
 </div>

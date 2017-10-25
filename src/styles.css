@@ -22,6 +22,11 @@ pre code {
 	overflow-x: auto;
 	white-space: pre-wrap!important;
 }
+.GUI_Syntax {
+    padding: 11px;
+    background: rgba(224, 224, 224, 0.2);
+    border-radius: 3px;
+}
 
 .html-embed {
 	margin: 23px 0 23px 0;
@@ -41,6 +46,12 @@ pre code {
 	margin: 15px 11px 69px 21px;
 	overflow-x: hidden;
 	position: relative;
+}
+@media screen and (max-width: 999px) {
+	.docs .doc-block {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 .docs .doc-block .d-sub-header {
 	margin: 49px 0px 9px 0px;

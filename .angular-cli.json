@@ -19,17 +19,22 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../src/assets/main.css"
       ],
       "scripts": [
-        "assets/toggle-class.js"
+        "assets/toggle-class.js",
+        "assets/syntax/syntax.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
-    }
+      },
+      "serviceWorker": true
+
+    },
+    { "serviceWorker": true }
   ],
   "e2e": {
     "protractor": {

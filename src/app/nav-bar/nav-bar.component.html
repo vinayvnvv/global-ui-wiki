@@ -2,7 +2,7 @@
 		
 
 		<div class="nav-brand">
-			<span class="toggle-side-menu" toggle-class='{"for":"nav_1","class":"active"}'>
+			<span class="toggle-side-menu" (click)="sideNav.toggle()">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -16,9 +16,9 @@
 
 
 		<div class="nav-left">
-			<a class="nav-item hovered" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+			<a class="nav-item hovered" [routerLink]="['/home']" >Home</a>
 			<a class="nav-item hovered ripple" [routerLink]="['/docs']" routerLinkActive="active">Docs</a>
-			<a class="nav-item hovered nav-dropdown no-hovered-active" toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
+			<a class="nav-item hovered nav-dropdown " toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
 				<span>Products</span><span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				<div class="menu wide-large" toggle-class-id="drop_down_menu_1">
 					<div class="item detailed">

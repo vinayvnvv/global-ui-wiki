@@ -3,6 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DocsComponent } from './docs/docs.component';
 
+// layout
+import { GridsComponent } from './docs/layout/grids/grids.component';
+import { SectionComponent } from './docs/layout/section/section.component';
+
+let layout = [ GridsComponent, SectionComponent ];
+
+
 //elements docs
 import { StartComponent } from './docs/start/start.component';
 import { ButtonsComponent } from './docs/buttons/buttons.component';
@@ -40,6 +47,8 @@ const appRoutes: Routes = [
   	children: [
       { path: '', redirectTo: 'start', pathMatch: 'full' },
       { path: 'start', component: StartComponent },
+      { path: 'grids', component: GridsComponent },
+      { path: 'section', component: SectionComponent },
       { path: 'typography', component: TypographyComponent },
       { path: 'buttons', component: ButtonsComponent },
       { path: 'input', component: InputComponent },
@@ -72,6 +81,7 @@ const appRoutes: Routes = [
 export class AppRoutingModule { }
 
 export const routerComponents = [ HomeComponent, DocsComponent,
+                                  layout,
                                   elements,
                                   components
                                 ];

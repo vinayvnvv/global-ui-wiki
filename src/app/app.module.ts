@@ -33,6 +33,12 @@ import { JsToggleInfoComponent } from './common/js-toggle-info/js-toggle-info.co
 import { ModalComponent } from './docs/components/modal/modal.component';
 import { ToastComponent } from './docs/components/toast/toast.component';
 
+
+//directives
+import { SyntaxHighlet } from './directives/syntax.directive';
+import { GridsComponent } from './docs/layout/grids/grids.component';
+import { SectionComponent } from './docs/layout/section/section.component'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +63,10 @@ import { ToastComponent } from './docs/components/toast/toast.component';
     TocDocComponent,
     JsToggleInfoComponent,
     ModalComponent,
-    ToastComponent
+    ToastComponent,
+    SyntaxHighlet,
+    GridsComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

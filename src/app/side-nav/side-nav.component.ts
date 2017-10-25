@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from './../../environments/environment';
+import { SideNavService } from './../services/sidenav.service';
+
 
 
 class NavList {
@@ -16,22 +18,31 @@ class NavList {
 @Component({
   selector: '[app-side-nav]',
   templateUrl: './side-nav.component.html',
-  styleUrls: ['./side-nav.component.sass']
+  styleUrls: ['./side-nav.component.sass'],
+  providers: [SideNavService]
 })
 export class SideNavComponent implements OnInit {
 
   public app_name: any = environment.app_name;
+  public layoutList: Array<NavList> = [];
   public navElementsList: Array<NavList> = [];
   public navComponetsList: Array<NavList> = [];
 
   constructor(
+      public navBar: SideNavService
   	) { 
   		
   }
 
   ngOnInit() {
+    this.initLayoutList();
   	this.initElementList();
     this.initComponentsList();
+  }
+
+  initLayoutList() {
+    this.layoutList.push(new NavList("Grids", ['/docs/grids'], "fa fa-th"));
+    this.layoutList.push(new NavList("Section", ['/docs/section'], "fa fa-square-o"));
   }
 
   initElementList() {

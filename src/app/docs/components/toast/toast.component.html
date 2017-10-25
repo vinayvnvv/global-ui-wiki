@@ -1,3 +1,510 @@
-<p>
-  toast works!
-</p>
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Toast</div>
+			<div class="sub-header size-3 light">Displays the notification messages.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="rows">
+		  <!-- main -->
+		  	<div class="row">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex1')">Open Toast</span>
+						 	<div class="toast" [class.active]="toast.ex1">Hello, this is default toast message</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast active">Hello, this is default toast message&lt;/div>
+						</div>
+
+						<div class="message icon modern info doc-block-info square">
+								By Default Toast message position will be at bottom-right.
+						</div>
+
+						<div class="message icon modern blue doc-block-info square">
+								In Mobile Screen, All Toast messages will be at bottom position as fully blocked element.
+						</div>
+
+
+						<div class="message icon modern info doc-block-info square">
+								To open the toast, just add the <span class="label black mini margin-x-4">active</span> modifier on the toast element.
+						</div>
+
+						<app-js-toggle-info></app-js-toggle-info>
+
+						
+
+					</div>
+
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex2')">Open primary-colored Toast</span>
+							<span class="button" (click)="openToast('ex3')">Open red-colored Toast</span>
+							<span class="button" (click)="openToast('ex4')">Open pink-colored Toast</span>
+							<span class="button" (click)="openToast('ex5')">Open black-colored Toast</span>
+						 	<div class="toast primary" [class.active]="toast.ex2">Hello, this is  toast message</div>
+						 	<div class="toast red" [class.active]="toast.ex3">Hello, this is toast message</div>
+						 	<div class="toast pink" [class.active]="toast.ex4">Hello, this is toast message</div>
+						 	<div class="toast black" [class.active]="toast.ex5">Hello, this is toast message</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast primary active" [class.active]="toast.ex2">Hello, this is toast message&lt;/div>
+					 	&lt;div class="toast red active" [class.active]="toast.ex3">Hello, this is toast message&lt;/div>
+					 	&lt;div class="toast pink active" [class.active]="toast.ex4">Hello, this is toast message&lt;/div>
+					 	&lt;div class="toast black active" [class.active]="toast.ex5">Hello, this is toast message&lt;/div>
+						</div>
+
+
+						
+
+					</div>
+
+
+					<!-- close-btn -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex6')">Open Closed Btn Toast</span>
+						 	<div class="toast primary" [class.active]="toast.ex6">Hello, this is toast message.
+								<span class="toast-close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast primary active" [class.active]="toast.ex6">Hello, this is toast message (top-right)
+							&lt;span class="toast-close">&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>&lt;/span>
+						&lt;/div>
+						</div>
+
+
+						
+
+					</div>
+
+
+
+					<!-- actios -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex7')">Open Actioned Toast</span>
+						 	<div class="toast black" [class.active]="toast.ex7">
+						 		<div class="text">Hello, This is actioned toast message.</div>
+								<div class="actions"><span class="button ripple square red mini border-0 outline standard">More</span></div>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast black active">
+					 		&lt;div class="text">Hello, This is actioned toast message.&lt;/div>
+							&lt;div class="actions">&lt;span class="button ripple square red mini border-0 outline standard">More&lt;/span>&lt;/div>
+						&lt;/div>
+						</div>
+
+						
+
+					</div>
+
+					<!-- wrapped -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex8')">Open Wrapped Toast</span>
+						 	<div class="toast pink" [class.active]="toast.ex8">
+								<div class="text nowrap">Hello, this is toast message (bottom-left) and no-wrap to next line on width exceeds</div>
+								<div class="actions">
+									<span class="button ripple square white mini border-0 outline standard">More</span>
+								</div>
+								<span class="toast-close">
+									<i class="fa fa-times-circle" aria-hidden="true"></i>
+								</span>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast pink active">
+							&lt;div class="text nowrap">Hello, this is toast message (bottom-left) and no-wrap to next line on width exceeds&lt;/div>
+							&lt;div class="actions">
+								&lt;span class="button ripple square white mini border-0 outline standard">More&lt;/span>
+							&lt;/div>
+							&lt;span class="toast-close">
+								&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+							&lt;/span>
+						&lt;/div>
+						</div>
+
+						<div class="message icon modern blue doc-block-info square">
+								wrapped class push the text to next line on width exceeds.
+						</div>
+
+						
+
+					</div>
+
+
+
+					<!-- loading - state -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="rows grow-mobile">
+								<div class="row">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="row auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex9')">Open Loading Toast</span>
+						 	<div class="toast deep-orange loading" [class.active]="toast.ex9">
+								<div class="text nowrap">Hello, this is toast message (bottom-left) and no-wrap to next line on width exceeds</div>
+								<div class="actions">
+									<span class="button ripple square white mini border-0 outline standard">More</span>
+								</div>
+								<span class="toast-close">
+									<i class="fa fa-times-circle" aria-hidden="true"></i>
+								</span>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast deep-orange loading active">
+							&lt;div class="text nowrap">Hello, this is toast message (bottom-left) and no-wrap to next line on width exceeds&lt;/div>
+							&lt;div class="actions">
+								&lt;span class="button ripple square white mini border-0 outline standard">More&lt;/span>
+							&lt;/div>
+							&lt;span class="toast-close">
+								&lt;i class="fa fa-times-circle" aria-hidden="true">&lt;/i>
+							&lt;/span>
+						&lt;/div>
+						</div>
+
+
+						
+
+					</div>
+
+
+					<!-- Shapes -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[6].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[6].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Square -->
+							<div class="d-sub-header" id="{{toc_list[6].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex10')">Open Squared Shaped Toast</span>
+							<div class="toast square" [class.active]="toast.ex10">Hello, This is default toast message</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast square active">Hello, This is default toast message&lt;/div>
+						</div>
+						<!-- Round -->
+						<div class="d-sub-header" id="{{toc_list[6].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[6].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex11')">Open Rounded Shaped Toast</span>
+							<div class="toast circle" [class.active]="toast.ex11">Hello, This is default toast message</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="toast circle active">Hello, This is default toast message&lt;/div>
+						</div>
+
+					</div>
+
+
+
+					<!-- Position -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[7].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h3 light">{{toc_list[7].name}}</span>
+									</div>
+									<div class="row auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- top-left -->
+							<div class="d-sub-header" id="{{toc_list[7].child[0].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex12')">Open Toast at Top-Left Position</span>
+							<div class="toast black top-left" [class.active]="toast.ex12">Hello, This is toast message</div>
+							</div>
+
+							<div class="GUI_Syntax" syntaxHighlet>
+							&lt;div class="toast black top-left active">Hello, This is toast message&lt;/div>
+							</div>
+
+							<!-- top-right -->
+							<div class="d-sub-header" id="{{toc_list[7].child[1].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex13')">Open Toast at Top-Right Position</span>
+							<div class="toast black top-right" [class.active]="toast.ex13">Hello, This is toast message</div>
+							</div>
+
+							<div class="GUI_Syntax" syntaxHighlet>
+							&lt;div class="toast black top-right active">Hello, This is toast message&lt;/div>
+							</div>
+
+
+							<!-- bottom-left -->
+							<div class="d-sub-header" id="{{toc_list[7].child[2].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex14')">Open Toast at Bottom-left Position</span>
+							<div class="toast black bottom-left" [class.active]="toast.ex14">Hello, This is toast message</div>
+							</div>
+
+							<div class="GUI_Syntax" syntaxHighlet>
+							&lt;div class="toast black bottom-left active">Hello, This is toast message&lt;/div>
+							</div>
+
+							<!-- bottom-right -->
+							<div class="d-sub-header" id="{{toc_list[7].child[3].id}}">
+								<div class="rows grow-mobile">
+									<div class="row">
+										<span class="header h4 light">{{toc_list[7].child[3].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<span class="button" (click)="openToast('ex15')">Open Toast at Bottom-right Position</span>
+							<div class="toast black bottom-right" [class.active]="toast.ex15">Hello, This is toast message</div>
+							</div>
+
+							<div class="GUI_Syntax" syntaxHighlet>
+							&lt;div class="toast black bottom-right active">Hello, This is toast message&lt;/div>
+							</div>
+
+					</div>
+
+
+
+			
+
+
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="row grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/toast'"></section>
+			</div>
+
+			</div>
+</div>
+
+

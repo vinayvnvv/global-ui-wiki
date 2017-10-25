@@ -14,6 +14,7 @@ export class DocsComponent implements OnInit {
 
   ngOnInit() {
   	this.scrollOnRouteChanges(); 
+    document.getElementById("side-nav").classList.add("active");
   }
 
 

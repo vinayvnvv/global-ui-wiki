@@ -7,16 +7,73 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- theme -->
-  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css"> 
   <!-- icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- syntax hightliter font -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>
+      <div class="loader-init">
+          <div class="ball-scale"><div></div></div> <span class="load-text">GLOBAL UI</span>
+      </div>
+      <!-- loaders init style  -->
+<style type="text/css">
+body{ 
+  margin:0 auto;
+ }
+.loader-init {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #205363;
+  color: #fff;
+  position: fixed;
+  flex-direction: column;
+}
+.loader-init>.load-text {
+  margin-top: 11px;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 2.9px;
+}
+@-webkit-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+.ball-scale > div {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+          animation: ball-scale 1s 0s ease-in-out infinite; }
+</style>
+  </app-root>
 </body>
 
-<!-- prismJs -->
-<link href="assets/syntax/prism.css" rel="stylesheet" />
-<script src="assets/syntax/prism.js"></script>
+
+
 </html>
