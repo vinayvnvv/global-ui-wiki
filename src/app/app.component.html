@@ -1,7 +1,7 @@
 <div class="layout-container">
-	<div class="navbar style-4 whiteframe-3 primary containera" app-nav-bar></div>
+	<div class="navbar style-4 whiteframe-3 primary containera" app-nav-bar id="nav-bar"></div>
 	<div class="nav-container active containera" id="side-nav">
-		<div class="back-drop" (click)="navBar.close()"></div>
+		<div class="back-drop" (click)="sideNav.close()"></div>
 		<div class="side-nav" app-side-nav></div>
 		<div class="nav-content" id="nav-content">
 			<router-outlet></router-outlet>

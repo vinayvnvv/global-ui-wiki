@@ -7,8 +7,8 @@
 				<span></span>
 				<span></span>
 			</span>
-			<a class="nav-item logo"><i>{{app_name}}</i></a>
-			<span class="mobile-toggle-menu" toggle-class-id="menu" toggle-class='{"for":"menu","class":"active"}'>
+			<a class="nav-item logo app-logo">{{app_name}}</a>
+			<span class="mobile-toggle-menu" (click)="navBar.toggle()" [class.active]="navBar.isActive">
 				<span></span>
 				<span></span>
 			</span>	

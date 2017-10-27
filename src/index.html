@@ -15,7 +15,9 @@
 <body>
   <app-root>
       <div class="loader-init">
-          <div class="ball-scale"><div></div></div> <span class="load-text">GLOBAL UI</span>
+          <div class="ball-scale"><div></div></div> 
+          <div class="load-text">GlobalUI</div>
+          <div class="load-sub-text">Loading..</div>
       </div>
       <!-- loaders init style  -->
 <style type="text/css">
@@ -35,9 +37,14 @@ body{
 }
 .loader-init>.load-text {
   margin-top: 11px;
-  font-size: 27px;
-  font-weight: bold;
-  letter-spacing: 2.9px;
+  font-size: 47px;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+.loader-init>.load-sub-text {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 400;
 }
 @-webkit-keyframes ball-scale {
   0% {

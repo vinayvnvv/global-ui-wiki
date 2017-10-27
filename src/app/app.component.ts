@@ -10,7 +10,7 @@ import { SideNavService } from './services/sidenav.service';
 export class AppComponent {
   title = 'app works!';
   constructor(
-  		public navBar: SideNavService
+  		public sideNav: SideNavService
   	) {
 
   }
