@@ -42,7 +42,6 @@ import { ToastComponent } from './docs/components/toast/toast.component';
 let components = [ BreadcrumbComponent, MessageComponent, PanelComponent, PaginationComponent ];
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
   { path: 'docs', component: DocsComponent,
   	children: [
       { path: '', redirectTo: 'start', pathMatch: 'full' },
@@ -70,8 +69,8 @@ const appRoutes: Routes = [
       { path: 'toast', component: ToastComponent }
     ]
   },
-  { path: '*', redirectTo: "/home" },
-  { path: '**', redirectTo: "/home" },
+  { path: '*', component: HomeComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
