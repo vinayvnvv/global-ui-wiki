@@ -19,7 +19,6 @@ export class BreadcrumbComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
      toc_sub_list.push(new TOC("Normal", "toc_normal", null));
     toc_sub_list.push(new TOC("Outline", "toc_outline", null));

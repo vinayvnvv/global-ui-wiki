@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
 
-declare const Prism: any;
 @Component({
   selector: 'app-panel',
   templateUrl: './panel.component.html',
@@ -19,7 +18,6 @@ export class PanelComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     this.toc_list.push(new TOC("Basic", "toc_basic", null));
 

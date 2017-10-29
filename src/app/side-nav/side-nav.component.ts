@@ -23,7 +23,7 @@ class NavList {
 })
 export class SideNavComponent implements OnInit {
 
-  public app_name: any = environment.app_name;
+  public app_structured_name: any = environment.app_structured_name;
   public layoutList: Array<NavList> = [];
   public navElementsList: Array<NavList> = [];
   public navComponetsList: Array<NavList> = [];

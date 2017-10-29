@@ -3,11 +3,11 @@
 (function() {
 
 	function initToggleClass() {
-	    console.log("init toggle class")
+	    //console.log("init toggle class")
 		var tClass = document.querySelectorAll('[toggle-class]');
-		console.log(tClass)
+		//console.log(tClass)
 		for(var i=0;i<tClass.length;i++) {
-			console.log(tClass)
+			//console.log(tClass)
 			obj = JSON.parse(tClass[0].attributes.getNamedItem('toggle-class').value);
 			obj.status = false;
 			tClass[0].setAttribute('toggle-class', JSON.stringify(obj));
@@ -39,9 +39,9 @@
 
 
 	function initAddClass() {
-	    console.log("init add class")
+	    //console.log("init add class")
 		var tClass = document.querySelectorAll('[add-class]');
-		console.log(tClass)
+		//console.log(tClass)
 		for(var i=0;i<tClass.length;i++) {
 			tClass[i].onclick = aClassPerform;
 		}
@@ -65,9 +65,9 @@
 
 
 	function initRemoveClass() {
-	    console.log("init remove class")
+	    //console.log("init remove class")
 		var tClass = document.querySelectorAll('[remove-class]');
-		console.log(tClass)
+		//console.log(tClass)
 		for(var i=0;i<tClass.length;i++) {
 			tClass[i].onclick = rClassPerform;
 		}

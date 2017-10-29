@@ -19,7 +19,6 @@ export class PaginationComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("Default", "toc_default", null));
     toc_sub_list.push(new TOC("Closed Items", "toc_closed", null));

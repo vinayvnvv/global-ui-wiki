@@ -16,7 +16,6 @@ export class TableComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("Simple", "toc_d_simple", null));
     toc_sub_list.push(new TOC("With Header", "toc_with_header", null));

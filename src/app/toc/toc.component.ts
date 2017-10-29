@@ -77,13 +77,17 @@ export class TocComponent implements OnInit, AfterViewInit {
         if (sections2[i] <= scrollPosition) {
           //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
           var last_active = document.querySelector('[toc-active="true"]');
-          last_active.setAttribute('class', 'item');
-          last_active.setAttribute('toc-active', 'false');
+          if(last_active) {
+            last_active.setAttribute('class', 'item');
+            last_active.setAttribute('toc-active', 'false');
+          }
 
           //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
           var current_active = document.querySelector('a[href*=' + i + ']');
-          current_active.setAttribute('class', 'item active');
-          current_active.setAttribute('toc-active', 'true');
+          if(current_active) {
+            current_active.setAttribute('class', 'item active');
+            current_active.setAttribute('toc-active', 'true');
+          }
         }
       }
 
@@ -91,13 +95,17 @@ export class TocComponent implements OnInit, AfterViewInit {
         if (sections1[i] <= scrollPosition) {
           //document.querySelector('.item.toc-item.active').setAttribute('class', 'item toc-item');
           var last_active = document.querySelector('[toc-sub-active="true"]');
-          last_active.setAttribute('class', 'item');
-          last_active.setAttribute('toc-sub-active', 'false');
+          if(last_active) {
+            last_active.setAttribute('class', 'item');
+            last_active.setAttribute('toc-sub-active', 'false');
+          }
 
           //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'item toc-item active');
           var current_active = document.querySelector('a[href*=' + i + ']');
-          current_active.setAttribute('class', 'item active');
-          current_active.setAttribute('toc-sub-active', 'true');
+          if(current_active) {
+            current_active.setAttribute('class', 'item active');
+            current_active.setAttribute('toc-sub-active', 'true');
+          }
         }
       }
     };

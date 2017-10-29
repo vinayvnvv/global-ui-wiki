@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
 
-declare const Prism: any;
 @Component({
   selector: 'app-progress-bar',
   templateUrl: './progress-bar.component.html',
@@ -19,7 +18,6 @@ export class ProgressBarComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("Default", "toc_default", null));
     toc_sub_list.push(new TOC("Shaded", "toc_shaded", null));

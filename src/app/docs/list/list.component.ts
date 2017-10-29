@@ -16,7 +16,6 @@ export class ListComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("With ul & li", "toc_ul_li", null));
     toc_sub_list.push(new TOC("Without u l& li", "toc_not_ul_li", null));

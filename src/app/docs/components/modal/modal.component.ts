@@ -20,7 +20,6 @@ export class ModalComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     this.toc_list.push(new TOC("Basic", "toc_basic", null));
 

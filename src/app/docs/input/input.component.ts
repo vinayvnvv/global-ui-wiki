@@ -16,7 +16,6 @@ public tab:any = "example";
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("Simple", "toc_simple", null));
     toc_sub_list.push(new TOC("Md Style", "toc_md_style", null));

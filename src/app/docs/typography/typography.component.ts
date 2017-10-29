@@ -16,7 +16,6 @@ export class TypographyComponent implements OnInit {
 
 
   addListToToc() {
-    console.log(this.toc_list)
     let toc_sub_list: Array<TOC> = [];
     toc_sub_list.push(new TOC("Basic", "toc_basic", null));
     toc_sub_list.push(new TOC("Headers with classes", "toc_headers_with_classes", null));
