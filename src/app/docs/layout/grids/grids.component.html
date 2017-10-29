@@ -40,7 +40,425 @@
 				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
 
 					
-					
+					<!-- basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">Basic</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<div class="columns">
+							<section class="column red">column</section>
+							<section class="column green">column</section>
+							<section class="column blue">column</section>
+							<section class="column black">column</section>
+						</div>
+						</div>
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red">column&lt;/section>
+							&lt;section class="column green">column&lt;/section>
+							&lt;section class="column blue">column&lt;/section>
+							&lt;section class="column black">column&lt;/section>
+						&lt;/div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Columns</div>
+								<div class="content">
+									<div class="margin-5">
+										- <b>Columns</b> divide horizontal space into indivisible units called "column". All column in a Columns must specify their width as proportion of the total available row width.
+									</div>
+									<div class="margin-5">
+										- Each <b>column</b> will have an equal width, no matter the number of columns if the width is not specified.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="message modern doc-block-info square">
+							<div class="details">
+								<div class="header">How it's Responsive?</div>
+								<div class="content">
+									<div class="margin-5">
+										By default, columns are only activated from tablet onwards. This means columns are stacked on top of each other on mobile.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Grow-items -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- basic -->
+							<div class="d-sub-header" id="{{toc_list[1].child[0].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h4 light">{{toc_list[1].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="columns">
+								<section class="column red grow-1">1</section>
+								<section class="column green grow-2">2</section>
+								<section class="column blue grow-3">3</section>
+								<section class="column black grow-6">6</section>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red grow-1">1&lt;/section>
+							&lt;section class="column green grow-2">2&lt;/section>
+							&lt;section class="column blue grow-3">3&lt;/section>
+							&lt;section class="column black grow-6">6&lt;/section>
+						&lt;/div>
+						</div>
+
+						<div class="message modern doc-block-info square">
+							<div class="details">
+								<div class="header">How Many Columns/Row?</div>
+								<div class="content">
+									<div class="margin-5">
+										All grid systems chooses an arbitrary column count to allow per row. <b>GlobalUI</b>'s default theme uses 12 columns.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="message modern deep-orange doc-block-info square">
+							<div class="details">
+								<div class="header">Note it?</div>
+								<div class="content">
+									<div class="margin-5">
+										You can add any number of column to the row, but column width should not increase more than 12 per row, if increases it will not be wrapped to next row by default. You can also wrap the row which you can see below.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- auto=-grow -->
+						<div class="d-sub-header" id="{{toc_list[1].child[1].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h4 light">{{toc_list[1].child[1].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="columns">
+								<section class="column red grow-3">3</section>
+								<section class="column green">auto</section>
+								<section class="column blue">auto</section>
+								<section class="column black">auto</section>
+								<section class="column green">auto</section>
+								<section class="column blue">auto</section>
+								<section class="column black">auto</section>
+								<section class="column green">auto</section>
+								<section class="column blue">auto</section>
+								<section class="column black">auto</section>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red grow-3">3&lt;/section>
+							&lt;section class="column green">auto&lt;/section>
+							&lt;section class="column blue">auto&lt;/section>
+							&lt;section class="column black">auto&lt;/section>
+							&lt;section class="column green">auto&lt;/section>
+							&lt;section class="column blue">auto&lt;/section>
+							&lt;section class="column black">auto&lt;/section>
+							&lt;section class="column green">auto&lt;/section>
+							&lt;section class="column blue">auto&lt;/section>
+							&lt;section class="column black">auto&lt;/section>
+						&lt;/div>
+						</div>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Auto Grow</div>
+								<div class="content">
+									<div class="margin-5">
+										If you are not specified <b>grow-width</b> to the column, it will grow automatically by dividing with equal width.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- mobile-grow -->
+						<div class="d-sub-header" id="{{toc_list[1].child[2].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h4 light">{{toc_list[1].child[2].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<div class="columns grow-mobile">
+								<section class="column red">auto</section>
+								<section class="column green">auto</section>
+								<section class="column blue">auto</section>
+								<section class="column black grow-6">6</section>
+							</div>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns grow-mobile">
+							&lt;section class="column red">auto&lt;/section>
+							&lt;section class="column green">auto&lt;/section>
+							&lt;section class="column blue">auto&lt;/section>
+							&lt;section class="column black grow-6">6&lt;/section>
+						&lt;/div>
+						</div>
+
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Mobile columns</div>
+								<div class="content">
+									<div class="margin-5">
+										- By default, columns are only activated from tablet onwards. This means columns are stacked on top of each other on mobile. <br/>
+										- If you want columns to work on mobile too, just add the <b>grow-mobile</b>  modifier on the columns container	
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+					<!-- Responsiveness -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[2].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[2].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<div class="columns">
+							<section class="column red grow-tablet-3 grow-desktop-8 grow-widescreen-4 grow-fullhd-2">Column</section>
+							<section class="column green">Column</section>
+						</div>
+						</div>
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red grow-tablet-3 grow-desktop-8 grow-widescreen-4 grow-fullhd-2">Column&lt;/section>
+							&lt;section class="column green">Column&lt;/section>
+						&lt;/div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Responsiveness</div>
+								<div class="content">
+									<div class="margin-5">
+										- <b>Column</b> inside the columns can be grow with a variable size according to the screen widths by a syntax : 
+										<div class="message modern  doc-block-info square">
+										  <div>
+											<b>grow</b>-<i>screen_type-size</i><br/><br/>
+											- <i>screen_type</i> can be <b>tablet, desktop, widescreen, fullhd</b>.<br/>
+											- <i>size</i> can variable from <b>1-12</b>.
+										  </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="message modern doc-block-info square">
+							<div class="details">
+								<div class="content">
+									<div class="margin-5">
+										In Above example, 1st column width is auto in mobile, 3/12 in tablet, 8/12 in desktop, 4/12 in widescreen, 2/12 in fullhd.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- wrapping -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[3].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[3].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<div class="columns layout-wrap">
+							<section class="column red grow-3">column</section>
+							<section class="column green grow-3">column</section>
+							<section class="column blue grow-3">column</section>
+							<section class="column orange grow-3">column</section>
+							<section class="column black grow-6">column</section>
+							<section class="column green grow-6">column</section>
+							<section class="column blue grow-2">column</section>
+							<section class="column black grow-2">column</section>
+							<section class="column green grow-2">column</section>
+							<section class="column blue grow-2">column</section>
+							<section class="column black grow-4">column</section>
+						</div>
+						</div>
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns layout-wrap">
+							&lt;section class="column red grow-3">column&lt;/section>
+							&lt;section class="column green grow-3">column&lt;/section>
+							&lt;section class="column blue grow-3">column&lt;/section>
+							&lt;section class="column orange grow-3">column&lt;/section>
+							&lt;section class="column black grow-6">column&lt;/section>
+							&lt;section class="column green grow-6">column&lt;/section>
+							&lt;section class="column blue grow-2">column&lt;/section>
+							&lt;section class="column black grow-2">column&lt;/section>
+							&lt;section class="column green grow-2">column&lt;/section>
+							&lt;section class="column blue grow-2">column&lt;/section>
+							&lt;section class="column black grow-4">column&lt;/section>
+						&lt;/div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Wrapping</div>
+								<div class="content">
+									<div class="margin-5">
+										<b>layout-wrap</b> modifier to the columns class wrap the column inside it to the next row if width exceeds the 12.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- offset -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[4].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[4].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<div class="columns">
+							<section class="column red">column</section>
+							<section class="column green grow-offset-2">column</section>
+							<section class="column blue grow-offset-1">column</section>
+							<section class="column black grow-offset-1">column</section>
+						</div>
+						</div>
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red">column&lt;/section
+							&lt;section class="column green grow-offset-2">column&lt;/section>
+							&lt;section class="column blue grow-offset-1">column&lt;/section>
+							&lt;section class="column black grow-offset-1">column&lt;/section>
+						&lt;/div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Offset</div>
+								<div class="content">
+									<div class="margin-5">
+										<b>grow-offset-[1-12]</b> modifier to the column allows you to give spaces between the colums in a row.	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- offset -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[5].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[5].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+
+						<div class="html-embed">
+						<div class="columns">
+							<section class="column red">column</section>
+							<section class="column green grow-offset-1 grow-offset-desktop-2">column</section>
+							<section class="column blue grow-offset-1 grow-offset-desktop-2">column</section>
+							<section class="column black grow-offset-1 grow-offset-desktop-2">column</section>
+						</div>
+						</div>
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;div class="columns">
+							&lt;section class="column red">column&lt;/section>
+							&lt;section class="column green grow-offset-1 grow-offset-desktop-2">column&lt;/section>
+							&lt;section class="column blue grow-offset-1 grow-offset-desktop-2">column&lt;/section>
+							&lt;section class="column black grow-offset-1 grow-offset-desktop-2">column&lt;/section>
+						&lt;/div>
+						</div>
+						<div class="message modern info doc-block-info square">
+							<div class="details">
+								<div class="header">Responsive Offset</div>
+								<div class="content">
+									<div class="margin-5">
+										- <b>Offset</b>  can also be grow with a variable size according to the screen widths by a syntax : 
+										<div class="message modern  doc-block-info square">
+										  <div>
+											<b>grow-offset-</b>-<i>screen_type-size</i><br/><br/>
+											- <i>screen_type</i> can be <b>tablet, desktop, widescreen, fullhd</b>.<br/>
+											- <i>size</i> can variable from <b>1-12</b>.
+										  </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 
 
 
