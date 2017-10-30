@@ -69,8 +69,9 @@ const appRoutes: Routes = [
       { path: 'toast', component: ToastComponent }
     ]
   },
+  { path: '', component: HomeComponent },
   { path: '*', component: HomeComponent },
-  { path: '**', component: HomeComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

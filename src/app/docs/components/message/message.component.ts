@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
-
-declare const Prism: any;
 @Component({
   selector: 'app-message',
   templateUrl: './message.component.html',

@@ -1,3 +1,381 @@
-<p>
-  section in progress
-</p>
+<div class="docs pageInUp">
+		<section class="advertisement padding-more white">
+			<div class="header h2 light">Section</div>
+			<div class="sub-header size-3 light">A simple container to divide your page into sections.</div>
+			<div class="margin-y-4">
+				<span class="label mini"><b>^ v1.0</b></span>
+			</div>
+		</section>
+				<div class="divider"></div>
+		<section class="padding-more doc-tab">
+
+
+					<div class="tab style-2 inlined">
+						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
+							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+							<span>Examples</span>
+						</div>
+						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
+							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+							<span>Usage Syntax</span>
+						</div>
+						<div class="item">
+							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+							<span>Supports</span>
+						</div>
+					</div>
+		</section>
+
+		  <div class="columns">
+		  <!-- main -->
+		  	<div class="column">
+
+
+
+
+
+
+
+		  	<!-- example tab -->
+				<section [class.none]="tab != 'example'" class="anim fadeIn pageInUp">
+
+					<!-- Basic -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[0].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[0].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<section>
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+
+							<div class="section">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</div>
+
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;section>
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						
+						&lt;div class="section">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/div>
+						</div>
+
+
+
+						<div class="message modern doc-block-info square">
+									<div class="margin-5">
+										<span class="label mini black"><b>&lt;section></b></span> html element by default inherit <b>section</b> styles.
+										<br/><br/>
+										<span class="label mini black"><b>.section</b></span> modifier also inherit the <b>section</b> styles.
+									</div>
+						</div>
+
+						
+
+					</div>
+
+					<!-- Colors -->
+					<div class="doc-block">
+						<div class="d-header" id="{{toc_list[1].id}}">
+							<div class="columns grow-mobile">
+								<div class="column">
+									<span class="header h3 light">{{toc_list[1].name}}</span>
+								</div>
+								<div class="column auto-grow">
+									<span class="label mini">^v1.0</span>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</div>
+						
+							<div class="html-embed">
+						 	<section class="red">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section><br/>
+							<section class="primary">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section><br/>
+							<section class="teal">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;section class="red">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>&lt;br/>
+						&lt;section class="primary">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>&lt;br/>
+						&lt;section class="teal">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						</div>
+
+
+
+						<div class="message modern doc-block-info square">
+									<div class="margin-5">
+										<span class="label mini black"><b>&lt;section></b></span> html element by default inherit <b>section</b> styles.
+										<br/><br/>
+										<span class="label mini black"><b>.section</b></span> modifier also inherit the <b>section</b> styles.
+									</div>
+						</div>
+
+						
+
+					</div>
+
+
+					<!-- Dimensions -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[2].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[2].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<!-- Padding-more -->
+							<div class="d-sub-header" id="{{toc_list[2].child[0].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h4 light">{{toc_list[2].child[0].name}}</span>
+										<span class="label mini margin-x-5">^v1.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="html-embed">
+							<section class="green padding-more">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;section class="green padding-more">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						</div>
+
+						<div class="message modern doc-block-info square">
+									<div class="margin-5">
+										<span class="label mini black"><b>padding-more</b></span> gives extra-padding to the section. 
+									</div>
+						</div>
+
+					</div>
+
+
+					<!-- Spacing -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[3].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[3].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+
+							<div class="html-embed">
+							<section class="green top-space">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+							<br/>
+							<section class="green left-space">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+							<br/>
+							<section class="green right-space">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>
+							<br/>
+							<section class="green bottom-space">
+								<div class="header h2 light">Section Title</div>
+								<div class="sub-header size-3 light">This is section details</div>
+							</section>				
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;section class="green padding-more top-space">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						&lt;br/>
+						&lt;section class="green padding-more left-space">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						&lt;br/>
+						&lt;section class="green padding-more right-space">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>
+						&lt;br/>
+						&lt;section class="green padding-more bottom-space">
+							&lt;div class="header h2 light">Section Title&lt;/div>
+							&lt;div class="sub-header size-3 light">This is section details&lt;/div>
+						&lt;/section>	
+						</div>
+
+						<div class="message modern doc-block-info square">
+									<div class="margin-5">
+										- By Default section has some padding, But you can also add padding to specific direction by a format : <span class="label grey"><b>(top|bottom|left|right)-space</b></span>. 
+									</div>
+									<div class="margin-5">
+										- If you add space in one direction, space in other direction will removed automatically.
+									</div>
+						</div>
+
+					</div>
+
+
+
+					<!-- Ad -->
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[4].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[4].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+
+							<div class="html-embed">
+							<section class="lime advertisement text-center">
+								<div class="header h1">GlobalUI</div>
+								<div class="sub-header size-2 light">Getting start with booming CSS Framework</div>
+							</section>				
+							</div>
+
+						<div class="GUI_Syntax" syntaxHighlet>
+						&lt;section class="lime advertisement text-center">
+							&lt;div class="header h1">GlobalUI&lt;/div>
+							&lt;div class="sub-header size-2 light">Getting start with booming CSS Framework&lt;/div>
+						&lt;/section>
+						</div>
+
+						<div class="message modern doc-block-info square">
+									<div class="margin-5">
+										<span class="label grey">advertisement</span> modifier sets the some min-height to the section so that you can use that as advertisement for pages.
+									</div>
+						</div>
+
+					</div>
+
+
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <!-- sytax tab  -->
+			 	<section [class.none]="tab != 'syntax'" class="anim fadeIn">
+			 		<div class="doc-block">
+			 		<table class="tabel defination">
+						  <thead>
+						   <tr>
+						  	<th></th>
+						  	<th>Age</th>
+						  	<th>City</th>
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+							<tr>
+								<td>vinay</td>
+								<td>23</td>
+								<td>bangalore</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+						   <tr>
+						  	<th></th>
+						  	<th>Ages</th>
+						  	<th>Citis</th>
+						   </tr>
+						  </tfoot>
+						</table>
+					</div>
+			 	</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- toc -->
+			<div class="column grow-3">
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/section'"></section>
+			</div>
+
+			</div>
+</div>
+
+
