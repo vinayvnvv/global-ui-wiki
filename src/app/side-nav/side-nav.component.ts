@@ -24,6 +24,7 @@ class NavList {
 export class SideNavComponent implements OnInit {
 
   public app_structured_name: any = environment.app_structured_name;
+  public overviewList: Array<NavList> = [];
   public layoutList: Array<NavList> = [];
   public navElementsList: Array<NavList> = [];
   public navComponetsList: Array<NavList> = [];
@@ -35,9 +36,14 @@ export class SideNavComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.initOverViewList();
     this.initLayoutList();
   	this.initElementList();
     this.initComponentsList();
+  }
+
+  initOverViewList() {
+     this.overviewList.push(new NavList("Getting Started", ['/docs/start'], "fa fa-play"));
   }
 
   initLayoutList() {

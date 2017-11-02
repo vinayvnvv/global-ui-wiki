@@ -10,6 +10,14 @@
 			<div class="avtar-details">Customized UI Components</div>
 		</div>
 	</div>
+	<div class="nav-list-header">Overview</div>
+	
+	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of overviewList">
+		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
+		<span class="text" >{{item.name}}</span>
+	</div>
+
+
 	<div class="nav-list-header">Layout</div>
 	
 	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of layoutList">
