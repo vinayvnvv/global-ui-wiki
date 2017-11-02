@@ -18,7 +18,7 @@
 		<div class="nav-left">
 			<a class="nav-item hovered" [routerLink]="['/home']" >Home</a>
 			<a class="nav-item hovered ripple" [routerLink]="['/docs']" routerLinkActive="active">Docs</a>
-			<a class="nav-item hovered nav-dropdown " toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
+			<!-- <a class="nav-item hovered nav-dropdown " toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
 				<span>Products</span><span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				<div class="menu wide-large" toggle-class-id="drop_down_menu_1">
 					<div class="item detailed">
@@ -32,12 +32,12 @@
 						<span class="details">Menu 2 details long</span>
 					</div>
 				</div>
-			</a>
+			</a> -->
 		</div>
 
 		<div class="nav-center row">
-			<a class="nav-item hovered nav-dropdown"><i class="fa fa-github" aria-hidden="true"></i></a>
-			<a class="nav-item hovered"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a class="nav-item hovered nav-dropdown" href="https://github.com/vinayvnvv/global-ui" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a class="nav-item hovered" href="https://twitter.com/Vinayvnvv" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
 		</div>
 
@@ -53,7 +53,7 @@
 					<i class="fa fa-google-plus" aria-hidden="true"></i>
 				</span>
 			</span> -->
-			<a class="nav-item hovered nav-dropdown">
+			<!-- <a class="nav-item hovered nav-dropdown">
 				<span>Acount</span><span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				<div class="menu wide-medium pointing point-top-end square">
 					<div class="item">
@@ -78,6 +78,21 @@
 						<span>Logout</span>
 					</div>
 				</div>
+			</a> -->
+			<a class="nav-item hovered nav-dropdown " toggle-class='{"for":"drop_down_menu_1","class":"active"}'>
+				<span>More</span><span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+				<div class="menu wide-large" toggle-class-id="drop_down_menu_1">
+					<div class="item detailed">
+						<span class="icon"><i class="fa fa-adn" aria-hidden="true"></i></span> 
+						<span>ng-global-ui</span>
+						<span class="details">Coming Soon</span>
+					</div>
+					<div class="item detailed">
+						<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
+						<span>build-global-ui</span>
+						<span class="details">Coming Soon</span>
+					</div>
+				</div>
 			</a>
-			<a class="nav-item hovered"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+			<a class="nav-item hovered"><i class="fa fa-download" aria-hidden="true"></i></a>
 		</div>
