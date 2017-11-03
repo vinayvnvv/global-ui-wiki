@@ -37,7 +37,8 @@ import { ToastComponent } from './docs/components/toast/toast.component';
 //directives
 import { SyntaxHighlet } from './directives/syntax.directive';
 import { GridsComponent } from './docs/layout/grids/grids.component';
-import { SectionComponent } from './docs/layout/section/section.component'; 
+import { SectionComponent } from './docs/layout/section/section.component';
+import { ResponsivenessComponent } from './docs/overview/responsiveness/responsiveness.component'; 
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { SectionComponent } from './docs/layout/section/section.component';
     ToastComponent,
     SyntaxHighlet,
     GridsComponent,
-    SectionComponent
+    SectionComponent,
+    ResponsivenessComponent
   ],
   imports: [
     BrowserModule,
