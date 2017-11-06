@@ -6804,7 +6804,10 @@ span.icon.white {
   display: none;
   align-items: center; }
   .toast.active {
-    display: flex; }
+    display: flex;
+    animation-name: toastAnimation;
+    animation-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); }
   .toast .text {
     flex-grow: 1; }
   .toast .actions {
@@ -8233,10 +8236,8 @@ span.icon.white {
     min-width: 42px;
     width: 42px;
     max-width: 42px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     padding: 0 .6rem;
     cursor: pointer;
     position: absolute;
@@ -8247,17 +8248,19 @@ span.icon.white {
       position: absolute;
       top: 50%;
       transform: rotate(45deg);
-      margin-left: -3px; }
+      margin-left: 12px;
+      animation-name: navbar_toggle_menu_bar_end; }
     .navbar .mobile-toggle-menu span:last-child {
       position: absolute;
       top: 50%;
       transform: rotate(-45deg);
-      margin-left: 5px; }
+      margin-left: 20px;
+      animation-name: navbar_toggle_menu_bar_start; }
     .navbar .mobile-toggle-menu span {
       background-color: #777;
       width: 12px;
       height: 1px;
-      transition: .3s all; }
+      animation-duration: 0.2s; }
     .navbar .mobile-toggle-menu:hover {
       background-color: #f2f2f2; }
     .navbar .mobile-toggle-menu.active {
@@ -8265,20 +8268,18 @@ span.icon.white {
       cursor: pointer; }
       .navbar .mobile-toggle-menu.active span:first-child {
         animation-name: navbar_toggle_menu_bar_start;
-        animation-duration: 0.2s;
         top: 50%;
         transform: rotate(-45deg); }
       .navbar .mobile-toggle-menu.active span:last-child {
         transform: rotate(45deg);
         animation-name: navbar_toggle_menu_bar_end;
-        animation-duration: 0.2s;
         top: 50%; }
   .navbar .nav-left, .navbar .nav-center, .navbar .nav-right {
     display: none; }
   .navbar.active {
     display: block;
     height: auto;
-    min-height: initial;
+    min-height: auto !important;
     z-index: 70; }
     .navbar.active .container {
       display: block; }
@@ -12235,3 +12236,11 @@ span.icon.white {
     opacity: 0; }
   to {
     opacity: 0.85; } }
+
+@keyframes toastAnimation {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+    to {
+      transform: rotate(0);
+      opacity: 1; } } }

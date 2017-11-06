@@ -13,10 +13,9 @@ export class DocsComponent implements OnInit {
   	) { }
 
   ngOnInit() {
-  	this.scrollOnRouteChanges(); 
-    document.getElementById("side-nav").classList.add("active");
+  	this.scrollOnRouteChanges();
+    setTimeout(() => { document.getElementById("side-nav").classList.add("active"); }, 550);
   }
-
 
 
   scrollOnRouteChanges() {
