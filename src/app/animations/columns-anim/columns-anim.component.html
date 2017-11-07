@@ -1,0 +1,32 @@
+<div class="anim-container">
+	<div class="title-bar">
+		<div *ngIf="view == 'desktop'" class="title">
+			<div class="header h2 light">Desktop</div>
+			<div class="header h3 light">Horizontal</div>
+		</div>
+		<div *ngIf="view == 'mobile'" class="title">
+			<div class="header h2 light">Mobile</div>
+			<div class="header h3 light">Vertical</div>
+		</div>
+	</div>
+ 	<div class="device desktop">
+		<div class="toolbar">
+			<span class="btn"></span>
+			<span class="btn orange"></span>
+			<span class="btn green"></span>
+		</div>
+		<div class="screen">
+			<div class="columns wrap grow-mobile responsive">
+				<div class="column" *ngFor="let item of [0,1,2,3]">
+					<div class="sctn-bars">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-bottom-bar"></div>
+	</div>
+</div>

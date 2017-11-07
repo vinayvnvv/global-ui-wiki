@@ -38,7 +38,10 @@ import { ToastComponent } from './docs/components/toast/toast.component';
 import { SyntaxHighlet } from './directives/syntax.directive';
 import { GridsComponent } from './docs/layout/grids/grids.component';
 import { SectionComponent } from './docs/layout/section/section.component';
-import { ResponsivenessComponent } from './docs/overview/responsiveness/responsiveness.component'; 
+import { ResponsivenessComponent } from './docs/overview/responsiveness/responsiveness.component';
+import { ColumnsAnimComponent } from './animations/columns-anim/columns-anim.component';
+import { NavbarAnimComponent } from './animations/navbar-anim/navbar-anim.component';
+import { SidebarAnimComponent } from './animations/sidebar-anim/sidebar-anim.component'; 
 
 @NgModule({
   declarations: [
@@ -68,7 +71,10 @@ import { ResponsivenessComponent } from './docs/overview/responsiveness/responsi
     SyntaxHighlet,
     GridsComponent,
     SectionComponent,
-    ResponsivenessComponent
+    ResponsivenessComponent,
+    ColumnsAnimComponent,
+    NavbarAnimComponent,
+    SidebarAnimComponent
   ],
   imports: [
     BrowserModule,
