@@ -11,6 +11,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   	document.getElementById("side-nav").classList.remove("active");
+  	this.changeNavColor();
+  }
+
+  changeNavColor() {
+    let elClass:DOMTokenList = document.querySelectorAll('[app-nav-bar]')[0].classList;
+    elClass.remove('white');
+    elClass.add('no-shadow');
+    elClass.add('primary');
   }
 
 }

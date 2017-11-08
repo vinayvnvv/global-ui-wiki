@@ -42,6 +42,10 @@ export class SideNavComponent implements OnInit {
     this.initComponentsList();
   }
 
+  initNavBehavior() {
+    window.onclick = () => { this.navBar.close(); };
+  }
+
   initOverViewList() {
      this.overviewList.push(new NavList("Getting Started", ['/docs/start'], "fa fa-play"));
      this.overviewList.push(new NavList("Responsiveness", ['/docs/responsiveness'], "fa fa-window-restore"));

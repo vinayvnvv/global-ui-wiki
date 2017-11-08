@@ -18,6 +18,15 @@ export class NavBarComponent implements OnInit {
   	) { }
 
   ngOnInit() {
+    this.initNavBehaviour();
+  }
+
+  initNavBehaviour() {
+    let elRef:Element = document.querySelectorAll('[app-nav-bar]')[0];
+    window.onclick = (ev) => {
+      if(ev.srcElement.classList.contains('mobile-toggle-menu')) return;
+      else elRef.classList.remove('active');
+    };
   }
 
 }

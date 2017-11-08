@@ -4,7 +4,7 @@ import { Router, NavigationStart, Event } from '@angular/router';
 @Component({
   selector: 'app-docs',
   templateUrl: './docs.component.html',
-  styleUrls: ['./docs.component.css']
+  styleUrls: ['./docs.component.sass']
 })
 export class DocsComponent implements OnInit {
 
@@ -15,6 +15,13 @@ export class DocsComponent implements OnInit {
   ngOnInit() {
   	this.scrollOnRouteChanges();
     setTimeout(() => { document.getElementById("side-nav").classList.add("active"); }, 550);
+    this.changeNavColor();
+  }
+
+  changeNavColor() {
+    let elClass:DOMTokenList = document.querySelectorAll('[app-nav-bar]')[0].classList;
+    elClass.remove("primary")
+    elClass.remove("no-shadow")
   }
 
 
