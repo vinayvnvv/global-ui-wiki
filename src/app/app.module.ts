@@ -41,7 +41,9 @@ import { SectionComponent } from './docs/layout/section/section.component';
 import { ResponsivenessComponent } from './docs/overview/responsiveness/responsiveness.component';
 import { ColumnsAnimComponent } from './animations/columns-anim/columns-anim.component';
 import { NavbarAnimComponent } from './animations/navbar-anim/navbar-anim.component';
-import { SidebarAnimComponent } from './animations/sidebar-anim/sidebar-anim.component'; 
+import { SidebarAnimComponent } from './animations/sidebar-anim/sidebar-anim.component';
+import { ColorsPaletteComponent } from './docs/overview/colors-palette/colors-palette.component';
+import { FooterComponent } from './footer/footer.component'; 
 
 @NgModule({
   declarations: [
@@ -74,7 +76,9 @@ import { SidebarAnimComponent } from './animations/sidebar-anim/sidebar-anim.com
     ResponsivenessComponent,
     ColumnsAnimComponent,
     NavbarAnimComponent,
-    SidebarAnimComponent
+    SidebarAnimComponent,
+    ColorsPaletteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

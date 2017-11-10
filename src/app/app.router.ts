@@ -6,8 +6,9 @@ import { DocsComponent } from './docs/docs.component';
 //overrview
 import { StartComponent } from './docs/start/start.component';
 import { ResponsivenessComponent } from './docs/overview/responsiveness/responsiveness.component';
+import { ColorsPaletteComponent } from './docs/overview/colors-palette/colors-palette.component';
 
-let overview = [StartComponent, ResponsivenessComponent ];
+let overview = [StartComponent, ResponsivenessComponent, ColorsPaletteComponent ];
 
 
 // layout
@@ -53,6 +54,7 @@ const appRoutes: Routes = [
       { path: '', redirectTo: 'start', pathMatch: 'full' },
       { path: 'start', component: StartComponent },
       { path: 'responsiveness', component: ResponsivenessComponent },
+      { path: 'colors-palette', component: ColorsPaletteComponent },
       { path: 'grids', component: GridsComponent },
       { path: 'section', component: SectionComponent },
       { path: 'typography', component: TypographyComponent },

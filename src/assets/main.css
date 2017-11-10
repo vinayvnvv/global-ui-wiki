@@ -28,6 +28,15 @@
 .valign-bottom {
   vertical-align: bottom; }
 
+.flex {
+  display: flex; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.align-item-center {
+  align-item: center; }
+
 .nowrap {
   white-margin: nowrap;
   text-overflow: ellipsis;
@@ -3852,8 +3861,7 @@ span.icon.white {
 
 .list {
   padding: 0;
-  list-style-type: none;
-  color: #000000; }
+  list-style-type: none; }
   .list > .item, .list li {
     list-style-type: none;
     display: flex;
