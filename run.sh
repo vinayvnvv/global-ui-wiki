@@ -5,7 +5,7 @@ set -x
 Green='\033[0;32m'        # Green
 NC='\e[0m' # No Color
 
-cp ../ng2UI/css/main.css src/assets/
+cp ../ng2UI/dist/global-ui.min.css src/assets/
 
 
 ng build --prod

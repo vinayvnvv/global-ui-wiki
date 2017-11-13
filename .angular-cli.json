@@ -21,7 +21,7 @@
       "styles": [
         "styles.css",
         "../src/assets/sass/main.sass",
-        "../src/assets/main.css"
+        "../node_modules/global-ui-test/dist/global-ui.css"
       ],
       "scripts": [
         "assets/syntax/syntax.js"

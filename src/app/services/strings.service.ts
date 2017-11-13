@@ -1,9 +1,11 @@
 import { ColorsModel } from './../models/colors.model';
 
 export class StringsService {
+	primaryColors: Array<ColorsModel> = [];
 	colors:Array<ColorsModel> = [];
 	constructor() {
 		this.initColors();
+		this.initPrimaryColors();
 	}
 
 	initColors() {
@@ -28,5 +30,15 @@ export class StringsService {
 		this.colors.push(new ColorsModel('Blue Grey', 'blue-grey', '#F44336'));
 		this.colors.push(new ColorsModel('Black', 'black', '#000000'));
 		this.colors.push(new ColorsModel('White', 'white', '#FFFFFF'));
+	}
+
+	initPrimaryColors() {
+		this.primaryColors.push(new ColorsModel('Primary', 'primary', '#0483a9'));
+		this.primaryColors.push(new ColorsModel('Info', 'info', '#3273dc'));
+		this.primaryColors.push(new ColorsModel('Success', 'success', '#23d160'));
+		this.primaryColors.push(new ColorsModel('Warning', 'warning', '#ffdd57'));
+		this.primaryColors.push(new ColorsModel('Danger', 'danger', '#ff3860'));
+		this.primaryColors.push(new ColorsModel('Light', 'light', '#f5f5f5'));
+		this.primaryColors.push(new ColorsModel('Dark', 'dark', '#363636'));
 	}
 }

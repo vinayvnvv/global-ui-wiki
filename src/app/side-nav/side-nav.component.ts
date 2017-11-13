@@ -49,6 +49,7 @@ export class SideNavComponent implements OnInit {
   initOverViewList() {
      this.overviewList.push(new NavList("Getting Started", ['/docs/start'], "fa fa-play"));
      this.overviewList.push(new NavList("Responsiveness", ['/docs/responsiveness'], "fa fa-window-restore"));
+     this.overviewList.push(new NavList("Color Palette", ['/docs/colors-palette'], "fa fa-themeisle"));
   }
 
   initLayoutList() {

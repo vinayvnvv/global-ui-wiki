@@ -11,7 +11,7 @@
 
 		<section class="padding-more">
 			 <div class="header h2 light">Choosing a color scheme</div>
-			 <div class="sub-header size-2 extra-light">You can customize your app’s color scheme to match your brand colors. Alternatively, you can create an entirely new color scheme using the color palette.</div>
+			 <div class="sub-header size-2 extra-light">You can customize your app’s color scheme to match your brand colors. <br/>Alternatively, you can create an entirely new color scheme using the color palette.</div>
 		</section>
 
 		  <div class="columns">
@@ -25,19 +25,208 @@
 					
 
 					<div class="doc-block">
-						<div class="panel teal square">
-							<div class="panel-header">
-								<span class="header h3 light">
-									&nbsp;&nbsp;<span class="icon">
-										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-									</span>
-									<span>Overview</span>
-								</span>
+							<div class="d-header" id="{{toc_list[0].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[0].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
 							</div>
-							<div class="panel-body">
-								GlobalUI Layout features provide sugar to enable developers to more easily create modern, responsive layouts on top of CSS3 flexbox.
+							<div class="doc-block-info sub-header size-3">GlobalUI comes with a two kinds of color scheme.</div>
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										<b>Primary Colors: </b> &nbsp;These colors are primary to site and can be change or add with <span class="label mini caption"><i>sass_vars</i></span> or <span class="label mini caption"><i>global-ui-build tools</i></span> .
+									</li>
+									<li class="sub-header size-3 light">
+										<b>Fixed Colors Palette: </b> &nbsp;These colors are fixed by GlobalUI and can be optional to include for your theme.
+									</li>
+								</div>
 							</div>
-						</div>
+
+					</div>
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+
+							<div class="doc-block-info">
+								<div class="columns layout-wrap">
+									<div class="section column grow-3 margin-x-2 margin-y-2 whiteframe-1" *ngFor="let item of strings.primaryColors" [ngClass]="item.value">
+										{{item.value}} - {{item.hex_code}}
+									</div>
+								</div>
+							</div>
+
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										GlobalUI comes with 7 primary site colors.
+									</li>
+									<li class="sub-header size-3 light">
+										You can <b>add</b> or <b>edit</b> or <b>remove</b> the colors you want to like by <b>global-ui-build-tools</b>.
+										<br/>Steps to customize the primary site colors:
+										<div class="list unordered">
+											<li class="sub-header size-3 light">
+												Open <span class="label mini">custom.json</span> by navigation global-ui > customize > custom.json.
+											</li>
+											<li class="sub-header size-3 light">
+												In the file add <span class="label mini">vars</span> field to the main object if it's not there. Then add <span class="label mini">colors</span> field to the modules field if it's not there.<br/>
+												It will look like:<br/>
+												<div syntaxHighlet>
+													&#123; 
+														"vars": &#123;
+															"colors": [
+																&#123;"primary": "rgb(4, 131, 169)"&#125;,
+																&#123;"info": "hsl(217, 71%,  53%)"&#125;,
+																&#123;"success": "hsl(141, 71%,  48%)"&#125;,
+																&#123;"warning": "hsl(48,  100%, 67%)"&#125;,
+																&#123;"danger": "hsl(348, 100%, 61%)"&#125;,
+																&#123;"light": "hsl(0, 0%, 96%)"&#125;,
+																&#123;"dark": "hsl(0, 0%, 21%)"&#125;
+															]
+														&#125;
+													&#125;
+												</div>
+											</li>
+											<li class="sub-header size-3 light">
+												Now run <span class="label black mini"><b>gulp build</b></span> command in the terminal. finally it will generate the final css file with specified colors to the <span class="label mini">dist</span> folder.
+											</li>
+											<li class="sub-header size-3 light">
+												You can also add additional colors to your primary site colors.<br/>
+												<b>Example:</b> If you want to add secondary color, it will just look like:
+												<div syntaxHighlet>
+													&#123; 
+														"vars": &#123;
+															"colors": [
+																&#123;"primary": "rgb(4, 131, 169)"&#125;,
+																<span style="color: hsl(217, 71%,  53%); background-color: #e9e9e9">&#123;"secondary": "hsl(217, 33%, 31%)"&#125;</span>
+																&#123;"info": "hsl(217, 71%,  53%)"&#125;,
+																&#123;"success": "hsl(141, 71%,  48%)"&#125;,
+																&#123;"warning": "hsl(48,  100%, 67%)"&#125;,
+																&#123;"danger": "hsl(348, 100%, 61%)"&#125;,
+																&#123;"light": "hsl(0, 0%, 96%)"&#125;,
+																&#123;"dark": "hsl(0, 0%, 21%)"&#125;
+															]
+														&#125;
+													&#125;
+												</div>
+											</li>
+											<li class="sub-header size-3 light">
+												If <span class="label mini">extra_colors</span> field is not there in <span class="label mini">modules</span> filed , it will take all the colors from the palette. So that you can add all the colors by removing the <span class="label mini">extra_colors</span> field.
+											</li>
+											<li class="sub-header size-3 light">
+												<div class="message padding-less">
+													<div>By default <b>global-ui-build-tools</b> supports all pre-defined sass functions so that you can specify the colors using sass function.</div>
+												</div><br/>
+												Example: <br/>
+												<div syntaxHighlet>
+												&#123; 
+														"vars": &#123;
+															"colors": [
+																&#123;"primary": "<span style="background-color: rgba(0,150,136,.401)">lighten(#342445, 20%)</span>"&#125;,
+															]
+														&#125;
+													&#125;
+												</div>
+											</li>
+										</div>
+									</li>
+								</div>
+							</div>
+
+
+
+							
+							
+
+					</div>
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[2].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[2].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+
+							<div class="doc-block-info">
+								<div class="columns layout-wrap">
+									<div class="section column grow-3 grow-desktop-4 grow-widescreen-4 margin-x-2 margin-y-2 whiteframe-1" *ngFor="let item of strings.colors" [ngClass]="item.value">
+										{{item.value}} - {{item.hex_code}}
+									</div>
+								</div>
+							</div>
+
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										All colors in the <b>Fixed Colors Palette</b> included in GlobalUI by default.
+									</li>
+									<li class="sub-header size-3 light">
+										You can select only required colors you want to like by <b>global-ui-build-tools</b> so that you can decrease the size of your theme css file.
+										<br/>Steps to select required colors to your theme:
+										<div class="list unordered">
+											<li class="sub-header size-3 light">
+												Open <span class="label mini">custom.json</span> by navigation global-ui > customize > custom.json.
+											</li>
+											<li class="sub-header size-3 light">
+												In the file add <span class="label mini">modules</span> field to the main object if it's not there. Then add <span class="label mini">extra_colors</span> field to the modules field.<br/>
+												It will look like:<br/>
+												<div syntaxHighlet>
+													&#123; 
+														"modules": &#123;
+															"extra_colors": ["red", "blue", "blue-grey"]
+														&#125;
+													&#125;
+												</div>
+											</li>
+											<li class="sub-header size-3 light">
+												Now run <span class="label black mini"><b>gulp build</b></span> command in the terminal. finally it will generate the final css file with specified colors to the <span class="label mini">dist</span> folder.
+											</li>
+											<li class="sub-header size-3 light">
+												You can add any number of color by specifying it's name from below palette table.
+											</li>
+											<li class="sub-header size-3 light">
+												If you dont want any extra colors , just give empty array to <span class="label mini">extra_colors</span> field.<br/>
+												<div syntaxHighlet>
+													&#123; 
+														"modules": &#123;
+															"extra_colors": []
+														&#125;
+													&#125;
+												</div>
+											</li>
+											<li class="sub-header size-3 light">
+												If <span class="label mini">extra_colors</span> field is not there in <span class="label mini">modules</span> filed , it will take all the colors from the palette. So that you can add all the colors by removing the <span class="label mini">extra_colors</span> field.
+											</li>
+
+
+										</div>
+									</li>
+								</div>
+							</div>
+
+							
+							
 
 					</div>
 
@@ -62,7 +251,7 @@
 
 			<!-- toc -->
 			<div class="column grow-3">
-				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/responsiveness'"></section>
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/colors-palette'"></section>
 			</div>
 
 			</div>

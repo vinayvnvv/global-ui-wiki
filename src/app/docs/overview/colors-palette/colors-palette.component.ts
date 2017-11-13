@@ -1,31 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { TOC } from './../../../toc/toc.component';
+import { StringsService } from '../../../services/strings.service';
 @Component({
   selector: 'app-colors-palette',
   templateUrl: './colors-palette.component.html',
-  styleUrls: ['./colors-palette.component.css']
+  styleUrls: ['./colors-palette.component.css'],
+  providers: [StringsService]
 })
 export class ColorsPaletteComponent implements OnInit {
   public tab:any = "example";
   public toc_list: Array<TOC> = [];
-  constructor() { }
+  constructor(
+      public strings: StringsService
+    ) { }
 
   ngOnInit() {
     this.addListToToc();
+    console.log(this.strings.primaryColors)
   }
 
 
   addListToToc() {
     let toc_sub_list: Array<TOC> = [];
     
-    this.toc_list.push(new TOC("Vertical Behavior", "toc_v_behave", null));
+    this.toc_list.push(new TOC("Overview", "toc_v_overview", null));
 
-    this.toc_list.push(new TOC("Break Points", "toc_break_points", null));
+    this.toc_list.push(new TOC("Primary Colors", "toc_primary", null));
 
-    toc_sub_list = [];
-    toc_sub_list.push(new TOC("NavBar Behavior", "toc_nav_bar", null));
-    toc_sub_list.push(new TOC("SideBar Behavior", "toc_sidebar", null));
-    this.toc_list.push(new TOC("Layout Behavior", "toc_lay_beh", toc_sub_list));
+    this.toc_list.push(new TOC("Fixed Colors Palette", "toc_fixed", null));
 
   }
 }
