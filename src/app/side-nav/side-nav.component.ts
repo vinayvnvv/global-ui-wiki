@@ -25,6 +25,7 @@ export class SideNavComponent implements OnInit {
 
   public app_structured_name: any = environment.app_structured_name;
   public overviewList: Array<NavList> = [];
+  public customizeList: Array<NavList> = [];
   public layoutList: Array<NavList> = [];
   public navElementsList: Array<NavList> = [];
   public navComponetsList: Array<NavList> = [];
@@ -37,6 +38,7 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit() {
     this.initOverViewList();
+    this.initCustomizeList();
     this.initLayoutList();
   	this.initElementList();
     this.initComponentsList();
@@ -50,6 +52,11 @@ export class SideNavComponent implements OnInit {
      this.overviewList.push(new NavList("Getting Started", ['/docs/start'], "fa fa-play"));
      this.overviewList.push(new NavList("Responsiveness", ['/docs/responsiveness'], "fa fa-window-restore"));
      this.overviewList.push(new NavList("Color Palette", ['/docs/colors-palette'], "fa fa-themeisle"));
+  }
+
+  initCustomizeList() {
+    this.customizeList.push(new NavList("Modular", ['/docs/modular'], "fa fa-newspaper-o"));
+    this.customizeList.push(new NavList("Build Tools", ['/docs/build-tools'], "fa fa-wrench"));
   }
 
   initLayoutList() {

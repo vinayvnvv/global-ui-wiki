@@ -10,6 +10,10 @@ import { ColorsPaletteComponent } from './docs/overview/colors-palette/colors-pa
 
 let overview = [StartComponent, ResponsivenessComponent, ColorsPaletteComponent ];
 
+//customize
+import { BuildToolsComponent } from './docs/customize/build-tools/build-tools.component';
+import { ModularComponent } from './docs/customize/modular/modular.component';
+let customize = [ BuildToolsComponent, ModularComponent ];
 
 // layout
 import { GridsComponent } from './docs/layout/grids/grids.component';
@@ -55,6 +59,8 @@ const appRoutes: Routes = [
       { path: 'start', component: StartComponent },
       { path: 'responsiveness', component: ResponsivenessComponent },
       { path: 'colors-palette', component: ColorsPaletteComponent },
+      { path: 'modular', component: ModularComponent },
+      { path: 'build-tools', component: BuildToolsComponent },
       { path: 'grids', component: GridsComponent },
       { path: 'section', component: SectionComponent },
       { path: 'typography', component: TypographyComponent },
@@ -91,6 +97,7 @@ export class AppRoutingModule { }
 
 export const routerComponents = [ HomeComponent, DocsComponent,
                                   overview,
+                                  customize,
                                   layout,
                                   elements,
                                   components

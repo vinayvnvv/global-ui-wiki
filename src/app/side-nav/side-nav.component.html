@@ -16,8 +16,15 @@
 		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
 		<span class="text" >{{item.name}}</span>
 	</div>
+	<div class="divider"></div>
+	<div class="nav-list-header">Customize</div>
+	
+	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of customizeList">
+		<span class="icon"><i class="{{item.icon}}" aria-hidden="true"></i>	</span>
+		<span class="text" >{{item.name}}</span>
+	</div>
 
-
+	<div class="divider"></div>
 	<div class="nav-list-header">Layout</div>
 	
 	<div class="nav-list-item ripple" [routerLink]="item.link" routerLinkActive="active" *ngFor="let item of layoutList">

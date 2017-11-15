@@ -43,7 +43,10 @@ import { ColumnsAnimComponent } from './animations/columns-anim/columns-anim.com
 import { NavbarAnimComponent } from './animations/navbar-anim/navbar-anim.component';
 import { SidebarAnimComponent } from './animations/sidebar-anim/sidebar-anim.component';
 import { ColorsPaletteComponent } from './docs/overview/colors-palette/colors-palette.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { BuildToolsComponent } from './docs/customize/build-tools/build-tools.component';
+import { ModularComponent } from './docs/customize/modular/modular.component';
+import { SassStructureComponent } from './common/sass-structure/sass-structure.component'; 
 
 @NgModule({
   declarations: [
@@ -78,7 +81,10 @@ import { FooterComponent } from './footer/footer.component';
     NavbarAnimComponent,
     SidebarAnimComponent,
     ColorsPaletteComponent,
-    FooterComponent
+    FooterComponent,
+    BuildToolsComponent,
+    ModularComponent,
+    SassStructureComponent
   ],
   imports: [
     BrowserModule,

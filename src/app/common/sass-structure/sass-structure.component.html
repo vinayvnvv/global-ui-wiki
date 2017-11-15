@@ -1,0 +1,16 @@
+<div class="list">
+	<div class="item" *ngFor="let item of data">
+		<span class="icon valign-top">
+			<i class="fa fa-folder" aria-hidden="true" *ngIf="(item.child.length > 0 || item.name == 'utilities');else template1"></i>
+			<ng-template #template1><i class="fa fa-file-code-o" aria-hidden="true" ></i></ng-template>
+		</span>
+		<div class="content">
+			<div class="title">
+				<span *ngIf="(item.child.length > 0 || item.name == 'utilities');else template2">{{item.name}}</span>
+				<ng-template #template2><i style="font-weight: normal;">{{item.name}}</i></ng-template>
+			</div>
+			<div class="desc">{{item.desc}}</div>
+			<app-sass-structure *ngIf=" item.child.length > 0 " [data]="item.child"></app-sass-structure>
+		</div>
+	</div>
+</div>

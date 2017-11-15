@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   	document.getElementById("side-nav").classList.remove("active");
   	this.changeNavColor();
-    this.startColorChangeAnimForLabel();
+    //this.startColorChangeAnimForLabel();
   }
 
   changeNavColor() {

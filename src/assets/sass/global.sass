@@ -1,3 +1,13 @@
+.lbl
+	background-color: transparentize(#333, 0.9)
+	padding: 4px
+	&.no-padding
+		padding: 0
+	&.red
+		color: #ff3860
+	&.green
+		color: #30b55a
+
 // navbar
 .navbar
 	transition: 1.2s all
@@ -8,3 +18,23 @@
 		animation-name: slideToBottom
 		animation-duration: 0.5s
 		transition-timing-function: ease-out
+
+
+//toc
+
+
+
+//typing anim
+.typewriter
+	display: inline-flex
+	background-color: transparentize(#000, 0.6)
+	& .text
+		font-family: monospace
+		overflow: hidden
+		border-right: .15em solid orange
+		white-space: nowrap
+		margin: 0 auto
+		letter-spacing: .15em
+		padding: 7px
+		animation: typing 3.5s steps(30, end), blink-caret .9s step-end infinite
+

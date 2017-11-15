@@ -34,6 +34,7 @@ export class TocComponent implements OnInit, AfterViewInit {
   	setTimeout(( () => { 
   		this.initScrollsPsy(); 
   		this.placeTOC();
+      this.resizeOnFooterOverlap();
   	}), 1500)
   	
   }
@@ -56,6 +57,34 @@ export class TocComponent implements OnInit, AfterViewInit {
         }
     }, true);
     }
+
+  resizeOnFooterOverlap() {
+    let scroller = document.getElementById("nav-content");
+    let footer:HTMLElement = <HTMLScriptElement>document.querySelector('app-footer');
+    let toc = document.getElementById("toc-container");
+    let t_h = 0;
+    let t_h_touch = 0;
+    let last_height;
+    
+     scroller.addEventListener('scroll', (ev)=> {
+        let toc_top = toc.offsetTop;
+        let toc_bottom = toc_top + toc.offsetHeight;
+        let footer_top = footer.offsetTop - ev.target["scrollTop"];
+        let footer_bottom = footer_top + footer.offsetHeight;
+         if (toc_bottom >= footer_top && toc_top < footer_bottom) {
+           if(!last_height) {
+             last_height =  toc.offsetHeight;
+             t_h_touch = footer_top + 10;
+           };
+           t_h = t_h_touch - footer_top;
+           toc.style.height = (toc.offsetHeight - t_h) + "px";
+         } else {
+           toc.style.height = last_height + "px";
+           t_h = 0;
+           last_height = null;
+         }
+     });
+  }
 
   initScrollsPsy() {
   	let section1 = (document.querySelectorAll(".d-sub-header"));
