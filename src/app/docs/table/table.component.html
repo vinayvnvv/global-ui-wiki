@@ -8,22 +8,7 @@
 		</section>
 				<div class="divider"></div>
 		<section class="padding-more doc-tab">
-
-
-					<div class="tab style-2 inlined">
-						<div class="item" (click)="tab = 'example'" [class.active]="tab == 'example'" [class.primary]="tab == 'example'"> 
-							<span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span> 
-							<span>Examples</span>
-						</div>
-						<div class="item" (click)="tab = 'syntax'" [class.active]="tab == 'syntax'" [class.primary]="tab == 'syntax'">
-							<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
-							<span>Usage Syntax</span>
-						</div>
-						<div class="item">
-							<span class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
-							<span>Supports</span>
-						</div>
-					</div>
+			<app-docs-tab-template></app-docs-tab-template>
 		</section>
 
 		  <div class="columns">

@@ -66,8 +66,103 @@
 							</div>
 							<div class="doc-block-info sub-header size-3">GlobalUI sass folder structure for overriding or for importing is having below tree structure. <span class="lbl red">You can import only the files from below folder strucure.</span></div>
 							<div class="doc-block-info">
-								<div class="whiteframe-2 margin-y-5 margin-x-5" style="display: inline-block;padding: 9px">
+								<div class="whiteframe-2 margin-y-5 margin-x-5" style="display: inline-block;padding: 9px;background-color: #fff">
 									<app-sass-structure [data]="sass_structure_data"></app-sass-structure>
+								</div>
+							</div>
+
+					</div>
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[2].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[2].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="doc-block-info sub-header size-3">You can import the modules by including that to your main sass file</div>
+							<div class="doc-block-info">
+								Example: 
+								<div class="GUI_Syntax" syntaxHighlet mode="sass">
+									@import 'global-ui/sass/include.sass'
+									@import 'global-ui/sass/grids/grids.sass'
+									@import 'global-ui/sass/elements/button.sass'
+								</div>
+							</div>
+							<div class="doc-block-info sub-header size-3">In above example , you can access only grids and buttons modules so that it will not compile all the modules.</div>
+
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li><span class="lbl red">global-ui/sass/include.sass</span> file contains basic styles & variables for your application to compile other modules.
+									</li>
+									<li>You must include <span class="lbl red">include.sass</span> file to compile other modules.
+									</li>
+								</div>
+							</div>
+
+					</div>
+
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[3].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[3].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="doc-block-info sub-header size-3"><span class="lbl">Angular CLI</span> has default <span class="lbl">sass compiler</span> so that it's easy to import the variables and modules of GlobalUI.</div>
+							<div class="doc-block-info">
+							</div>
+
+
+							<div class="doc-block-info header h3 light"><span class="lbl">Steps:</span></div>
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										<b>Create <span class="lbl red">main.sass</span> file in <span class="lbl red">src</span> directory of your angular application.</b><br/>
+										<ul>
+											<div class="doc-block-info">- include what you need in <span class="lbl">main.sass</span></div>
+											<div class="GUI_Syntax" syntaxHighlet mode="sass">
+												@import '~global-ui/sass/include.sass'
+												@import '~global-ui/sass/grids/grids.sass'
+												@import '~global-ui/sass/elements/button.sass'
+											</div>
+											<div class="doc-block-info message modern square blue">
+												<div>
+													<span class="lbl red">~</span> symbol at start of the src in angular CLI automatically point to <span class='lbl red'>node_modules</span> directory. So no need to include full path in @import link.
+												</div>
+											</div>
+										</ul>
+										
+									</li>
+									<li class="sub-header size-3 light">
+										Link the <span class="lbl red">main.sass</span> file to angular application by specifying it in <span class="lbl red">.angular-cli.json</span> at styles field.
+										<ul>
+											<div class="doc-block-info">Example: </div>
+											<div class="GUI_Syntax" syntaxHighlet mode="js">
+												&#123;
+													"apps": [
+																&#123;
+																	"styles": ["main.sass"]
+																&#125;
+														    ]
+												&#125;
+											</div>
+										</ul>
+									</li>
+									<li class="sub-header size-3 light">
+										That's all. Now your angular application importing only grids and button modules from GlobalUI bundle.
+									</li>
 								</div>
 							</div>
 

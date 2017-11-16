@@ -66,7 +66,8 @@
 							<div class="doc-block-info">
 								<div class="columns layout-wrap">
 									<div class="section column grow-3 margin-x-2 margin-y-2 whiteframe-1" *ngFor="let item of strings.primaryColors" [ngClass]="item.value">
-										{{item.value}} - {{item.hex_code}}
+										{{item.value}}<br/><br/>
+										{{item.hex_code}}
 									</div>
 								</div>
 							</div>
@@ -81,12 +82,12 @@
 										<br/>Steps to customize the primary site colors:
 										<div class="list unordered">
 											<li class="sub-header size-3 light">
-												Open <span class="label mini">custom.json</span> by navigation global-ui > customize > custom.json.
+												Open <span class="label mini">custom.json</span> by navigating global-ui > customize > custom.json.
 											</li>
 											<li class="sub-header size-3 light">
 												In the file add <span class="label mini">vars</span> field to the main object if it's not there. Then add <span class="label mini">colors</span> field to the modules field if it's not there.<br/>
 												It will look like:<br/>
-												<div syntaxHighlet>
+												<div syntaxHighlet class="GUI_Syntax">
 													&#123; 
 														"vars": &#123;
 															"colors": [
@@ -108,7 +109,7 @@
 											<li class="sub-header size-3 light">
 												You can also add additional colors to your primary site colors.<br/>
 												<b>Example:</b> If you want to add secondary color, it will just look like:
-												<div syntaxHighlet>
+												<div syntaxHighlet class="GUI_Syntax">
 													&#123; 
 														"vars": &#123;
 															"colors": [
@@ -133,7 +134,7 @@
 													<div>By default <b>global-ui-build-tools</b> supports all pre-defined sass functions so that you can specify the colors using sass function.</div>
 												</div><br/>
 												Example: <br/>
-												<div syntaxHighlet>
+												<div syntaxHighlet class="GUI_Syntax">
 												&#123; 
 														"vars": &#123;
 															"colors": [
@@ -171,7 +172,8 @@
 							<div class="doc-block-info">
 								<div class="columns layout-wrap">
 									<div class="section column grow-3 grow-desktop-4 grow-widescreen-4 margin-x-2 margin-y-2 whiteframe-1" *ngFor="let item of strings.colors" [ngClass]="item.value">
-										{{item.value}} - {{item.hex_code}}
+										{{item.value}} <br/><br/>
+									    {{item.hex_code}}
 									</div>
 								</div>
 							</div>
@@ -186,12 +188,12 @@
 										<br/>Steps to select required colors to your theme:
 										<div class="list unordered">
 											<li class="sub-header size-3 light">
-												Open <span class="label mini">custom.json</span> by navigation global-ui > customize > custom.json.
+												Open <span class="label mini">custom.json</span> by navigating global-ui > customize > custom.json.
 											</li>
 											<li class="sub-header size-3 light">
 												In the file add <span class="label mini">modules</span> field to the main object if it's not there. Then add <span class="label mini">extra_colors</span> field to the modules field.<br/>
 												It will look like:<br/>
-												<div syntaxHighlet>
+												<div syntaxHighlet class="GUI_Syntax">
 													&#123; 
 														"modules": &#123;
 															"extra_colors": ["red", "blue", "blue-grey"]
@@ -207,7 +209,7 @@
 											</li>
 											<li class="sub-header size-3 light">
 												If you dont want any extra colors , just give empty array to <span class="label mini">extra_colors</span> field.<br/>
-												<div syntaxHighlet>
+												<div syntaxHighlet class="GUI_Syntax">
 													&#123; 
 														"modules": &#123;
 															"extra_colors": []

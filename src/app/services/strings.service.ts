@@ -48,7 +48,7 @@ export class StringsService {
 	initSassFolderStructure() {
 		this.sassFolderStructure = [
 			{
-				name: "root",
+				name: "global-ui (root)",
 				desc: "root folder",
 				child: [
 					{

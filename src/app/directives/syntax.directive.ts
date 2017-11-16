@@ -6,6 +6,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 
 export class SyntaxHighlet implements OnInit {
     private isCollapsed: Boolean = false;
+    private mode: string = "html";
     constructor(private el: ElementRef) {
     }
 
@@ -16,10 +17,12 @@ export class SyntaxHighlet implements OnInit {
     }
 
     highlightSyntax() {
+     if(this.el.nativeElement.attributes.getNamedItem("mode"))
+         this.mode = this.el.nativeElement.attributes["mode"].nodeValue;
      let syntax = new window["GUISyntax"]();
      syntax.settings.tabsize = 0;
      syntax.settings.structured = true;
-     syntax.highletSyntax(this.el.nativeElement, 'html');
+     syntax.highletSyntax(this.el.nativeElement, this.mode);
   }
 
 

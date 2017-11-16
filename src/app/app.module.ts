@@ -46,7 +46,8 @@ import { ColorsPaletteComponent } from './docs/overview/colors-palette/colors-pa
 import { FooterComponent } from './footer/footer.component';
 import { BuildToolsComponent } from './docs/customize/build-tools/build-tools.component';
 import { ModularComponent } from './docs/customize/modular/modular.component';
-import { SassStructureComponent } from './common/sass-structure/sass-structure.component'; 
+import { SassStructureComponent } from './common/sass-structure/sass-structure.component';
+import { DocsTabTemplateComponent } from './common/docs-tab-template/docs-tab-template.component'; 
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { SassStructureComponent } from './common/sass-structure/sass-structure.c
     FooterComponent,
     BuildToolsComponent,
     ModularComponent,
-    SassStructureComponent
+    SassStructureComponent,
+    DocsTabTemplateComponent
   ],
   imports: [
     BrowserModule,

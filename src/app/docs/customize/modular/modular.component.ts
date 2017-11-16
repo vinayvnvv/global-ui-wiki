@@ -27,7 +27,9 @@ export class ModularComponent implements OnInit {
 
     this.toc_list.push(new TOC("Sass Folder structure", "toc_structure", null));
 
-    this.toc_list.push(new TOC("Fixed Colors Palette", "toc_fixed", null));
+    this.toc_list.push(new TOC("How to Import", "toc_import", null));
+
+    this.toc_list.push(new TOC("Angular CLI guide", "toc_cli_ng", null));
 
   }
 }

@@ -107,6 +107,7 @@ var GUISyntax = function() {
   if (lang == "html") {elmntTxt = htmlMode(elmntTxt);}
   if (lang == "css") {elmntTxt = cssMode(elmntTxt);}
   if (lang == "js") {elmntTxt = jsMode(elmntTxt);}
+  if (lang == "sass") {elmntTxt = sassMode(elmntTxt);}
   elmntObj.innerHTML = elmntTxt;
   function extract(str, start, end, func, repl) {
     var s, e, d = "", a = [];
@@ -125,6 +126,16 @@ var GUISyntax = function() {
     }
     this.rest = d + str;
     this.arr = a;
+  }
+  function sassMode(code) {
+    console.log(code)
+    code = code.replace(/@import\s\'([\~])*(\b(?!@import)\b\S+)\'/g, function($1) {
+        var arr = $1.split(" ");
+        arr[0] = "<span style='color:" + csspropertycolor + "'>" + arr[0] + "</span>";
+        arr[1] = "<span style='color:" + attributevaluecolor + "'>" + arr[1] + "</span>";
+        return arr.join(" ");
+    });
+    return code;
   }
   function htmlMode(txt) {
     var rest = txt, done = "", php, comment, angular, startpos, endpos, note, i;
