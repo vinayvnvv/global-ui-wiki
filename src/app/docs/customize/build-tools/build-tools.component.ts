@@ -25,11 +25,11 @@ export class BuildToolsComponent implements OnInit {
     
     this.toc_list.push(new TOC("Overview", "toc_v_overview", null));
 
-    this.toc_list.push(new TOC("Sass Folder structure", "toc_structure", null));
+    this.toc_list.push(new TOC("Tool Installation", "toc_install", null));
 
-    this.toc_list.push(new TOC("How to Import", "toc_import", null));
+    this.toc_list.push(new TOC("How to Customize", "toc_how_to", null));
 
-    this.toc_list.push(new TOC("Angular CLI guide", "toc_cli_ng", null));
+    this.toc_list.push(new TOC("Building", "toc_cli_build", null));
 
   }
 }

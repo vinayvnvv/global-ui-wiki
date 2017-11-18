@@ -51,6 +51,271 @@
 							</div>
 
 					</div>
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[1].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[1].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="doc-block-info sub-header size-3">Follow below steps to start customizing your UI with CLI.</div>
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										Switch to <span class="lbl">global-ui</span> project folder.
+									</li>
+									<div class="divider extra-margin"></div>
+									<li class="sub-header size-3 light">
+										Hit below command to install <span class="lbl">node modules</span>.
+										<ul>
+											<div class="cmd">
+												npm install
+											</div>
+										</ul>
+									</li>
+									<div class="divider extra-margin"></div>
+									<li class="sub-header size-3 light">
+										Now your CLI tool is up and ready to customize.
+									</li>
+								</div>
+							</div>
+
+					</div>
+
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[2].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[2].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="doc-block-info sub-header size-3">Customization with <span class="lbl">CLI</span> requires a <span class="lbl red">custom.json</span> file which is available in the <span class="lbl">customize</span> folder of the <span class="lbl">root</span> directory.</div>
+
+							<div class="doc-block-info sub-header size-3">Structure of  <span class="lbl red">custom.json</span> is given below </div>
+
+
+							<div class="doc-block-info">
+								<div class="GUI_Syntax" syntaxHighlet mode="js">
+									&#123;
+										"vars": &#123;  // <-- variables
+
+												"colors": [ ],  // <-- site primary colors palette
+
+												"site": &#123;  // <-- others site vars
+
+															"colors": &#123; },  // <-- Generic site colors
+															"font": &#123; },    // <-- site fonts vars
+															"dimensions": &#123; } // <-- dimensions of components
+												
+														}
+										},
+
+										"modules": &#123;  // <-- what to include 
+												"extra_colors": [ ],  // <-- selection of fixed color palette
+												"components": [ ]  // <-- selection of sass modules
+										}
+									}
+								</div>
+							</div>
+
+							<div class="doc-block-info sub-header size-2">
+								Options:
+							</div>
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										<b>vars :</b> &nbsp; contains the values of site variables<br/>
+										<div class="list unordered margin-y-5">
+											<li class="sub-header size-3 light">
+												<b>colors (<span class="lbl">array</span>) :</b> &nbsp; Array of primary colors palette ( <a [routerLink]="['/docs/colors-palette']">refer here for adding and removing color</a> )
+											</li>
+											<li class="sub-header size-3 light">
+												<b>site : </b> &nbsp; Specifies site variables.<br/>
+												<div class="list unordered margin-y-5">
+													<li class="sub-header size-3 light">
+														<b>colors :</b> &nbsp; Specifies some Generic site colors<br/>
+														<div class="list unordered margin-y-5">
+															<li class="sub-header size-3 light">
+																<b>body-background (<span class="lbl">string</span>) :</b> &nbsp; Background color of the body 
+															</li> 
+															<li class="sub-header size-3 light">
+																<b>body-text (<span class="lbl">string</span>) : </b> &nbsp; Site text color.
+															</li>
+															<li class="sub-header size-3 light">
+																<b>link-color (<span class="lbl">string</span>) : </b> &nbsp; color of the hyperlink.
+															</li>
+														</div>
+
+													</li>
+													<li class="sub-header size-3 light">
+														<b>font : </b> &nbsp; Specifies site font vars.<br/>
+														<div class="list unordered margin-y-5">
+															<li class="sub-header size-3 light">
+																<b>font-family (<span class="lbl">string</span>) :</b> &nbsp; Site font family
+															</li>
+														</div>
+													</li>
+													<li class="sub-header size-3 light">
+														<b>dimensions : </b> &nbsp; Specifies dimensions of site components.<br/>
+														<div class="list unordered margin-y-5">
+															<li class="sub-header size-3 light">
+																<b>nav-height (<span class="lbl">string</span>) : </b> &nbsp; Height of nav bar (top-bar) .
+															</li>
+															<li class="sub-header size-3 light">
+																<b>side-nav-width (<span class="lbl">string</span>) : </b> &nbsp; Width of the Side drawer.
+															</li>
+														</div>
+
+													</li>
+												</div>
+											</li>
+										</div>
+									</li>
+									<li class="sub-header size-3 light">
+										<b>modules : </b> &nbsp; Specifies what to import ( select only what you need ).<br/>
+										<div class="list unordered margin-y-5">
+											<li class="sub-header size-3 light">
+												<b>extra_colors (<span class="lbl">array</span>) :</b> &nbsp; Array of fixed color palette that you want to include in your site ( <a [routerLink]="['/docs/colors-palette']">refer here for adding and removing color</a> )
+											</li> 
+											<li class="sub-header size-3 light">
+												<b>components (<span class="lbl">array</span>) : </b> &nbsp; Array of site components you want to include to your site.
+											</li>
+										</div>
+									</li>
+								</div>
+							</div>
+
+							<div class="doc-block-info sub-header size-2">
+								Default / Reset:<br/>
+								<div class="list unordered margin-y-5">
+									<li class="sub-header size-3 light">
+										If the fields are not specified in the <span class="lbl red">custom.json</span>, then it will take the default values of GlobalUI vars.
+									</li>
+									<div class="list unordered margin-y-5">
+										<li class="sub-header size-3 light">
+											<b>Example 1:</b> 
+											<div class="GUI_Syntax" syntaxHighlet mode="js">
+												&#123;
+													"vars": &#123;
+
+															"colors": [
+																	&#123;"primary": "rgb(4, 131, 169)"&#125;,
+																	&#123;"secondary": "hsl(217, 33%, 31%)"&#125;
+																	&#123;"info": "hsl(217, 71%,  53%)"&#125;,
+																	&#123;"success": "hsl(141, 71%,  48%)"&#125;,
+																	&#123;"warning": "hsl(48,  100%, 67%)"&#125;,
+																	&#123;"danger": "hsl(348, 100%, 61%)"&#125;,
+																	&#123;"light": "hsl(0, 0%, 96%)"&#125;,
+																	&#123;"dark": "hsl(0, 0%, 21%)"&#125;
+															 ],
+
+															"site": &#123;
+
+																		"colors": &#123;
+																			"body-background": "#f6f6f6",
+																			"body-text": "#000",
+																			"link-color": "#3b5998"
+																		 }
+															
+																	}
+													},
+
+													"modules": &#123;
+															"extra_colors": [ ],
+															"components": [ 'button', 'grids' ]
+													}
+												}
+											</div><br/>
+											<b>In above example,</b>
+											<div class="list unordered">
+												<li class="sub-header size-3 light">
+													 <span class="lbl red">build-tool</span> will take the 6 primary colors specified in the <span class="lbl">colors</span> field of the <span class="lbl">vars</span>.
+												</li>
+												<li class="sub-header size-3 light">
+													 <span class="lbl red">build-tool</span> will take the generic site colors specified in the <span class="lbl">colors</span> field of the <span class="lbl">site</span>.
+												</li>
+												<li class="sub-header size-3 light">
+													 But <span class="lbl red">build-tool</span> will take the default <span class="lbl">font</span> and <span class="lbl">dimensions</span> variables since it is not mentioned in the file.
+												</li>
+												<li class="sub-header size-3 light">
+													 <span class="lbl red">build-tool</span> will not compile any extra-colors from the color-palette since <span class="lbl">extra_colors</span> field is empty array.
+												</li>
+												<li class="sub-header size-3 light">
+													 <span class="lbl red">build-tool</span> will import only  <span class="lbl red">button</span> &  <span class="lbl red">grids</span> module to the final css file.
+												</li>
+											</div>
+
+											<br/>
+											<b>Points to remember,</b>
+											<div class="list unordered">
+												<li class="sub-header size-3 light">
+													If the build-tool want to compile default values then don't mention it.
+												</li>
+												<li class="sub-header size-3 light">
+													So that, By removing the <span class="lbl">extra_colors</span> field from the file will compile all the extra-colors from the palette.
+												</li>
+											</div>
+
+
+										</li>
+								</div>
+								</div>
+							</div>
+
+					</div>
+
+
+					<div class="doc-block">
+							<div class="d-header" id="{{toc_list[3].id}}">
+								<div class="columns grow-mobile">
+									<div class="column">
+										<span class="header h3 light">{{toc_list[3].name}}</span>
+									</div>
+									<div class="column auto-grow">
+										<span class="label mini">^v1.0</span>
+									</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="doc-block-info sub-header size-3">Once your <span class="lbl red">custom.json</span> file is ready, You are now ready to build.</div>
+							<div class="doc-block-info">Steps:</div>
+							<div class="doc-block-info">
+								<div class="list unordered">
+									<li class="sub-header size-3 light">
+										Go to root directory.
+									</li>
+									<div class="divider extra-margin"></div>
+									<li class="sub-header size-3 light">
+										Hit below command to build.
+										<ul>
+											<div class="cmd">
+												gulp build
+											</div>
+										</ul>
+									</li>
+									<div class="divider extra-margin"></div>
+									<li class="sub-header size-3 light">
+										Now your CLI tool will compile all the sass files by taking the vars from the <span class="lbl red">custom.json</span> file.
+									</li>
+									<li class="sub-header size-3 light">
+										After the successfull build, <span class="lbl red">global-ui.css</span> & <span class="lbl red">global-ui.min.css</span> file will generated in the <span class="lbl red">dist</span> folder.
+									</li>
+								</div>
+							</div>
+
+					</div>
 					
 
 				</section>
@@ -69,7 +334,7 @@
 
 			<!-- toc -->
 			<div class="column grow-3">
-				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/modular'"></section>
+				<section class="ppadding-more toc-container" id="toc-container" toc [list]="toc_list" [url]="'/docs/build-tools'"></section>
 			</div>
 
 			</div>
