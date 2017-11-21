@@ -47,7 +47,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BuildToolsComponent } from './docs/customize/build-tools/build-tools.component';
 import { ModularComponent } from './docs/customize/modular/modular.component';
 import { SassStructureComponent } from './common/sass-structure/sass-structure.component';
-import { DocsTabTemplateComponent } from './common/docs-tab-template/docs-tab-template.component'; 
+import { DocsTabTemplateComponent } from './common/docs-tab-template/docs-tab-template.component';
+import { ButtonsAnimComponent } from './animations/buttons-anim/buttons-anim.component'; 
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { DocsTabTemplateComponent } from './common/docs-tab-template/docs-tab-te
     BuildToolsComponent,
     ModularComponent,
     SassStructureComponent,
-    DocsTabTemplateComponent
+    DocsTabTemplateComponent,
+    ButtonsAnimComponent
   ],
   imports: [
     BrowserModule,

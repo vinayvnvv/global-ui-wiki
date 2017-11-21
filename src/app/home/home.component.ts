@@ -8,7 +8,9 @@ import { StringsService } from './../services/strings.service';
   providers: [ StringsService ]
 })
 export class HomeComponent implements OnInit {
-
+  public uiVars = {
+    how_works: false
+  };
   constructor(
         private Strings: StringsService
     ) { }
@@ -17,6 +19,11 @@ export class HomeComponent implements OnInit {
   	document.getElementById("side-nav").classList.remove("active");
   	this.changeNavColor();
     //this.startColorChangeAnimForLabel();
+  }
+
+
+  initUiVars() {
+    this.uiVars["how_works"] = false;
   }
 
   changeNavColor() {

@@ -3,7 +3,7 @@
 	<div class="sub-title">User Interface is the language of the web</div>
 	<div class="actions">
 		<span [routerLink]="['/docs/start']" class="button outline border-2 white ripple  big border-dim-5" style="color:inherit">Get Started</span>&nbsp; &nbsp;&nbsp;&nbsp;
-		<span class="button outline border-2 white ripple  big border-dim-7" style="color:inherit">Download</span><br/><br/>
+		<span class="button outline border-2 white ripple  big border-dim-7" style="color:inherit" (click)="uiVars.how_works = !uiVars.how_works">How It Works!</span><br/><br/>
 		<div class="section flex justify-content-center slide_to_bottom">
 			<span class="big black padding-more header h4 light terminal typewriter"  id="label_color_change">
 			  		<span class="text">npm install global-ui-test</span>
@@ -11,3 +11,13 @@
 		</div>
 	</div>
 </section>
+
+
+<!-- how works modal -->
+<div class="modal animated how-to" [class.active]="uiVars.how_works">
+	<div class="modal-bg" (click)="uiVars.how_works = false"></div>
+	<div class="modal-content">
+		<div class="close" (click)="uiVars.how_works = false"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+		<app-buttons-anim></app-buttons-anim>
+	</div>
+</div>

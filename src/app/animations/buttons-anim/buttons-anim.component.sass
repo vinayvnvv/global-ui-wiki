@@ -1,0 +1,37 @@
+.anm
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	min-height: 230px
+	width: 100%
+	padding: 33px 0
+	flex-direction: column
+	& .html-emd
+		padding: 0 19px
+		width: 30%
+		text-align: center
+		height: 90px
+	& .code
+		& span 
+			transition: .1s all
+			&.class-change
+				background: rgba(255, 0, 0, 0.14)
+				&.class-change-anim
+					animation-name: color_change
+					animation-duration: 2s
+
+
+
+
+//anim
+
+@keyframes color_change
+	0%
+		background-color: transparent
+		color: #fff
+	20%
+		background-color: #cc4444
+	30%
+		background-color: rgba(255, 0, 0, 0.14)
+	100%
